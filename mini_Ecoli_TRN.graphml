@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="name" attr.type="string" />
+  <key id="d0" for="node" attr.name="ntype" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="b3243">
+      <data key="d0">TF</data>
+      <data key="d1">aaeR</data>
+    </node>
+    <node id="b3242">
+      <data key="d0">TG</data>
+      <data key="d1">aaeX</data>
+    </node>
+    <node id="b3255">
+      <data key="d0">TF</data>
+      <data key="d1">accB</data>
+    </node>
+    <node id="b0464">
+      <data key="d0">TF</data>
+      <data key="d1">acrR</data>
+    </node>
+    <node id="b1530">
+      <data key="d0">TG</data>
+      <data key="d1">marR</data>
+    </node>
+    <node id="b4063">
+      <data key="d0">TG</data>
+      <data key="d1">soxR</data>
+    </node>
+    <node id="b4062">
+      <data key="d0">TG</data>
+      <data key="d1">soxS</data>
+    </node>
+    <node id="b2213">
+      <data key="d0">TF</data>
+      <data key="d1">ada</data>
+    </node>
+    <node id="b4187">
+      <data key="d0">TG</data>
+      <data key="d1">aidB</data>
+    </node>
+    <node id="b2068">
+      <data key="d0">TG</data>
+      <data key="d1">alkA</data>
+    </node>
+    <node id="b4116">
+      <data key="d0">TF</data>
+      <data key="d1">adiY</data>
+    </node>
+    <node id="b3517">
+      <data key="d0">TG</data>
+      <data key="d1">gadA</data>
+    </node>
+    <node id="b1493">
+      <data key="d0">TG</data>
+      <data key="d1">gadB</data>
+    </node>
+    <node id="b3212">
+      <data key="d0">TG</data>
+      <data key="d1">gltB</data>
+    </node>
+    <node id="b3131">
+      <data key="d0">TF</data>
+      <data key="d1">agaR</data>
+    </node>
+    <node id="b3132">
+      <data key="d0">TG</data>
+      <data key="d1">kbaZ</data>
+    </node>
+    <edge source="b3243" target="b3242" />
+    <edge source="b3255" target="b3255" />
+    <edge source="b0464" target="b1530" />
+    <edge source="b0464" target="b4063" />
+    <edge source="b0464" target="b4062" />
+    <edge source="b2213" target="b4187" />
+    <edge source="b2213" target="b2068" />
+    <edge source="b2213" target="b2213" />
+    <edge source="b2213" target="b4062" />
+    <edge source="b4116" target="b3517" />
+    <edge source="b4116" target="b1493" />
+    <edge source="b4116" target="b3212" />
+    <edge source="b3131" target="b3132" />
+  </graph>
+</graphml>
