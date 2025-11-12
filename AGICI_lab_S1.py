@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from Bio.SeqRecord import SeqRecord
 from  Bio import SeqIO
 import csv
@@ -12,7 +10,7 @@ import networkx as nx
 # --------------- END OF AUXILIARY FUNCTIONS ------------------ #
 
 def feature_list(genome: SeqRecord, query: str) -> list:
-    '''
+    """
     Extract CDS features with specific feature description.
     - param genome : SeqRecord
         genome SeqRecord object to be analyzed.
@@ -20,7 +18,7 @@ def feature_list(genome: SeqRecord, query: str) -> list:
         feature descriptor.
     - return list
         list of tuples (locus_tag, protein_id) matching descriptor.
-    '''
+    """
 
     ret_list = []
     for feat in genome.features:
@@ -33,7 +31,7 @@ def feature_list(genome: SeqRecord, query: str) -> list:
 
 def gene_qualifier(query: str, query_field: str,
                    target_field: str, genome: SeqRecord) -> tuple:
-    '''
+    """
     Obtain the specified qualifier identifier for a given gene qualifier
     - param: query: str
         gene name/locus_tag to map to corresponding locus_tag/name
@@ -46,7 +44,7 @@ def gene_qualifier(query: str, query_field: str,
     - return: tuple
         int : feature index
         str : specified qualifier for gene (empty string if no match)
-    '''
+    """
 
     feat_num = 0
     ret_value = ''
@@ -61,8 +59,8 @@ def gene_qualifier(query: str, query_field: str,
             feat_num = feat_num + 1
     return feat_num, ret_value
 
-def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str, \
-                   detect_operons: bool, max_intergenic_dist: int, \
+def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
+                   detect_operons: bool, max_intergenic_dist: int,
                    genome: SeqRecord) -> nx.DiGraph:
     """
     Parse TF-RISet file to obtain a TRN graph.
