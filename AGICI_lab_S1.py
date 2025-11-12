@@ -87,9 +87,10 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
     
     G = nx.DiGraph()
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    TF_dict :dict[str, str] = {}
     
-    
-    
+    with open(tf_riset_filename, newline='') as tsv_file:
+        pass
     
     
     # ----------------- END OF FUNCTION --------------------- #
