@@ -84,16 +84,16 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
         genome SeqRecord object to extract information from
     - return: TF dictionary
     """
-
-    G = None
+    
+    G = nx.DiGraph()
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-
-
-
-
-
+    
+    
+    
+    
+    
     # ----------------- END OF FUNCTION --------------------- #
-
+    
     return G
 
 
@@ -108,7 +108,7 @@ if __name__ == "__main__":
     genome = SeqIO.read('dataset/sequence.gb' , 'genbank')
 
     # parse TF_RISet file to obtain networks
-    G1 = TF_RISet_parse('TF-RISet.tsv', 'genbank', False, 100, genome)
+    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome)
 
     # report basic network stats
     ...
