@@ -99,9 +99,9 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
     
     
     # ----------------- END OF FUNCTION --------------------- #
-
+    
     return G
-
+    
 
 if __name__ == "__main__":
 
