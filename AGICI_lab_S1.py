@@ -2,6 +2,8 @@ from Bio.SeqRecord import SeqRecord
 from  Bio import SeqIO
 import csv
 import networkx as nx
+import matplotlib 
+import scipy as sp  
 
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
@@ -87,9 +89,33 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
     
     G = nx.DiGraph()
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    with open('dataset/TFSet.tsv', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
-        
+    tf_dict = {}
+    nodes = {}
+    with open(tf_set_filename, newline='') as file: #creacio tf_dict
+        tsv_reader = csv.reader(file, delimiter='\t')
+        for index,row in enumerate(tsv_reader):
+            if len(row) < 18:   
+                continue
+            if index != 35:
+                tf_dict[row[1]] = row[4]
+
+    with open (tf_riset_filename, newline='') as file:
+        tsv_reader = csv.reader(file,delimiter='\t')
+        for row in tsv_reader:
+            if len(row) < 27:
+                continue
+            if index > 45 and row[3] in tf_dict:
+                node1 = row[3]
+                node2 = row[16]
+                if node1 not in nodes:
+                    nodes[node1] = True
+                    G.add_node(tf_dict[node1],name=node1)
+                if node2 not in nodes:
+                    nodes[node2] = True
+                    info_gene = feature_list(genome,node2)
+                    G.add_node(node2)
+                G.add_edge(tf_dict[node1],node2)
+
 
 
     TF_dict :dict[str, str] = {}
@@ -121,6 +147,7 @@ if __name__ == "__main__":
 
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
+    nx.draw_networkx(G1)
 
     print("--- %s seconds ---" % (time.time() - start_time))
 
