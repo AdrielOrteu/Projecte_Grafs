@@ -2,9 +2,11 @@ from Bio.SeqRecord import SeqRecord
 from  Bio import SeqIO
 import csv
 import networkx as nx
-import matplotlib 
-import scipy as sp  
-
+import matplotlib.pyplot as plt
+from collections import Counter
+import numpy as np
+import math
+import copy
 
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 
@@ -63,7 +65,7 @@ def gene_qualifier(query: str, query_field: str,
 
 def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                    detect_operons: bool, max_intergenic_dist: int,
-                   genome: SeqRecord) -> nx.DiGraph:
+                   genome: SeqRecord, mode:bool = False) -> nx.DiGraph:
     """
     Parse TF-RISet file to obtain a TRN graph.
     The TFSet file will be used to extract information on the gene coding for
@@ -86,8 +88,10 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
         genome SeqRecord object to extract information from
     - return: TF dictionary
     """
-
-    G = nx.DiGraph()
+    if mode:
+        G = nx.DiGraph()
+    else:
+        G = nx.Graph()
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     tf_dict = {}
     nodes = {}
@@ -109,13 +113,12 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                 node2 = row[16]
                 if node1 not in nodes:
                     nodes[node1] = True
-                    G.add_node(tf_dict[node1],name=node1)
+                    G.add_node((tf_dict[node1]))
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
                     G.add_node(node2)
                 G.add_edge(tf_dict[node1],node2)
-
 
 
     # ----------------- END OF FUNCTION --------------------- #
@@ -134,14 +137,27 @@ if __name__ == "__main__":
     genome = SeqIO.read('dataset/sequence.gb' , 'genbank')
 
     # parse TF_RISet file to obtain networks
-    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome)
+    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,False)
+    Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,False) #Graf per mirar PowerLaw
 
     # report basic network stats
-    ...
-
+    '''
+    Hay que añadir otras pruebas tipo grado medio camino mas corto medio y por delante
+    '''
+    degress = [ x[1] for x in Gpruebas.degree] #Sagar el grado de cada nodo
+    frequencias = Counter(degress) # Sacar el Counter {valor  del grado: Cuantos veces sale el valor}
+    list_x = list(frequencias) # Sacar las claves del counter (valores del grado)
+    list_y = list(frequencias.values()) # Sacar los valores del counter (frequencias)
+    y_punts = np.array(copy.deepcopy(list_y)) # Valores para grafo de puntos normal x
+    x_punts = np.array(copy.deepcopy(list_x)) # Valores para grafo de puntos normal y
+    x_punts_plaw = np.array(list(map(math.log,copy.deepcopy(list_x)))) #Valores para power law x
+    y_punts_plaw = np.array(list(map(math.log, copy.deepcopy(list_y)))) #Valores para power law y
+    fig, ax = plt.subplots(2, 1)
+    ax[0].plot(x_punts, y_punts, 'o')
+    ax[1].plot(x_punts_plaw, y_punts_plaw, 'o')
+    plt.show()
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
-    nx.draw_networkx(G1)
 
     print("--- %s seconds ---" % (time.time() - start_time))
 

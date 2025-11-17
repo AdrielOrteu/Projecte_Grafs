@@ -1,96 +1,49 @@
 <?xml version='1.0' encoding='utf-8'?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
-  <key id="d0" for="node" attr.name="name" attr.type="string" />
-  <graph edgedefault="directed">
-    <node id="b3515">
-      <data key="d0">GadW</data>
-    </node>
+  <graph edgedefault="undirected">
+    <node id="b3515" />
     <node id="slp" />
     <node id="hdeA" />
-    <node id="b2837">
-      <data key="d0">GalR</data>
-    </node>
+    <node id="b2837" />
     <node id="galP" />
-    <node id="b2151">
-      <data key="d0">GalS</data>
-    </node>
-    <node id="b0676">
-      <data key="d0">NagC</data>
-    </node>
-    <node id="b4539;b2017">
-      <data key="d0">YefMB</data>
-    </node>
+    <node id="b2151" />
+    <node id="b0676" />
+    <node id="b4539;b2017" />
     <node id="yefM" />
-    <node id="b3516">
-      <data key="d0">GadX</data>
-    </node>
-    <node id="b3512">
-      <data key="d0">GadE</data>
-    </node>
-    <node id="b2369">
-      <data key="d0">EvgA</data>
-    </node>
+    <node id="b3516" />
+    <node id="b3512" />
+    <node id="b2369" />
     <node id="yegR" />
-    <node id="b2427">
-      <data key="d0">MurR</data>
-    </node>
+    <node id="b2427" />
     <node id="murQ" />
-    <node id="b0080">
-      <data key="d0">Cra</data>
-    </node>
+    <node id="b0080" />
     <node id="aroP" />
     <node id="manX" />
-    <node id="b3357">
-      <data key="d0">CRP</data>
-    </node>
+    <node id="b3357" />
     <node id="malI" />
-    <node id="b0889">
-      <data key="d0">Lrp</data>
-    </node>
+    <node id="b0889" />
     <node id="yojI" />
-    <node id="b3094">
-      <data key="d0">ExuR</data>
-    </node>
+    <node id="b3094" />
     <node id="exuT" />
-    <node id="b1564">
-      <data key="d0">RelB</data>
-    </node>
+    <node id="b1564" />
     <node id="relB" />
-    <node id="b1564;b1563">
-      <data key="d0">RelBE</data>
-    </node>
-    <node id="b1014">
-      <data key="d0">PutA</data>
-    </node>
+    <node id="b1564;b1563" />
+    <node id="b1014" />
     <node id="putA" />
     <node id="putP" />
-    <node id="b4043">
-      <data key="d0">LexA</data>
-    </node>
+    <node id="b4043" />
     <node id="dinJ" />
-    <node id="b4401">
-      <data key="d0">ArcA</data>
-    </node>
+    <node id="b4401" />
     <node id="puuA" />
-    <node id="b1334">
-      <data key="d0">FNR</data>
-    </node>
-    <node id="b3702">
-      <data key="d0">DnaA</data>
-    </node>
+    <node id="b1334" />
+    <node id="b3702" />
     <node id="yjeV" />
-    <node id="b3261">
-      <data key="d0">Fis</data>
-    </node>
+    <node id="b3261" />
     <node id="ogt" />
-    <node id="b1221">
-      <data key="d0">NarL</data>
-    </node>
+    <node id="b1221" />
     <node id="yeaR" />
     <node id="yfdX" />
-    <node id="b4260">
-      <data key="d0">PepA</data>
-    </node>
+    <node id="b4260" />
     <node id="pepA" />
     <node id="ppdD" />
     <node id="hofM" />
@@ -98,20 +51,12 @@
     <node id="ydeJ" />
     <node id="ybdN" />
     <node id="iraM" />
-    <node id="b1499">
-      <data key="d0">YdeO</data>
-    </node>
+    <node id="b1499" />
     <node id="gadE" />
-    <node id="b4062">
-      <data key="d0">SoxS</data>
-    </node>
+    <node id="b4062" />
     <node id="waaY" />
-    <node id="b1531">
-      <data key="d0">MarA</data>
-    </node>
-    <node id="b0620">
-      <data key="d0">DpiA</data>
-    </node>
+    <node id="b1531" />
+    <node id="b0620" />
     <node id="dpiB" />
     <node id="citC" />
     <node id="mdh" />
@@ -119,41 +64,25 @@
     <node id="dinB" />
     <node id="gltX" />
     <node id="valU" />
-    <node id="b3961">
-      <data key="d0">OxyR</data>
-    </node>
+    <node id="b3961" />
     <node id="fhuF" />
     <node id="mntH" />
     <node id="dsbG" />
     <node id="ahpC" />
-    <node id="b1162">
-      <data key="d0">BluR</data>
-    </node>
+    <node id="b1162" />
     <node id="ycgZ" />
-    <node id="b1450">
-      <data key="d0">McbR</data>
-    </node>
+    <node id="b1450" />
     <node id="mcbA" />
-    <node id="b3023">
-      <data key="d0">YgiV</data>
-    </node>
+    <node id="b3023" />
     <node id="mcbR" />
-    <node id="b4178">
-      <data key="d0">NsrR</data>
-    </node>
+    <node id="b4178" />
     <node id="fliA" />
-    <node id="b3060">
-      <data key="d0">Dan</data>
-    </node>
+    <node id="b3060" />
     <node id="ttdR" />
     <node id="ttdA" />
-    <node id="b2105">
-      <data key="d0">RcnR</data>
-    </node>
+    <node id="b2105" />
     <node id="rcnR" />
-    <node id="b2714">
-      <data key="d0">AscG</data>
-    </node>
+    <node id="b2714" />
     <node id="ascF" />
     <node id="prpR" />
     <node id="ybiT" />
@@ -186,9 +115,7 @@
     <node id="dkgB" />
     <node id="wecA" />
     <node id="mhpT" />
-    <node id="b3934">
-      <data key="d0">CytR</data>
-    </node>
+    <node id="b3934" />
     <node id="udp" />
     <node id="tsx" />
     <node id="ppiA" />
@@ -198,41 +125,25 @@
     <node id="trg" />
     <node id="azuR" />
     <node id="ykgR" />
-    <node id="b3905">
-      <data key="d0">RhaS</data>
-    </node>
+    <node id="b3905" />
     <node id="rhaS" />
-    <node id="b2554">
-      <data key="d0">GlrR</data>
-    </node>
+    <node id="b2554" />
     <node id="glmY" />
-    <node id="b1712;b0912">
-      <data key="d0">IHF</data>
-    </node>
+    <node id="b1712;b0912" />
     <node id="nupG" />
-    <node id="b0064">
-      <data key="d0">AraC</data>
-    </node>
+    <node id="b0064" />
     <node id="xylA" />
     <node id="yafN" />
     <node id="lsrA" />
-    <node id="b0683">
-      <data key="d0">Fur</data>
-    </node>
+    <node id="b0683" />
     <node id="ftnA" />
-    <node id="b1237">
-      <data key="d0">H-NS</data>
-    </node>
+    <node id="b1237" />
     <node id="argO" />
-    <node id="b0076">
-      <data key="d0">LeuO</data>
-    </node>
+    <node id="b0076" />
     <node id="dsrA" />
     <node id="fnrS" />
     <node id="murR" />
-    <node id="b1130">
-      <data key="d0">PhoP</data>
-    </node>
+    <node id="b1130" />
     <node id="mgrR" />
     <node id="mgtS" />
     <node id="hemH" />
@@ -248,106 +159,70 @@
     <node id="katG" />
     <node id="oxyR" />
     <node id="oxyS" />
-    <node id="b2217">
-      <data key="d0">RcsB</data>
-    </node>
+    <node id="b2217" />
     <node id="gadB" />
-    <node id="b0730">
-      <data key="d0">MngR</data>
-    </node>
+    <node id="b0730" />
     <node id="mngA" />
     <node id="gadA" />
-    <node id="b2531">
-      <data key="d0">IscR</data>
-    </node>
+    <node id="b2531" />
     <node id="rnlA" />
     <node id="uspE" />
     <node id="ompT" />
     <node id="gadW" />
     <node id="hdeD" />
-    <node id="b3021">
-      <data key="d0">MqsA</data>
-    </node>
+    <node id="b3021" />
     <node id="cspD" />
     <node id="mqsR" />
-    <node id="b1916">
-      <data key="d0">SdiA</data>
-    </node>
+    <node id="b1916" />
     <node id="casA" />
-    <node id="b4396">
-      <data key="d0">Rob</data>
-    </node>
+    <node id="b4396" />
     <node id="acnA" />
     <node id="yncE" />
     <node id="nfsB" />
-    <node id="b0034">
-      <data key="d0">CaiF</data>
-    </node>
+    <node id="b0034" />
     <node id="fixA" />
     <node id="caiT" />
     <node id="nrdA" />
     <node id="pdeF" />
-    <node id="b3010">
-      <data key="d0">YqhC</data>
-    </node>
+    <node id="b3010" />
     <node id="yqhD" />
     <node id="lsrR" />
-    <node id="b3574">
-      <data key="d0">PlaR</data>
-    </node>
+    <node id="b3574" />
     <node id="plaR" />
     <node id="oppA" />
     <node id="garP" />
     <node id="gspC" />
     <node id="ryhB" />
     <node id="yjjZ" />
-    <node id="b0020">
-      <data key="d0">NhaR</data>
-    </node>
+    <node id="b0020" />
     <node id="nhaA" />
-    <node id="b2731">
-      <data key="d0">FhlA</data>
-    </node>
+    <node id="b2731" />
     <node id="fdhF" />
-    <node id="b3912">
-      <data key="d0">CpxR</data>
-    </node>
+    <node id="b3912" />
     <node id="csgD" />
-    <node id="b2217;b3512">
-      <data key="d0">GadRcs</data>
-    </node>
+    <node id="b2217;b3512" />
     <node id="adiC" />
     <node id="sodA" />
     <node id="pyrC" />
-    <node id="b1187">
-      <data key="d0">FadR</data>
-    </node>
+    <node id="b1187" />
     <node id="fadH" />
     <node id="yciG" />
     <node id="safA" />
     <node id="ydeP" />
     <node id="arcZ" />
-    <node id="b2127">
-      <data key="d0">MlrA</data>
-    </node>
+    <node id="b2127" />
     <node id="cadC" />
     <node id="rplU" />
     <node id="ibaG" />
     <node id="rplM" />
     <node id="cysB" />
-    <node id="b1827">
-      <data key="d0">KdgR</data>
-    </node>
+    <node id="b1827" />
     <node id="edd" />
-    <node id="b4187">
-      <data key="d0">AidB</data>
-    </node>
+    <node id="b4187" />
     <node id="aidB" />
     <node id="glgB" />
     <node id="glgA" />
-    <node id="b3071">
-      <data key="d0">NfeR</data>
-    </node>
+    <node id="b3071" />
     <node id="nfeR" />
     <node id="nfeF" />
     <node id="alaA" />
@@ -374,47 +249,31 @@
     <node id="feoA" />
     <node id="aslB" />
     <node id="yhiM" />
-    <node id="b4480">
-      <data key="d0">HdfR</data>
-    </node>
+    <node id="b4480" />
     <node id="gltB" />
-    <node id="b4116">
-      <data key="d0">AdiY</data>
-    </node>
+    <node id="b4116" />
     <node id="rcsD" />
     <node id="ydeO" />
     <node id="adiY" />
     <node id="hdfR" />
     <node id="evgL" />
     <node id="adeD" />
-    <node id="b4004">
-      <data key="d0">ZraR</data>
-    </node>
+    <node id="b4004" />
     <node id="zraP" />
     <node id="zraS" />
     <node id="mhpR" />
-    <node id="b0817">
-      <data key="d0">MntR</data>
-    </node>
+    <node id="b0817" />
     <node id="nrdH" />
     <node id="gadY" />
     <node id="btuB" />
     <node id="gadX" />
-    <node id="b2916">
-      <data key="d0">ArgP</data>
-    </node>
+    <node id="b2916" />
     <node id="lysP" />
     <node id="cadB" />
-    <node id="b2017">
-      <data key="d0">YefM</data>
-    </node>
-    <node id="b1508">
-      <data key="d0">HipB</data>
-    </node>
+    <node id="b2017" />
+    <node id="b1508" />
     <node id="hipB" />
-    <node id="b1040">
-      <data key="d0">CsgD</data>
-    </node>
+    <node id="b1040" />
     <node id="ubiT" />
     <node id="fliF" />
     <node id="fliE" />
@@ -447,31 +306,21 @@
     <node id="aegA" />
     <node id="grcA" />
     <node id="lpd" />
-    <node id="b2624">
-      <data key="d0">AlpA</data>
-    </node>
+    <node id="b2624" />
     <node id="intA" />
     <node id="scpA" />
-    <node id="b2079">
-      <data key="d0">BaeR</data>
-    </node>
+    <node id="b2079" />
     <node id="ycaC" />
     <node id="gapC" />
     <node id="poxB" />
     <node id="betT" />
     <node id="betI" />
-    <node id="b4324">
-      <data key="d0">UxuR</data>
-    </node>
+    <node id="b4324" />
     <node id="lgoR" />
     <node id="lgoD" />
-    <node id="b2783">
-      <data key="d0">MazE</data>
-    </node>
+    <node id="b2783" />
     <node id="mazE" />
-    <node id="b2782;b2783">
-      <data key="d0">MazEF</data>
-    </node>
+    <node id="b2782;b2783" />
     <node id="mntP" />
     <node id="rybA" />
     <node id="hfq" />
@@ -484,9 +333,7 @@
     <node id="dapD" />
     <node id="asd" />
     <node id="fadM" />
-    <node id="b4398">
-      <data key="d0">CreB</data>
-    </node>
+    <node id="b4398" />
     <node id="malE" />
     <node id="talA" />
     <node id="ackA" />
@@ -494,71 +341,47 @@
     <node id="cbrA" />
     <node id="cbrB" />
     <node id="recG" />
-    <node id="b0225;b0226">
-      <data key="d0">DinJ-YafQ</data>
-    </node>
+    <node id="b0225;b0226" />
     <node id="cspE" />
     <node id="argP" />
     <node id="dnaA" />
     <node id="rpoS" />
-    <node id="b3773">
-      <data key="d0">IlvY</data>
-    </node>
+    <node id="b3773" />
     <node id="ilvC" />
     <node id="ilvY" />
-    <node id="b3828">
-      <data key="d0">MetR</data>
-    </node>
+    <node id="b3828" />
     <node id="metE" />
     <node id="metR" />
     <node id="glyA" />
-    <node id="b1111">
-      <data key="d0">ComR</data>
-    </node>
+    <node id="b1111" />
     <node id="patZ" />
-    <node id="b4124">
-      <data key="d0">DcuR</data>
-    </node>
-    <node id="b0113">
-      <data key="d0">PdhR</data>
-    </node>
+    <node id="b4124" />
+    <node id="b0113" />
     <node id="glcD" />
     <node id="mraZ" />
     <node id="ilvI" />
     <node id="dadA" />
-    <node id="b2808">
-      <data key="d0">GcvA</data>
-    </node>
+    <node id="b2808" />
     <node id="gcvB" />
     <node id="gcvA" />
     <node id="gcvT" />
     <node id="mcaS" />
-    <node id="b4327">
-      <data key="d0">HypT</data>
-    </node>
+    <node id="b4327" />
     <node id="cydA" />
     <node id="metN" />
     <node id="cysH" />
     <node id="metB" />
     <node id="fecA" />
-    <node id="b0294">
-      <data key="d0">MatA</data>
-    </node>
+    <node id="b0294" />
     <node id="flhD" />
     <node id="ecpA" />
     <node id="rhaT" />
-    <node id="b4366;b2217">
-      <data key="d0">RcsB-BglJ</data>
-    </node>
+    <node id="b4366;b2217" />
     <node id="leuO" />
-    <node id="b2669">
-      <data key="d0">StpA</data>
-    </node>
+    <node id="b2669" />
     <node id="bglG" />
     <node id="ydfZ" />
-    <node id="b1921">
-      <data key="d0">FliZ</data>
-    </node>
+    <node id="b1921" />
     <node id="mlrA" />
     <node id="pdeR" />
     <node id="yjbJ" />
@@ -566,9 +389,7 @@
     <node id="matA" />
     <node id="fliC" />
     <node id="hcp" />
-    <node id="b3237">
-      <data key="d0">ArgR</data>
-    </node>
+    <node id="b3237" />
     <node id="argA" />
     <node id="gapA" />
     <node id="pdeL" />
@@ -578,26 +399,18 @@
     <node id="uxaC" />
     <node id="rrsB" />
     <node id="rrsA" />
-    <node id="b3868">
-      <data key="d0">NtrC</data>
-    </node>
+    <node id="b3868" />
     <node id="argT" />
     <node id="ddpX" />
     <node id="rutA" />
     <node id="yhdW" />
-    <node id="b0995">
-      <data key="d0">TorR</data>
-    </node>
+    <node id="b0995" />
     <node id="uxuR" />
     <node id="lolA" />
     <node id="rob" />
-    <node id="b2125">
-      <data key="d0">BtsR</data>
-    </node>
+    <node id="b2125" />
     <node id="btsT" />
-    <node id="b4113">
-      <data key="d0">BasR</data>
-    </node>
+    <node id="b4113" />
     <node id="yrbL" />
     <node id="eptA" />
     <node id="arnB" />
@@ -610,14 +423,10 @@
     <node id="ydeN" />
     <node id="fadR" />
     <node id="ycdZ" />
-    <node id="b0846">
-      <data key="d0">RcdA</data>
-    </node>
+    <node id="b0846" />
     <node id="rcdA" />
     <node id="ybjJ" />
-    <node id="b1540">
-      <data key="d0">YdfH</data>
-    </node>
+    <node id="b1540" />
     <node id="rspA" />
     <node id="sulA" />
     <node id="bluF" />
@@ -625,9 +434,7 @@
     <node id="asr" />
     <node id="ydeI" />
     <node id="yagK" />
-    <node id="b0399">
-      <data key="d0">PhoB</data>
-    </node>
+    <node id="b0399" />
     <node id="mipA" />
     <node id="hiuH" />
     <node id="rspR" />
@@ -637,22 +444,14 @@
     <node id="rcdB" />
     <node id="yegH" />
     <node id="hyaA" />
-    <node id="b2381">
-      <data key="d0">PyrR</data>
-    </node>
+    <node id="b2381" />
     <node id="yhjX" />
-    <node id="b1328">
-      <data key="d0">PgrR</data>
-    </node>
+    <node id="b1328" />
     <node id="ycjY" />
-    <node id="b1570">
-      <data key="d0">DicA</data>
-    </node>
+    <node id="b1570" />
     <node id="dicC" />
     <node id="dicA" />
-    <node id="b1299">
-      <data key="d0">PuuR</data>
-    </node>
+    <node id="b1299" />
     <node id="phoQ" />
     <node id="phoU" />
     <node id="ompF" />
@@ -667,15 +466,11 @@
     <node id="yqaE" />
     <node id="slt" />
     <node id="fabH" />
-    <node id="b3753">
-      <data key="d0">RbsR</data>
-    </node>
+    <node id="b3753" />
     <node id="purH" />
     <node id="add" />
     <node id="udk" />
-    <node id="b1988">
-      <data key="d0">Nac</data>
-    </node>
+    <node id="b1988" />
     <node id="ydcS" />
     <node id="rmf" />
     <node id="raiA" />
@@ -684,19 +479,13 @@
     <node id="nrdD" />
     <node id="ssrS" />
     <node id="ydbK" />
-    <node id="b3226">
-      <data key="d0">NanR</data>
-    </node>
+    <node id="b3226" />
     <node id="nanX" />
     <node id="qseB" />
-    <node id="b1384">
-      <data key="d0">FeaR</data>
-    </node>
+    <node id="b1384" />
     <node id="tynA" />
     <node id="feaB" />
-    <node id="b0305">
-      <data key="d0">RclR</data>
-    </node>
+    <node id="b0305" />
     <node id="rclA" />
     <node id="yehF" />
     <node id="sfsB" />
@@ -708,29 +497,19 @@
     <node id="ynbA" />
     <node id="ynjI" />
     <node id="relA" />
-    <node id="b1508;b1507">
-      <data key="d0">HipAB</data>
-    </node>
+    <node id="b1508;b1507" />
     <node id="eutH" />
     <node id="flgM" />
-    <node id="b0081">
-      <data key="d0">MraZ</data>
-    </node>
+    <node id="b0081" />
     <node id="mioC" />
     <node id="ytfQ" />
     <node id="pck" />
     <node id="crp" />
-    <node id="b1399">
-      <data key="d0">PaaX</data>
-    </node>
+    <node id="b1399" />
     <node id="paaX" />
     <node id="patA" />
-    <node id="b0464">
-      <data key="d0">AcrR</data>
-    </node>
-    <node id="b1275">
-      <data key="d0">CysB</data>
-    </node>
+    <node id="b0464" />
+    <node id="b1275" />
     <node id="yciW" />
     <node id="ygeH" />
     <node id="dgcZ" />
@@ -739,48 +518,30 @@
     <node id="ariR" />
     <node id="cyaR" />
     <node id="rprA" />
-    <node id="b1434">
-      <data key="d0">SutR</data>
-    </node>
+    <node id="b1434" />
     <node id="sutR" />
     <node id="ydcO" />
     <node id="cysE" />
-    <node id="b0571">
-      <data key="d0">CusR</data>
-    </node>
-    <node id="b1969">
-      <data key="d0">HprR</data>
-    </node>
+    <node id="b0571" />
+    <node id="b1969" />
     <node id="appC" />
     <node id="yiiS" />
     <node id="nhaR" />
     <node id="proV" />
-    <node id="b3405">
-      <data key="d0">OmpR</data>
-    </node>
+    <node id="b3405" />
     <node id="pgaA" />
-    <node id="b0959;b3357">
-      <data key="d0">CRP-Sxy</data>
-    </node>
+    <node id="b0959;b3357" />
     <node id="sxy" />
-    <node id="b4046">
-      <data key="d0">Zur</data>
-    </node>
+    <node id="b4046" />
     <node id="pliG" />
-    <node id="b1790">
-      <data key="d0">NimR</data>
-    </node>
+    <node id="b1790" />
     <node id="nimT" />
     <node id="nimR" />
     <node id="secB" />
     <node id="lysO" />
-    <node id="b1853">
-      <data key="d0">YebK</data>
-    </node>
+    <node id="b1853" />
     <node id="yebK" />
-    <node id="b4365">
-      <data key="d0">YjjQ</data>
-    </node>
+    <node id="b4365" />
     <node id="ybhL" />
     <node id="yfiR" />
     <node id="ymiA" />
@@ -791,18 +552,12 @@
     <node id="accA" />
     <node id="accB" />
     <node id="accD" />
-    <node id="b2193">
-      <data key="d0">NarP</data>
-    </node>
-    <node id="b1914">
-      <data key="d0">UvrY</data>
-    </node>
+    <node id="b2193" />
+    <node id="b1914" />
     <node id="uhpT" />
     <node id="tcyP" />
     <node id="tcyJ" />
-    <node id="b3569">
-      <data key="d0">XylR</data>
-    </node>
+    <node id="b3569" />
     <node id="araC" />
     <node id="csrB" />
     <node id="csrC" />
@@ -813,32 +568,20 @@
     <node id="mpaA" />
     <node id="mppA" />
     <node id="exuR" />
-    <node id="b0796">
-      <data key="d0">CecR</data>
-    </node>
+    <node id="b0796" />
     <node id="cecR" />
     <node id="rhlE" />
     <node id="cspA" />
     <node id="ompW" />
-    <node id="b0447">
-      <data key="d0">DecR</data>
-    </node>
+    <node id="b0447" />
     <node id="cyuP" />
     <node id="luxS" />
-    <node id="b3082">
-      <data key="d0">HigA</data>
-    </node>
+    <node id="b3082" />
     <node id="higB" />
-    <node id="b3082;b3083">
-      <data key="d0">HigBA</data>
-    </node>
-    <node id="b0315">
-      <data key="d0">PdeL</data>
-    </node>
+    <node id="b3082;b3083" />
+    <node id="b0315" />
     <node id="rseD" />
-    <node id="b3105">
-      <data key="d0">YhaJ</data>
-    </node>
+    <node id="b3105" />
     <node id="yhaK" />
     <node id="bssS" />
     <node id="ybiJ" />
@@ -847,13 +590,9 @@
     <node id="ygiD" />
     <node id="mdtU" />
     <node id="ravA" />
-    <node id="b0357">
-      <data key="d0">FrmR</data>
-    </node>
+    <node id="b0357" />
     <node id="frmR" />
-    <node id="b1642">
-      <data key="d0">SlyA</data>
-    </node>
+    <node id="b1642" />
     <node id="fecI" />
     <node id="elfA" />
     <node id="paaA" />
@@ -866,26 +605,18 @@
     <node id="mdaB" />
     <node id="yhbW" />
     <node id="aldA" />
-    <node id="b2289">
-      <data key="d0">LrhA</data>
-    </node>
+    <node id="b2289" />
     <node id="recQ" />
-    <node id="b3025">
-      <data key="d0">QseB</data>
-    </node>
+    <node id="b3025" />
     <node id="yhcC" />
-    <node id="b0272">
-      <data key="d0">XynR</data>
-    </node>
+    <node id="b0272" />
     <node id="yagA" />
     <node id="yagE" />
     <node id="mlaF" />
     <node id="xseA" />
     <node id="queE" />
     <node id="ytfK" />
-    <node id="b1356">
-      <data key="d0">RacR</data>
-    </node>
+    <node id="b1356" />
     <node id="ydaS" />
     <node id="dapB" />
     <node id="csqR" />
@@ -895,9 +626,7 @@
     <node id="znuC" />
     <node id="znuA" />
     <node id="zinT" />
-    <node id="b4063">
-      <data key="d0">SoxR</data>
-    </node>
+    <node id="b4063" />
     <node id="aroF" />
     <node id="yjcB" />
     <node id="decR" />
@@ -905,28 +634,20 @@
     <node id="nepI" />
     <node id="torT" />
     <node id="clpS" />
-    <node id="b1658">
-      <data key="d0">PurR</data>
-    </node>
+    <node id="b1658" />
     <node id="purT" />
     <node id="xylE" />
     <node id="uvrB" />
     <node id="recN" />
-    <node id="b0435">
-      <data key="d0">BolA</data>
-    </node>
+    <node id="b0435" />
     <node id="mreB" />
     <node id="pagP" />
     <node id="speFL" />
-    <node id="b3884">
-      <data key="d0">CsqR</data>
-    </node>
+    <node id="b3884" />
     <node id="yihV" />
     <node id="yihU" />
     <node id="rsd" />
-    <node id="b4479">
-      <data key="d0">DgoR</data>
-    </node>
+    <node id="b4479" />
     <node id="dgoR" />
     <node id="abgR" />
     <node id="cbrC" />
@@ -1041,9 +762,7 @@
     <node id="yqeK" />
     <node id="yraH" />
     <node id="yrhB" />
-    <node id="b2664">
-      <data key="d0">GlaR</data>
-    </node>
+    <node id="b2664" />
     <node id="glaH" />
     <node id="elaB" />
     <node id="cspB" />
@@ -1083,13 +802,9 @@
     <node id="chaB" />
     <node id="fimA" />
     <node id="ridA" />
-    <node id="b1320">
-      <data key="d0">YcjW</data>
-    </node>
+    <node id="b1320" />
     <node id="ycjM" />
-    <node id="b1438">
-      <data key="d0">HicB</data>
-    </node>
+    <node id="b1438" />
     <node id="hicA" />
     <node id="yghS" />
     <node id="gltF" />
@@ -1565,46 +1280,26 @@
     <node id="ytfB" />
     <node id="ytfJ" />
     <node id="ytfP" />
-    <node id="b4000;b0440">
-      <data key="d0">HU</data>
-    </node>
+    <node id="b4000;b0440" />
     <node id="glk" />
-    <node id="b0564">
-      <data key="d0">AppY</data>
-    </node>
+    <node id="b0564" />
     <node id="galE" />
-    <node id="b3938">
-      <data key="d0">MetJ</data>
-    </node>
-    <node id="b0069">
-      <data key="d0">SgrR</data>
-    </node>
-    <node id="b2213">
-      <data key="d0">Ada</data>
-    </node>
-    <node id="b1594">
-      <data key="d0">Mlc</data>
-    </node>
+    <node id="b3938" />
+    <node id="b0069" />
+    <node id="b2213" />
+    <node id="b1594" />
     <node id="mlc" />
     <node id="rrsG" />
-    <node id="b1608">
-      <data key="d0">RstA</data>
-    </node>
-    <node id="b3906">
-      <data key="d0">RhaR</data>
-    </node>
+    <node id="b1608" />
+    <node id="b3906" />
     <node id="gyrB" />
     <node id="rrsC" />
     <node id="idlP" />
     <node id="frdA" />
-    <node id="b2405">
-      <data key="d0">XapR</data>
-    </node>
+    <node id="b2405" />
     <node id="xapA" />
     <node id="rrsD" />
-    <node id="b0566">
-      <data key="d0">EnvY</data>
-    </node>
+    <node id="b0566" />
     <node id="pfkA" />
     <node id="gabD" />
     <node id="acs" />
@@ -1612,12 +1307,8 @@
     <node id="ada" />
     <node id="gpmA" />
     <node id="sohB" />
-    <node id="b1892;b1891">
-      <data key="d0">FlhDC</data>
-    </node>
-    <node id="b2217;b1951">
-      <data key="d0">RcsAB</data>
-    </node>
+    <node id="b1892;b1891" />
+    <node id="b2217;b1951" />
     <node id="pqiA" />
     <node id="pgi" />
     <node id="rrsH" />
@@ -1774,17 +1465,13 @@
     <node id="zipA" />
     <node id="zitB" />
     <node id="zntR" />
-    <node id="b1422">
-      <data key="d0">YdcI</data>
-    </node>
+    <node id="b1422" />
     <node id="smrB" />
     <node id="csgA" />
     <node id="fimH" />
     <node id="hemF" />
     <node id="frlA" />
-    <node id="b3375">
-      <data key="d0">FrlR</data>
-    </node>
+    <node id="b3375" />
     <node id="actP" />
     <node id="fadB" />
     <node id="fadD" />
@@ -1798,12 +1485,8 @@
     <node id="yhaJ" />
     <node id="yjbE" />
     <node id="malP" />
-    <node id="b3418">
-      <data key="d0">MalT</data>
-    </node>
-    <node id="b4118">
-      <data key="d0">MelR</data>
-    </node>
+    <node id="b3418" />
+    <node id="b4118" />
     <node id="melR" />
     <node id="metA" />
     <node id="metF" />
@@ -1822,55 +1505,35 @@
     <node id="dusB" />
     <node id="galS" />
     <node id="glpA" />
-    <node id="b3423">
-      <data key="d0">GlpR</data>
-    </node>
+    <node id="b3423" />
     <node id="glpT" />
     <node id="ivbL" />
-    <node id="b0694">
-      <data key="d0">KdpE</data>
-    </node>
+    <node id="b0694" />
     <node id="kdpF" />
-    <node id="b0345">
-      <data key="d0">LacI</data>
-    </node>
+    <node id="b0345" />
     <node id="lexA" />
     <node id="malK" />
-    <node id="b4018">
-      <data key="d0">IclR</data>
-    </node>
+    <node id="b4018" />
     <node id="araB" />
     <node id="argC" />
     <node id="argE" />
     <node id="argF" />
     <node id="argI" />
-    <node id="b1323">
-      <data key="d0">TyrR</data>
-    </node>
-    <node id="b4393">
-      <data key="d0">TrpR</data>
-    </node>
+    <node id="b1323" />
+    <node id="b4393" />
     <node id="aroH" />
     <node id="aroL" />
     <node id="cirA" />
     <node id="cyaA" />
-    <node id="b0840">
-      <data key="d0">DeoR</data>
-    </node>
-    <node id="b0761">
-      <data key="d0">ModE</data>
-    </node>
+    <node id="b0840" />
+    <node id="b0761" />
     <node id="dmsA" />
     <node id="fliL" />
     <node id="nikA" />
-    <node id="b3481">
-      <data key="d0">NikR</data>
-    </node>
+    <node id="b3481" />
     <node id="torR" />
     <node id="hyfA" />
-    <node id="b2491">
-      <data key="d0">HyfR</data>
-    </node>
+    <node id="b2491" />
     <node id="degP" />
     <node id="ihfA" />
     <node id="yiaK" />
@@ -1879,9 +1542,7 @@
     <node id="rnpB" />
     <node id="hupB" />
     <node id="hydN" />
-    <node id="b0162">
-      <data key="d0">CdaR</data>
-    </node>
+    <node id="b0162" />
     <node id="phoP" />
     <node id="xylR" />
     <node id="xylF" />
@@ -1893,54 +1554,32 @@
     <node id="hypB" />
     <node id="grpE" />
     <node id="paaZ" />
-    <node id="b1987">
-      <data key="d0">Cbl</data>
-    </node>
-    <node id="b1735">
-      <data key="d0">ChbR</data>
-    </node>
+    <node id="b1987" />
+    <node id="b1735" />
     <node id="chbB" />
-    <node id="b3604">
-      <data key="d0">LldR</data>
-    </node>
+    <node id="b3604" />
     <node id="lldP" />
     <node id="fimE" />
     <node id="rtcB" />
-    <node id="b3422">
-      <data key="d0">RtcR</data>
-    </node>
-    <node id="b3501">
-      <data key="d0">ArsR</data>
-    </node>
+    <node id="b3422" />
+    <node id="b3501" />
     <node id="arsR" />
     <node id="fpr" />
     <node id="sdhD" />
     <node id="ugpB" />
     <node id="trmA" />
     <node id="fur" />
-    <node id="b2839">
-      <data key="d0">LysR</data>
-    </node>
-    <node id="b1620">
-      <data key="d0">MalI</data>
-    </node>
+    <node id="b2839" />
+    <node id="b1620" />
     <node id="mngR" />
     <node id="gntK" />
-    <node id="b4264">
-      <data key="d0">IdnR</data>
-    </node>
-    <node id="b3438">
-      <data key="d0">GntR</data>
-    </node>
+    <node id="b4264" />
+    <node id="b3438" />
     <node id="yhfA" />
     <node id="hflD" />
     <node id="dsdX" />
-    <node id="b2364">
-      <data key="d0">DsdC</data>
-    </node>
-    <node id="b1512">
-      <data key="d0">LsrR</data>
-    </node>
+    <node id="b2364" />
+    <node id="b1512" />
     <node id="glmU" />
     <node id="pheU" />
     <node id="leuQ" />
@@ -1963,21 +1602,15 @@
     <node id="argX" />
     <node id="adiA" />
     <node id="psiE" />
-    <node id="b0313">
-      <data key="d0">BetI</data>
-    </node>
-    <node id="b4133">
-      <data key="d0">CadC</data>
-    </node>
+    <node id="b0313" />
+    <node id="b4133" />
     <node id="purE" />
     <node id="phoE" />
     <node id="tyrB" />
     <node id="glnB" />
     <node id="malT" />
     <node id="fabA" />
-    <node id="b3963">
-      <data key="d0">FabR</data>
-    </node>
+    <node id="b3963" />
     <node id="araJ" />
     <node id="recA" />
     <node id="ssb" />
@@ -1988,15 +1621,9 @@
     <node id="cysK" />
     <node id="umuD" />
     <node id="srlA" />
-    <node id="b2706">
-      <data key="d0">GutM</data>
-    </node>
-    <node id="b2707">
-      <data key="d0">SrlR</data>
-    </node>
-    <node id="b2805">
-      <data key="d0">FucR</data>
-    </node>
+    <node id="b2706" />
+    <node id="b2707" />
+    <node id="b2805" />
     <node id="malS" />
     <node id="fucP" />
     <node id="malX" />
@@ -2006,42 +1633,28 @@
     <node id="thrU" />
     <node id="leuX" />
     <node id="purR" />
-    <node id="b3973">
-      <data key="d0">BirA</data>
-    </node>
+    <node id="b3973" />
     <node id="bioB" />
     <node id="proK" />
     <node id="argD" />
     <node id="hns" />
-    <node id="b3556">
-      <data key="d0">CspA</data>
-    </node>
-    <node id="b3118">
-      <data key="d0">TdcA</data>
-    </node>
-    <node id="b3119">
-      <data key="d0">TdcR</data>
-    </node>
+    <node id="b3556" />
+    <node id="b3118" />
+    <node id="b3119" />
     <node id="ubiG" />
     <node id="melA" />
     <node id="gyrA" />
     <node id="mtlA" />
-    <node id="b4390">
-      <data key="d0">NadR</data>
-    </node>
+    <node id="b4390" />
     <node id="nadB" />
     <node id="codB" />
     <node id="tonB" />
     <node id="gatY" />
-    <node id="b4498">
-      <data key="d0">GatR</data>
-    </node>
+    <node id="b4498" />
     <node id="glpF" />
     <node id="fumB" />
     <node id="ebgA" />
-    <node id="b3075">
-      <data key="d0">EbgR</data>
-    </node>
+    <node id="b3075" />
     <node id="cysD" />
     <node id="dsdA" />
     <node id="hemA" />
@@ -2051,74 +1664,48 @@
     <node id="lysT" />
     <node id="proL" />
     <node id="fepA" />
-    <node id="b0338">
-      <data key="d0">CynR</data>
-    </node>
+    <node id="b0338" />
     <node id="cysP" />
-    <node id="b2220">
-      <data key="d0">AtoC</data>
-    </node>
+    <node id="b2220" />
     <node id="atoD" />
     <node id="bioA" />
     <node id="kbaZ" />
-    <node id="b3131">
-      <data key="d0">AgaR</data>
-    </node>
+    <node id="b3131" />
     <node id="agaR" />
-    <node id="b3669">
-      <data key="d0">UhpA</data>
-    </node>
+    <node id="b3669" />
     <node id="aldB" />
     <node id="gntT" />
-    <node id="b1530">
-      <data key="d0">MarR</data>
-    </node>
+    <node id="b1530" />
     <node id="metC" />
     <node id="phnC" />
     <node id="prs" />
     <node id="speA" />
     <node id="guaB" />
     <node id="asnC" />
-    <node id="b3743">
-      <data key="d0">AsnC</data>
-    </node>
+    <node id="b3743" />
     <node id="torC" />
     <node id="treB" />
-    <node id="b4241">
-      <data key="d0">TreR</data>
-    </node>
+    <node id="b4241" />
     <node id="rhaB" />
     <node id="ribA" />
     <node id="queA" />
-    <node id="b3255">
-      <data key="d0">AccB</data>
-    </node>
+    <node id="b3255" />
     <node id="ydjM" />
-    <node id="b2163">
-      <data key="d0">YeiL</data>
-    </node>
+    <node id="b2163" />
     <node id="yeiL" />
-    <node id="b2980">
-      <data key="d0">GlcC</data>
-    </node>
+    <node id="b2980" />
     <node id="cydD" />
     <node id="artJ" />
     <node id="nagA" />
     <node id="hemL" />
     <node id="ybjG" />
-    <node id="b1201">
-      <data key="d0">DhaR</data>
-    </node>
+    <node id="b1201" />
     <node id="polB" />
-    <node id="b0506">
-      <data key="d0">AllR</data>
-    </node>
+    <node id="b0506" />
     <node id="allA" />
     <node id="allS" />
     <node id="gcl" />
-    <node id="b0504">
-      <data key="d0">AllS</data>
-    </node>
+    <node id="b0504" />
     <node id="allD" />
     <node id="yhhY" />
     <node id="nohA" />
@@ -2126,12 +1713,8 @@
     <node id="agp" />
     <node id="rpsP" />
     <node id="bdm" />
-    <node id="b2537">
-      <data key="d0">HcaR</data>
-    </node>
-    <node id="b0330">
-      <data key="d0">PrpR</data>
-    </node>
+    <node id="b2537" />
+    <node id="b0330" />
     <node id="eda" />
     <node id="rpsJ" />
     <node id="ruvA" />
@@ -2142,26 +1725,18 @@
     <node id="uvrC" />
     <node id="agaS" />
     <node id="ppiD" />
-    <node id="b2697">
-      <data key="d0">AlaS</data>
-    </node>
+    <node id="b2697" />
     <node id="dinG" />
     <node id="malZ" />
     <node id="argG" />
     <node id="ubiC" />
-    <node id="b1303">
-      <data key="d0">PspF</data>
-    </node>
+    <node id="b1303" />
     <node id="tisB" />
     <node id="uidA" />
-    <node id="b1618">
-      <data key="d0">UidR</data>
-    </node>
+    <node id="b1618" />
     <node id="uidR" />
     <node id="ulaA" />
-    <node id="b4191">
-      <data key="d0">UlaR</data>
-    </node>
+    <node id="b4191" />
     <node id="ulaG" />
     <node id="purA" />
     <node id="yhgH" />
@@ -2169,38 +1744,28 @@
     <node id="nagE" />
     <node id="seqA" />
     <node id="norV" />
-    <node id="b2709">
-      <data key="d0">NorR</data>
-    </node>
+    <node id="b2709" />
     <node id="gudP" />
-    <node id="b4089">
-      <data key="d0">AlsR</data>
-    </node>
+    <node id="b4089" />
     <node id="alsR" />
     <node id="skp" />
     <node id="sra" />
     <node id="entS" />
     <node id="psd" />
     <node id="bacA" />
-    <node id="b2684">
-      <data key="d0">MprA</data>
-    </node>
+    <node id="b2684" />
     <node id="mprA" />
     <node id="fldB" />
     <node id="metJ" />
     <node id="amiA" />
     <node id="trxA" />
-    <node id="b0487">
-      <data key="d0">CueR</data>
-    </node>
+    <node id="b0487" />
     <node id="copA" />
     <node id="glsA" />
     <node id="cueO" />
     <node id="chiA" />
     <node id="mhpA" />
-    <node id="b0346">
-      <data key="d0">MhpR</data>
-    </node>
+    <node id="b0346" />
     <node id="mgtL" />
     <node id="treR" />
     <node id="mgrB" />
@@ -2250,9 +1815,7 @@
     <node id="sgrR" />
     <node id="symE" />
     <node id="folA" />
-    <node id="b0413">
-      <data key="d0">NrdR</data>
-    </node>
+    <node id="b0413" />
     <node id="ychH" />
     <node id="dcuR" />
     <node id="galR" />
@@ -2260,9 +1823,7 @@
     <node id="ftsL" />
     <node id="ftsK" />
     <node id="rybB" />
-    <node id="b1013">
-      <data key="d0">RutR</data>
-    </node>
+    <node id="b1013" />
     <node id="rutR" />
     <node id="frc" />
     <node id="flxA" />
@@ -2272,13 +1833,9 @@
     <node id="sfsA" />
     <node id="creD" />
     <node id="nadA" />
-    <node id="b3264">
-      <data key="d0">EnvR</data>
-    </node>
+    <node id="b3264" />
     <node id="preT" />
-    <node id="b1649">
-      <data key="d0">NemR</data>
-    </node>
+    <node id="b1649" />
     <node id="nemR" />
     <node id="dinD" />
     <node id="yebG" />
@@ -2293,41 +1850,27 @@
     <node id="pnp" />
     <node id="ygjV" />
     <node id="yoaA" />
-    <node id="b3243">
-      <data key="d0">AaeR</data>
-    </node>
-    <node id="b1659">
-      <data key="d0">PunR</data>
-    </node>
+    <node id="b3243" />
+    <node id="b1659" />
     <node id="punC" />
     <node id="cadA" />
-    <node id="b1284">
-      <data key="d0">YciT</data>
-    </node>
+    <node id="b1284" />
     <node id="cusF" />
     <node id="bsmA" />
     <node id="ybiY" />
-    <node id="b2398">
-      <data key="d0">YfeC</data>
-    </node>
+    <node id="b2398" />
     <node id="yfeC" />
     <node id="hybE" />
     <node id="rpmB" />
-    <node id="b3711">
-      <data key="d0">YidZ</data>
-    </node>
+    <node id="b3711" />
     <node id="rof" />
     <node id="ppiC" />
     <node id="ryjB" />
-    <node id="b3202">
-      <data key="d0">RpoN</data>
-    </node>
+    <node id="b3202" />
     <node id="mutM" />
     <node id="nth" />
     <node id="cspC" />
-    <node id="b2735">
-      <data key="d0">YgbI</data>
-    </node>
+    <node id="b2735" />
     <node id="ygbJ" />
     <node id="glvC" />
     <node id="ascG" />
@@ -2337,16 +1880,12 @@
     <node id="ypfN" />
     <node id="ybcW" />
     <node id="mdtF" />
-    <node id="b3755">
-      <data key="d0">YieP</data>
-    </node>
+    <node id="b3755" />
     <node id="cusA" />
     <node id="ybiX" />
     <node id="dauA" />
     <node id="yohJ" />
-    <node id="b2157">
-      <data key="d0">YeiE</data>
-    </node>
+    <node id="b2157" />
     <node id="infA" />
     <node id="ssuA" />
     <node id="uspF" />
@@ -2354,9 +1893,7 @@
     <node id="sodC" />
     <node id="ftp" />
     <node id="yibQ" />
-    <node id="b0208">
-      <data key="d0">YafC</data>
-    </node>
+    <node id="b0208" />
     <node id="ytiC" />
     <node id="nuoN" />
     <node id="alx" />
@@ -2366,25 +1903,17 @@
     <node id="cdgI" />
     <node id="ydcC" />
     <node id="yodD" />
-    <node id="b3292">
-      <data key="d0">ZntR</data>
-    </node>
+    <node id="b3292" />
     <node id="zntA" />
-    <node id="b2921">
-      <data key="d0">SrsR</data>
-    </node>
+    <node id="b2921" />
     <node id="yafL" />
     <node id="bluR" />
     <node id="yfdO" />
     <node id="yfdP" />
-    <node id="b3585">
-      <data key="d0">YiaU</data>
-    </node>
+    <node id="b3585" />
     <node id="yiaT" />
     <node id="yiaW" />
-    <node id="b0603">
-      <data key="d0">CitR</data>
-    </node>
+    <node id="b0603" />
     <node id="citR" />
     <node id="hycB" />
     <node id="narZ" />
@@ -2407,22 +1936,14 @@
     <node id="dgt" />
     <node id="yhdJ" />
     <node id="ygjR" />
-    <node id="b0535">
-      <data key="d0">FimZ</data>
-    </node>
+    <node id="b0535" />
     <node id="sfmA" />
     <node id="puuC" />
     <node id="setB" />
     <node id="entF" />
-    <node id="b1526">
-      <data key="d0">PtrR</data>
-    </node>
-    <node id="b1696">
-      <data key="d0">YdiP</data>
-    </node>
-    <node id="b4135">
-      <data key="d0">DicD</data>
-    </node>
+    <node id="b1526" />
+    <node id="b1696" />
+    <node id="b4135" />
     <node id="lpxP" />
     <node id="yfdY" />
     <node id="yhcO" />
@@ -2468,9 +1989,7 @@
     <node id="dmsB" />
     <node id="ydcF" />
     <node id="yddB" />
-    <node id="b2101">
-      <data key="d0">YegW</data>
-    </node>
+    <node id="b2101" />
     <node id="yegT" />
     <node id="lfgA" />
     <node id="yeaC" />
@@ -2486,16 +2005,12 @@
     <node id="fbp" />
     <node id="hisG" />
     <node id="mgtA" />
-    <node id="b1358">
-      <data key="d0">YdaT</data>
-    </node>
+    <node id="b1358" />
     <node id="yoaI" />
     <node id="ybgD" />
     <node id="rydC" />
     <node id="moaB" />
-    <node id="b2667">
-      <data key="d0">YgaV</data>
-    </node>
+    <node id="b2667" />
     <node id="gmd" />
     <edge source="b3515" target="slp" />
     <edge source="b3515" target="hdeA" />
@@ -2505,17 +2020,35 @@
     <edge source="b3515" target="gadW" />
     <edge source="b3515" target="gadE" />
     <edge source="b3515" target="gadX" />
+    <edge source="slp" target="b2217;b3512" />
+    <edge source="slp" target="b1237" />
+    <edge source="slp" target="b3516" />
+    <edge source="slp" target="b1499" />
+    <edge source="slp" target="b1531" />
+    <edge source="slp" target="b0995" />
+    <edge source="hdeA" target="b3516" />
+    <edge source="hdeA" target="b3512" />
+    <edge source="hdeA" target="b1130" />
+    <edge source="hdeA" target="b2217" />
+    <edge source="hdeA" target="b1921" />
+    <edge source="hdeA" target="b0995" />
+    <edge source="hdeA" target="b0889" />
+    <edge source="hdeA" target="b1237" />
+    <edge source="hdeA" target="b1531" />
     <edge source="b2837" target="galP" />
     <edge source="b2837" target="galE" />
     <edge source="b2837" target="mglB" />
     <edge source="b2837" target="galS" />
     <edge source="b2837" target="galR" />
-    <edge source="b2151" target="galP" />
+    <edge source="galP" target="b2151" />
+    <edge source="galP" target="b0676" />
+    <edge source="galP" target="b3357" />
+    <edge source="galP" target="b3405" />
+    <edge source="galP" target="b3912" />
     <edge source="b2151" target="galE" />
     <edge source="b2151" target="mglB" />
     <edge source="b2151" target="galS" />
     <edge source="b2151" target="galR" />
-    <edge source="b0676" target="galP" />
     <edge source="b0676" target="chiZ" />
     <edge source="b0676" target="ptsH" />
     <edge source="b0676" target="creA" />
@@ -2532,11 +2065,10 @@
     <edge source="b0676" target="nagE" />
     <edge source="b0676" target="fimB" />
     <edge source="b4539;b2017" target="yefM" />
-    <edge source="b3516" target="hdeA" />
+    <edge source="yefM" target="b2017" />
     <edge source="b3516" target="gadE" />
     <edge source="b3516" target="uspE" />
     <edge source="b3516" target="gadB" />
-    <edge source="b3516" target="slp" />
     <edge source="b3516" target="gadY" />
     <edge source="b3516" target="gadA" />
     <edge source="b3516" target="gadW" />
@@ -2553,7 +2085,6 @@
     <edge source="b3516" target="cadB" />
     <edge source="b3516" target="asnB" />
     <edge source="b3516" target="glsA" />
-    <edge source="b3512" target="hdeA" />
     <edge source="b3512" target="gadE" />
     <edge source="b3512" target="yhiM" />
     <edge source="b3512" target="yjbQ" />
@@ -2577,8 +2108,10 @@
     <edge source="b2369" target="safA" />
     <edge source="b2369" target="ydeP" />
     <edge source="b2369" target="frc" />
+    <edge source="yegR" target="b1988" />
     <edge source="b2427" target="murQ" />
     <edge source="b2427" target="murR" />
+    <edge source="murQ" target="b3357" />
     <edge source="b0080" target="aroP" />
     <edge source="b0080" target="manX" />
     <edge source="b0080" target="sgrS" />
@@ -2636,6 +2169,13 @@
     <edge source="b0080" target="mdtA" />
     <edge source="b0080" target="metE" />
     <edge source="b0080" target="msrB" />
+    <edge source="aroP" target="b3237" />
+    <edge source="aroP" target="b2664" />
+    <edge source="aroP" target="b1334" />
+    <edge source="aroP" target="b1323" />
+    <edge source="manX" target="b3357" />
+    <edge source="manX" target="b1594" />
+    <edge source="manX" target="b0683" />
     <edge source="b3357" target="malI" />
     <edge source="b3357" target="exuT" />
     <edge source="b3357" target="ppdD" />
@@ -2719,7 +2259,6 @@
     <edge source="b3357" target="mlc" />
     <edge source="b3357" target="csiE" />
     <edge source="b3357" target="rhaS" />
-    <edge source="b3357" target="murQ" />
     <edge source="b3357" target="mpl" />
     <edge source="b3357" target="pdhR" />
     <edge source="b3357" target="ompF" />
@@ -2830,7 +2369,6 @@
     <edge source="b3357" target="gyrA" />
     <edge source="b3357" target="mtlA" />
     <edge source="b3357" target="pncB" />
-    <edge source="b3357" target="manX" />
     <edge source="b3357" target="gatY" />
     <edge source="b3357" target="glpF" />
     <edge source="b3357" target="aspA" />
@@ -2858,7 +2396,6 @@
     <edge source="b3357" target="glcC" />
     <edge source="b3357" target="agp" />
     <edge source="b3357" target="prpR" />
-    <edge source="b3357" target="galP" />
     <edge source="b3357" target="cstA" />
     <edge source="b3357" target="nanC" />
     <edge source="b3357" target="argG" />
@@ -2904,6 +2441,8 @@
     <edge source="b3357" target="ybgD" />
     <edge source="b3357" target="yraH" />
     <edge source="b3357" target="aphA" />
+    <edge source="malI" target="b1988" />
+    <edge source="malI" target="b1620" />
     <edge source="b0889" target="yojI" />
     <edge source="b0889" target="argO" />
     <edge source="b0889" target="alaA" />
@@ -2973,7 +2512,6 @@
     <edge source="b0889" target="rrsG" />
     <edge source="b0889" target="rrsC" />
     <edge source="b0889" target="rrsD" />
-    <edge source="b0889" target="hdeA" />
     <edge source="b0889" target="rrsH" />
     <edge source="b0889" target="rrsE" />
     <edge source="b0889" target="acrZ" />
@@ -3210,6 +2748,7 @@
     <edge source="b0889" target="osmC" />
     <edge source="b0889" target="yeiL" />
     <edge source="b0889" target="glaH" />
+    <edge source="yojI" target="b0683" />
     <edge source="b3094" target="exuT" />
     <edge source="b3094" target="uxaB" />
     <edge source="b3094" target="uxaC" />
@@ -3218,10 +2757,17 @@
     <edge source="b3094" target="exuR" />
     <edge source="b3094" target="uxuA" />
     <edge source="b3094" target="uxuR" />
+    <edge source="exuT" target="b0620" />
+    <edge source="exuT" target="b1988" />
     <edge source="b1564" target="relB" />
-    <edge source="b1564;b1563" target="relB" />
+    <edge source="relB" target="b1564;b1563" />
     <edge source="b1014" target="putA" />
     <edge source="b1014" target="putP" />
+    <edge source="putA" target="b4113" />
+    <edge source="putA" target="b4401" />
+    <edge source="putA" target="b1531" />
+    <edge source="putA" target="b2157" />
+    <edge source="putP" target="b4401" />
     <edge source="b4043" target="dinJ" />
     <edge source="b4043" target="dinB" />
     <edge source="b4043" target="yafN" />
@@ -3259,6 +2805,9 @@
     <edge source="b4043" target="cho" />
     <edge source="b4043" target="ybfE" />
     <edge source="b4043" target="yoaA" />
+    <edge source="dinJ" target="b0225;b0226" />
+    <edge source="dinJ" target="b1988" />
+    <edge source="dinJ" target="b2921" />
     <edge source="b4401" target="puuA" />
     <edge source="b4401" target="puuD" />
     <edge source="b4401" target="ybdN" />
@@ -3318,8 +2867,6 @@
     <edge source="b4401" target="pldA" />
     <edge source="b4401" target="pntA" />
     <edge source="b4401" target="potF" />
-    <edge source="b4401" target="putA" />
-    <edge source="b4401" target="putP" />
     <edge source="b4401" target="rho" />
     <edge source="b4401" target="rstA" />
     <edge source="b4401" target="sstT" />
@@ -3388,7 +2935,10 @@
     <edge source="b4401" target="ydeA" />
     <edge source="b4401" target="ptsG" />
     <edge source="b4401" target="grcA" />
-    <edge source="b1334" target="puuA" />
+    <edge source="puuA" target="b1334" />
+    <edge source="puuA" target="b1299" />
+    <edge source="puuA" target="b0464" />
+    <edge source="puuA" target="b1526" />
     <edge source="b1334" target="ydeJ" />
     <edge source="b1334" target="ybdN" />
     <edge source="b1334" target="iraM" />
@@ -3415,7 +2965,6 @@
     <edge source="b1334" target="ravA" />
     <edge source="b1334" target="adhE" />
     <edge source="b1334" target="arcA" />
-    <edge source="b1334" target="aroP" />
     <edge source="b1334" target="cydA" />
     <edge source="b1334" target="fdnG" />
     <edge source="b1334" target="fnr" />
@@ -3635,7 +3184,7 @@
     <edge source="b3261" target="tolB" />
     <edge source="b3261" target="yodD" />
     <edge source="b3261" target="fimA" />
-    <edge source="b1221" target="ogt" />
+    <edge source="ogt" target="b1221" />
     <edge source="b1221" target="ynfE" />
     <edge source="b1221" target="dpiB" />
     <edge source="b1221" target="citC" />
@@ -3669,18 +3218,28 @@
     <edge source="b1221" target="yeaR" />
     <edge source="b1221" target="ytfE" />
     <edge source="b1221" target="ydhY" />
+    <edge source="yeaR" target="b4178" />
+    <edge source="yeaR" target="b2193" />
     <edge source="b4260" target="pepA" />
     <edge source="b4260" target="carA" />
+    <edge source="puuD" target="b1299" />
+    <edge source="puuD" target="b0535" />
+    <edge source="ybdN" target="b1275" />
+    <edge source="iraM" target="b1130" />
     <edge source="b1499" target="gadE" />
     <edge source="b1499" target="safA" />
     <edge source="b1499" target="gadW" />
     <edge source="b1499" target="hyaA" />
     <edge source="b1499" target="appC" />
     <edge source="b1499" target="yiiS" />
-    <edge source="b1499" target="slp" />
     <edge source="b1499" target="nhaR" />
     <edge source="b1499" target="gadB" />
     <edge source="b1499" target="adiA" />
+    <edge source="gadE" target="b1130" />
+    <edge source="gadE" target="b1237" />
+    <edge source="gadE" target="b1921" />
+    <edge source="gadE" target="b1988" />
+    <edge source="gadE" target="b0995" />
     <edge source="b4062" target="waaY" />
     <edge source="b4062" target="ybjC" />
     <edge source="b4062" target="acnA" />
@@ -3717,7 +3276,7 @@
     <edge source="b4062" target="ptsG" />
     <edge source="b4062" target="tolC" />
     <edge source="b4062" target="cadA" />
-    <edge source="b1531" target="waaY" />
+    <edge source="waaY" target="b1531" />
     <edge source="b1531" target="ybjC" />
     <edge source="b1531" target="acnA" />
     <edge source="b1531" target="yncE" />
@@ -3732,13 +3291,10 @@
     <edge source="b1531" target="ycgZ" />
     <edge source="b1531" target="micF" />
     <edge source="b1531" target="poxB" />
-    <edge source="b1531" target="hdeA" />
     <edge source="b1531" target="pqiA" />
     <edge source="b1531" target="acrA" />
-    <edge source="b1531" target="putA" />
     <edge source="b1531" target="fpr" />
     <edge source="b1531" target="nfo" />
-    <edge source="b1531" target="slp" />
     <edge source="b1531" target="sodA" />
     <edge source="b1531" target="fumC" />
     <edge source="b1531" target="marR" />
@@ -3752,8 +3308,13 @@
     <edge source="b0620" target="dpiB" />
     <edge source="b0620" target="citC" />
     <edge source="b0620" target="mdh" />
-    <edge source="b0620" target="exuT" />
     <edge source="b0620" target="appY" />
+    <edge source="dpiB" target="b4124" />
+    <edge source="mdh" target="b2125" />
+    <edge source="mdh" target="b1892;b1891" />
+    <edge source="mdh" target="b0683" />
+    <edge source="ynfE" target="b1988" />
+    <edge source="dinB" target="b0683" />
     <edge source="b3961" target="fhuF" />
     <edge source="b3961" target="mntH" />
     <edge source="b3961" target="dsbG" />
@@ -3784,11 +3345,24 @@
     <edge source="b3961" target="gor" />
     <edge source="b3961" target="hemF" />
     <edge source="b3961" target="xthA" />
+    <edge source="fhuF" target="b0683" />
+    <edge source="fhuF" target="b1988" />
+    <edge source="fhuF" target="b2667" />
+    <edge source="mntH" target="b1988" />
+    <edge source="mntH" target="b0817" />
+    <edge source="mntH" target="b0683" />
+    <edge source="dsbG" target="b1988" />
+    <edge source="dsbG" target="b3912" />
+    <edge source="ahpC" target="b1988" />
+    <edge source="ahpC" target="b3938" />
     <edge source="b1162" target="ycgZ" />
+    <edge source="ycgZ" target="b0683" />
     <edge source="b1450" target="mcbA" />
     <edge source="b1450" target="yciG" />
     <edge source="b1450" target="rsd" />
     <edge source="b1450" target="rmf" />
+    <edge source="mcbA" target="b1988" />
+    <edge source="mcbA" target="b0683" />
     <edge source="b3023" target="mcbR" />
     <edge source="b4178" target="fliA" />
     <edge source="b4178" target="hycA" />
@@ -3822,19 +3396,70 @@
     <edge source="b4178" target="moeA" />
     <edge source="b4178" target="ytfE" />
     <edge source="b4178" target="hcp" />
-    <edge source="b4178" target="yeaR" />
     <edge source="b4178" target="rybB" />
     <edge source="b4178" target="feaB" />
+    <edge source="fliA" target="b0294" />
+    <edge source="fliA" target="b1040" />
+    <edge source="fliA" target="b1434" />
+    <edge source="fliA" target="b1712;b0912" />
+    <edge source="fliA" target="b1892;b1891" />
+    <edge source="fliA" target="b1237" />
+    <edge source="fliA" target="b4004" />
     <edge source="b3060" target="ttdR" />
     <edge source="b3060" target="ttdA" />
+    <edge source="ttdR" target="b2664" />
+    <edge source="ttdR" target="b1237" />
+    <edge source="ttdA" target="b2664" />
     <edge source="b2105" target="rcnR" />
     <edge source="b2105" target="rcnA" />
     <edge source="b2714" target="ascF" />
     <edge source="b2714" target="prpR" />
     <edge source="b2714" target="ybiT" />
     <edge source="b2714" target="htpG" />
+    <edge source="ascF" target="b1237" />
+    <edge source="ascF" target="b3912" />
+    <edge source="prpR" target="b0399" />
+    <edge source="prpR" target="b0330" />
+    <edge source="ybiT" target="b4396" />
+    <edge source="htpG" target="b1988" />
+    <edge source="hycA" target="b2731" />
+    <edge source="hycA" target="b0761" />
+    <edge source="hycA" target="b1712;b0912" />
+    <edge source="feaR" target="b0399" />
+    <edge source="feaR" target="b1988" />
+    <edge source="feaR" target="b3025" />
+    <edge source="feaR" target="b3912" />
+    <edge source="hmp" target="b0683" />
+    <edge source="hmp" target="b3828" />
+    <edge source="nrfA" target="b1712;b0912" />
+    <edge source="nrfA" target="b2193" />
+    <edge source="nrfA" target="b1892;b1891" />
+    <edge source="hypA" target="b2731" />
+    <edge source="hypA" target="b1712;b0912" />
+    <edge source="cdd" target="b3934" />
+    <edge source="norR" target="b2709" />
+    <edge source="ndh" target="b0683" />
+    <edge source="ndh" target="b1712;b0912" />
+    <edge source="ndh" target="b0113" />
+    <edge source="sodB" target="b1712;b0912" />
+    <edge source="tehA" target="b2664" />
+    <edge source="sufA" target="b2531" />
+    <edge source="sufA" target="b1712;b0912" />
+    <edge source="sufA" target="b0683" />
+    <edge source="waaH" target="b4113" />
+    <edge source="waaH" target="b0399" />
+    <edge source="dsdC" target="b2364" />
+    <edge source="lrp" target="b1237" />
+    <edge source="lrp" target="b3237" />
+    <edge source="lrp" target="b1988" />
+    <edge source="thrS" target="b1988" />
+    <edge source="tsgA" target="b3405" />
+    <edge source="bamE" target="b3912" />
+    <edge source="bdcA" target="b2664" />
+    <edge source="yeaE" target="b2664" />
+    <edge source="yeaE" target="b3868" />
+    <edge source="wecA" target="b0315" />
     <edge source="b3934" target="udp" />
-    <edge source="b3934" target="cdd" />
     <edge source="b3934" target="tsx" />
     <edge source="b3934" target="ppiA" />
     <edge source="b3934" target="cytR" />
@@ -3844,17 +3469,26 @@
     <edge source="b3934" target="ycdZ" />
     <edge source="b3934" target="nupC" />
     <edge source="b3934" target="aphA" />
+    <edge source="udp" target="b0683" />
+    <edge source="tsx" target="b0840" />
+    <edge source="tsx" target="b0683" />
+    <edge source="ppiA" target="b3912" />
+    <edge source="rpoH" target="b3912" />
+    <edge source="rpoH" target="b1712;b0912" />
+    <edge source="rpoH" target="b4004" />
+    <edge source="deoC" target="b0840" />
+    <edge source="deoC" target="b0761" />
     <edge source="b3905" target="rhaS" />
     <edge source="b3905" target="rhaT" />
     <edge source="b3905" target="rhaB" />
+    <edge source="rhaS" target="b3906" />
     <edge source="b2554" target="glmY" />
     <edge source="b2554" target="rseD" />
-    <edge source="b1712;b0912" target="glmY" />
+    <edge source="glmY" target="b1712;b0912" />
     <edge source="b1712;b0912" target="csgD" />
     <edge source="b1712;b0912" target="proV" />
     <edge source="b1712;b0912" target="rseD" />
     <edge source="b1712;b0912" target="csrB" />
-    <edge source="b1712;b0912" target="fliA" />
     <edge source="b1712;b0912" target="micF" />
     <edge source="b1712;b0912" target="gltB" />
     <edge source="b1712;b0912" target="dps" />
@@ -3884,7 +3518,6 @@
     <edge source="b1712;b0912" target="ompR" />
     <edge source="b1712;b0912" target="fimA" />
     <edge source="b1712;b0912" target="rtcB" />
-    <edge source="b1712;b0912" target="rpoH" />
     <edge source="b1712;b0912" target="focA" />
     <edge source="b1712;b0912" target="yadV" />
     <edge source="b1712;b0912" target="adiA" />
@@ -3896,15 +3529,11 @@
     <edge source="b1712;b0912" target="nuoA" />
     <edge source="b1712;b0912" target="tdcA" />
     <edge source="b1712;b0912" target="glnH" />
-    <edge source="b1712;b0912" target="hycA" />
-    <edge source="b1712;b0912" target="hypA" />
-    <edge source="b1712;b0912" target="ndh" />
     <edge source="b1712;b0912" target="cysJ" />
     <edge source="b1712;b0912" target="hemA" />
     <edge source="b1712;b0912" target="sucA" />
     <edge source="b1712;b0912" target="gltA" />
     <edge source="b1712;b0912" target="carA" />
-    <edge source="b1712;b0912" target="nrfA" />
     <edge source="b1712;b0912" target="ssuE" />
     <edge source="b1712;b0912" target="yeiL" />
     <edge source="b1712;b0912" target="glcD" />
@@ -3915,13 +3544,11 @@
     <edge source="b1712;b0912" target="ibpB" />
     <edge source="b1712;b0912" target="norV" />
     <edge source="b1712;b0912" target="sra" />
-    <edge source="b1712;b0912" target="sufA" />
     <edge source="b1712;b0912" target="amiA" />
     <edge source="b1712;b0912" target="hemF" />
     <edge source="b1712;b0912" target="pspA" />
     <edge source="b1712;b0912" target="hpt" />
     <edge source="b1712;b0912" target="gcd" />
-    <edge source="b1712;b0912" target="sodB" />
     <edge source="b1712;b0912" target="dmsA" />
     <edge source="b1712;b0912" target="hipB" />
     <edge source="b1712;b0912" target="dcuD" />
@@ -3932,6 +3559,7 @@
     <edge source="b1712;b0912" target="uspB" />
     <edge source="b1712;b0912" target="icd" />
     <edge source="b1712;b0912" target="cycA" />
+    <edge source="nupG" target="b0840" />
     <edge source="b0064" target="xylA" />
     <edge source="b0064" target="ydeN" />
     <edge source="b0064" target="ytfQ" />
@@ -3940,12 +3568,14 @@
     <edge source="b0064" target="araC" />
     <edge source="b0064" target="araJ" />
     <edge source="b0064" target="araE" />
+    <edge source="xylA" target="b3569" />
+    <edge source="yafN" target="b1988" />
+    <edge source="lsrA" target="b1512" />
     <edge source="b0683" target="ftnA" />
     <edge source="b0683" target="oppA" />
     <edge source="b0683" target="garP" />
     <edge source="b0683" target="gspC" />
     <edge source="b0683" target="ryhB" />
-    <edge source="b0683" target="fhuF" />
     <edge source="b0683" target="yjjZ" />
     <edge source="b0683" target="sodA" />
     <edge source="b0683" target="pyrC" />
@@ -3959,7 +3589,6 @@
     <edge source="b0683" target="glnK" />
     <edge source="b0683" target="aspC" />
     <edge source="b0683" target="glnD" />
-    <edge source="b0683" target="ndh" />
     <edge source="b0683" target="zwf" />
     <edge source="b0683" target="gdhA" />
     <edge source="b0683" target="fnr" />
@@ -3990,11 +3619,9 @@
     <edge source="b0683" target="sdhC" />
     <edge source="b0683" target="yhhY" />
     <edge source="b0683" target="nohA" />
-    <edge source="b0683" target="mntH" />
     <edge source="b0683" target="entS" />
     <edge source="b0683" target="ygaC" />
     <edge source="b0683" target="fhuE" />
-    <edge source="b0683" target="sufA" />
     <edge source="b0683" target="metJ" />
     <edge source="b0683" target="fiu" />
     <edge source="b0683" target="exbB" />
@@ -4003,7 +3630,6 @@
     <edge source="b0683" target="fes" />
     <edge source="b0683" target="zinT" />
     <edge source="b0683" target="feoA" />
-    <edge source="b0683" target="hmp" />
     <edge source="b0683" target="katG" />
     <edge source="b0683" target="katE" />
     <edge source="b0683" target="rpoS" />
@@ -4041,14 +3667,12 @@
     <edge source="b0683" target="adhP" />
     <edge source="b0683" target="maeB" />
     <edge source="b0683" target="yobD" />
-    <edge source="b0683" target="manX" />
     <edge source="b0683" target="map" />
     <edge source="b0683" target="mdtL" />
     <edge source="b0683" target="tauA" />
     <edge source="b0683" target="fecE" />
     <edge source="b0683" target="fecR" />
     <edge source="b0683" target="tqsA" />
-    <edge source="b0683" target="udp" />
     <edge source="b0683" target="ugpB" />
     <edge source="b0683" target="ugpA" />
     <edge source="b0683" target="ugpE" />
@@ -4075,7 +3699,6 @@
     <edge source="b0683" target="yjiR" />
     <edge source="b0683" target="pqqU" />
     <edge source="b0683" target="yncE" />
-    <edge source="b0683" target="yojI" />
     <edge source="b0683" target="yqeC" />
     <edge source="b0683" target="yqeB" />
     <edge source="b0683" target="yqhD" />
@@ -4090,7 +3713,6 @@
     <edge source="b0683" target="hscA" />
     <edge source="b0683" target="dapB" />
     <edge source="b0683" target="lysP" />
-    <edge source="b0683" target="mdh" />
     <edge source="b0683" target="mglB" />
     <edge source="b0683" target="mqo" />
     <edge source="b0683" target="narU" />
@@ -4101,8 +3723,6 @@
     <edge source="b0683" target="sulA" />
     <edge source="b0683" target="ycgR" />
     <edge source="b0683" target="leuD" />
-    <edge source="b0683" target="dinB" />
-    <edge source="b0683" target="tsx" />
     <edge source="b0683" target="entD" />
     <edge source="b0683" target="entB" />
     <edge source="b0683" target="entH" />
@@ -4111,7 +3731,6 @@
     <edge source="b0683" target="punC" />
     <edge source="b0683" target="moaA" />
     <edge source="b0683" target="ybiX" />
-    <edge source="b0683" target="mcbA" />
     <edge source="b0683" target="mntS" />
     <edge source="b0683" target="rimK" />
     <edge source="b0683" target="serS" />
@@ -4131,17 +3750,14 @@
     <edge source="b0683" target="uxuA" />
     <edge source="b0683" target="yjiT" />
     <edge source="b0683" target="acnA" />
-    <edge source="b0683" target="ycgZ" />
     <edge source="b0683" target="efeU" />
     <edge source="b0683" target="yoeA" />
-    <edge source="b1237" target="ftnA" />
+    <edge source="ftnA" target="b1237" />
     <edge source="b1237" target="casA" />
     <edge source="b1237" target="yciG" />
-    <edge source="b1237" target="slp" />
     <edge source="b1237" target="rcsD" />
     <edge source="b1237" target="cadC" />
     <edge source="b1237" target="ydeP" />
-    <edge source="b1237" target="gadE" />
     <edge source="b1237" target="ydeO" />
     <edge source="b1237" target="adiY" />
     <edge source="b1237" target="yhiM" />
@@ -4149,7 +3765,6 @@
     <edge source="b1237" target="hdfR" />
     <edge source="b1237" target="evgL" />
     <edge source="b1237" target="adeD" />
-    <edge source="b1237" target="lrp" />
     <edge source="b1237" target="leuO" />
     <edge source="b1237" target="nrdA" />
     <edge source="b1237" target="nrdD" />
@@ -4166,7 +3781,6 @@
     <edge source="b1237" target="proV" />
     <edge source="b1237" target="rrsC" />
     <edge source="b1237" target="rrsD" />
-    <edge source="b1237" target="hdeA" />
     <edge source="b1237" target="gadA" />
     <edge source="b1237" target="rrsH" />
     <edge source="b1237" target="rrsB" />
@@ -4187,7 +3801,6 @@
     <edge source="b1237" target="fimA" />
     <edge source="b1237" target="fimE" />
     <edge source="b1237" target="caiF" />
-    <edge source="b1237" target="fliA" />
     <edge source="b1237" target="stpA" />
     <edge source="b1237" target="gspC" />
     <edge source="b1237" target="gspA" />
@@ -4217,7 +3830,6 @@
     <edge source="b1237" target="ddlA" />
     <edge source="b1237" target="adiC" />
     <edge source="b1237" target="glvC" />
-    <edge source="b1237" target="ascF" />
     <edge source="b1237" target="gadB" />
     <edge source="b1237" target="iraP" />
     <edge source="b1237" target="ascG" />
@@ -4234,7 +3846,6 @@
     <edge source="b1237" target="pdeF" />
     <edge source="b1237" target="dgcJ" />
     <edge source="b1237" target="dgcZ" />
-    <edge source="b1237" target="ttdR" />
     <edge source="b1237" target="fucA" />
     <edge source="b1237" target="oxc" />
     <edge source="b1237" target="hprR" />
@@ -4248,6 +3859,9 @@
     <edge source="b1237" target="yraH" />
     <edge source="b1237" target="sfmA" />
     <edge source="b1237" target="elfA" />
+    <edge source="argO" target="b2916" />
+    <edge source="argO" target="b1988" />
+    <edge source="argO" target="b2157" />
     <edge source="b0076" target="dsrA" />
     <edge source="b0076" target="casA" />
     <edge source="b0076" target="leuO" />
@@ -4261,11 +3875,8 @@
     <edge source="b1130" target="mgrR" />
     <edge source="b1130" target="mgtS" />
     <edge source="b1130" target="ompT" />
-    <edge source="b1130" target="hdeA" />
     <edge source="b1130" target="gadW" />
     <edge source="b1130" target="hdeD" />
-    <edge source="b1130" target="gadE" />
-    <edge source="b1130" target="iraM" />
     <edge source="b1130" target="safA" />
     <edge source="b1130" target="ydeP" />
     <edge source="b1130" target="cysB" />
@@ -4297,9 +3908,17 @@
     <edge source="b1130" target="ryjB" />
     <edge source="b1130" target="rmf" />
     <edge source="b1130" target="rsd" />
+    <edge source="mgtS" target="b1988" />
+    <edge source="hemH" target="b1988" />
+    <edge source="uxuA" target="b4324" />
+    <edge source="gntP" target="b4324" />
+    <edge source="ybjC" target="b4396" />
+    <edge source="dps" target="b0817" />
+    <edge source="dps" target="b3237" />
+    <edge source="isrC" target="b1422" />
+    <edge source="katG" target="b1988" />
     <edge source="b2217" target="gadB" />
     <edge source="b2217" target="gadA" />
-    <edge source="b2217" target="hdeA" />
     <edge source="b2217" target="hdeD" />
     <edge source="b2217" target="gadY" />
     <edge source="b2217" target="safA" />
@@ -4311,30 +3930,45 @@
     <edge source="b2217" target="bdm" />
     <edge source="b2217" target="ftsA" />
     <edge source="b2217" target="rprA" />
+    <edge source="gadB" target="b4116" />
+    <edge source="gadB" target="b1921" />
+    <edge source="gadB" target="b0995" />
+    <edge source="gadB" target="b1526" />
+    <edge source="gadB" target="b1422" />
     <edge source="b0730" target="mngA" />
     <edge source="b0730" target="mngR" />
+    <edge source="gadA" target="b4116" />
+    <edge source="gadA" target="b0995" />
+    <edge source="gadA" target="b2217;b3512" />
+    <edge source="gadA" target="b1526" />
     <edge source="b2531" target="rnlA" />
     <edge source="b2531" target="nrdH" />
     <edge source="b2531" target="hyaA" />
     <edge source="b2531" target="torT" />
-    <edge source="b2531" target="sufA" />
     <edge source="b2531" target="iscR" />
     <edge source="b2531" target="napF" />
     <edge source="b2531" target="selO" />
     <edge source="b2531" target="erpA" />
     <edge source="b2531" target="nfuA" />
+    <edge source="ompT" target="b1988" />
+    <edge source="gadW" target="b1916" />
+    <edge source="gadW" target="b2664" />
+    <edge source="gadW" target="b4004" />
+    <edge source="gadW" target="b3604" />
     <edge source="b3021" target="cspD" />
     <edge source="b3021" target="mqsR" />
     <edge source="b3021" target="rpoS" />
     <edge source="b3021" target="csgD" />
     <edge source="b3021" target="lfgA" />
-    <edge source="b1916" target="gadW" />
     <edge source="b1916" target="rsd" />
     <edge source="b1916" target="rmf" />
     <edge source="b1916" target="ftsQ" />
     <edge source="b1916" target="gadY" />
     <edge source="b1916" target="rflP" />
-    <edge source="b4396" target="ybjC" />
+    <edge source="casA" target="b1642" />
+    <edge source="casA" target="b2669" />
+    <edge source="casA" target="b2664" />
+    <edge source="casA" target="b3912" />
     <edge source="b4396" target="acnA" />
     <edge source="b4396" target="nfsB" />
     <edge source="b4396" target="fumC" />
@@ -4359,7 +3993,6 @@
     <edge source="b4396" target="glgS" />
     <edge source="b4396" target="narG" />
     <edge source="b4396" target="mdtD" />
-    <edge source="b4396" target="ybiT" />
     <edge source="b4396" target="ydcL" />
     <edge source="b4396" target="yacH" />
     <edge source="b4396" target="acrA" />
@@ -4372,15 +4005,24 @@
     <edge source="b4396" target="mltF" />
     <edge source="b4396" target="aslB" />
     <edge source="b4396" target="tolC" />
+    <edge source="yncE" target="b3912" />
     <edge source="b0034" target="fixA" />
     <edge source="b0034" target="caiT" />
+    <edge source="nrdA" target="b2916" />
+    <edge source="nrdA" target="b0413" />
+    <edge source="pdeF" target="b1988" />
     <edge source="b3010" target="yqhD" />
+    <edge source="lsrR" target="b1512" />
     <edge source="b3574" target="plaR" />
     <edge source="b3574" target="yiaK" />
     <edge source="b3574" target="eda" />
     <edge source="b3574" target="glpA" />
     <edge source="b3574" target="glpT" />
     <edge source="b3574" target="ygjV" />
+    <edge source="oppA" target="b1988" />
+    <edge source="oppA" target="b0761" />
+    <edge source="garP" target="b0162" />
+    <edge source="gspC" target="b1642" />
     <edge source="b0020" target="nhaA" />
     <edge source="b0020" target="osmC" />
     <edge source="b0020" target="pgaA" />
@@ -4393,11 +4035,10 @@
     <edge source="b0020" target="rrsE" />
     <edge source="b0020" target="rsd" />
     <edge source="b0020" target="rmf" />
-    <edge source="b2731" target="hycA" />
-    <edge source="b2731" target="hypA" />
     <edge source="b2731" target="fdhF" />
     <edge source="b2731" target="hyfA" />
     <edge source="b2731" target="hydN" />
+    <edge source="fdhF" target="b2193" />
     <edge source="b3912" target="csgD" />
     <edge source="b3912" target="csgB" />
     <edge source="b3912" target="acrD" />
@@ -4412,7 +4053,6 @@
     <edge source="b3912" target="cyaR" />
     <edge source="b3912" target="rprA" />
     <edge source="b3912" target="ldtD" />
-    <edge source="b3912" target="rpoH" />
     <edge source="b3912" target="ompF" />
     <edge source="b3912" target="cpxR" />
     <edge source="b3912" target="ompC" />
@@ -4427,11 +4067,9 @@
     <edge source="b3912" target="aroG" />
     <edge source="b3912" target="degP" />
     <edge source="b3912" target="rseD" />
-    <edge source="b3912" target="ppiA" />
     <edge source="b3912" target="ung" />
     <edge source="b3912" target="ppiD" />
     <edge source="b3912" target="skp" />
-    <edge source="b3912" target="bamE" />
     <edge source="b3912" target="psd" />
     <edge source="b3912" target="bacA" />
     <edge source="b3912" target="motR" />
@@ -4467,18 +4105,14 @@
     <edge source="b3912" target="gapC" />
     <edge source="b3912" target="gmhA" />
     <edge source="b3912" target="fadE" />
-    <edge source="b3912" target="galP" />
-    <edge source="b3912" target="ascF" />
     <edge source="b3912" target="btsT" />
     <edge source="b3912" target="pdeB" />
     <edge source="b3912" target="ettA" />
     <edge source="b3912" target="cspA" />
     <edge source="b3912" target="cbl" />
     <edge source="b3912" target="matA" />
-    <edge source="b3912" target="feaR" />
     <edge source="b3912" target="exbB" />
     <edge source="b3912" target="ampH" />
-    <edge source="b3912" target="casA" />
     <edge source="b3912" target="shoB" />
     <edge source="b3912" target="inaA" />
     <edge source="b3912" target="yfaH" />
@@ -4486,21 +4120,31 @@
     <edge source="b3912" target="fadI" />
     <edge source="b3912" target="plsB" />
     <edge source="b3912" target="gstA" />
-    <edge source="b3912" target="dsbG" />
     <edge source="b3912" target="fimB" />
     <edge source="b3912" target="mtn" />
     <edge source="b3912" target="dgt" />
-    <edge source="b3912" target="yncE" />
     <edge source="b3912" target="yhdJ" />
     <edge source="b3912" target="ygjR" />
     <edge source="b3912" target="yacH" />
     <edge source="b3912" target="astC" />
+    <edge source="csgD" target="b2127" />
+    <edge source="csgD" target="b1040" />
+    <edge source="csgD" target="b1921" />
+    <edge source="csgD" target="b4113" />
+    <edge source="csgD" target="b0846" />
+    <edge source="csgD" target="b2125" />
+    <edge source="csgD" target="b1608" />
+    <edge source="csgD" target="b2217;b1951" />
+    <edge source="csgD" target="b3405" />
+    <edge source="csgD" target="b0435" />
     <edge source="b2217;b3512" target="adiC" />
-    <edge source="b2217;b3512" target="slp" />
     <edge source="b2217;b3512" target="aslB" />
     <edge source="b2217;b3512" target="yhiM" />
-    <edge source="b2217;b3512" target="gadA" />
     <edge source="b2217;b3512" target="cadB" />
+    <edge source="adiC" target="b0399" />
+    <edge source="adiC" target="b0995" />
+    <edge source="sodA" target="b4063" />
+    <edge source="pyrC" target="b1658" />
     <edge source="b1187" target="fadH" />
     <edge source="b1187" target="fadM" />
     <edge source="b1187" target="fadR" />
@@ -4518,22 +4162,56 @@
     <edge source="b1187" target="fadI" />
     <edge source="b1187" target="iclR" />
     <edge source="b1187" target="fabB" />
-    <edge source="b2127" target="csgD" />
+    <edge source="fadH" target="b1508" />
+    <edge source="fadH" target="b0113" />
+    <edge source="safA" target="b2664" />
+    <edge source="ydeP" target="b2193" />
+    <edge source="ydeP" target="b1914" />
+    <edge source="ydeP" target="b1988" />
     <edge source="b2127" target="cadC" />
     <edge source="b2127" target="rplU" />
     <edge source="b2127" target="ibaG" />
+    <edge source="cadC" target="b3405" />
+    <edge source="cadC" target="b2664" />
+    <edge source="cadC" target="b4133" />
+    <edge source="rplU" target="b1988" />
+    <edge source="cysB" target="b1275" />
     <edge source="b1827" target="edd" />
     <edge source="b1827" target="eda" />
+    <edge source="edd" target="b3438" />
     <edge source="b4187" target="aidB" />
+    <edge source="aidB" target="b2213" />
     <edge source="b3071" target="nfeR" />
     <edge source="b3071" target="nfeF" />
+    <edge source="nfeF" target="b2667" />
+    <edge source="sgrS" target="b0069" />
+    <edge source="pdhR" target="b2125" />
+    <edge source="pdhR" target="b3405" />
+    <edge source="pdhR" target="b2664" />
+    <edge source="pdhR" target="b0113" />
+    <edge source="prpB" target="b0330" />
+    <edge source="cyoA" target="b0571" />
+    <edge source="cyoA" target="b1969" />
+    <edge source="cyoA" target="b0113" />
+    <edge source="marR" target="b0464" />
+    <edge source="marR" target="b1988" />
+    <edge source="marR" target="b1530" />
+    <edge source="glcC" target="b2980" />
+    <edge source="ppc" target="b1988" />
+    <edge source="fruB" target="b1892;b1891" />
+    <edge source="ptsH" target="b1594" />
+    <edge source="ptsH" target="b1892;b1891" />
+    <edge source="eutS" target="b3237" />
+    <edge source="eutS" target="b1988" />
+    <edge source="feoA" target="b3405" />
     <edge source="b4480" target="gltB" />
     <edge source="b4480" target="maoP" />
     <edge source="b4480" target="flhD" />
-    <edge source="b4116" target="gadA" />
-    <edge source="b4116" target="gadB" />
-    <edge source="b4116" target="gltB" />
+    <edge source="gltB" target="b4116" />
+    <edge source="gltB" target="b3237" />
+    <edge source="gltB" target="b1988" />
     <edge source="b4116" target="adiA" />
+    <edge source="ydeO" target="b2664" />
     <edge source="b4004" target="zraP" />
     <edge source="b4004" target="zraS" />
     <edge source="b4004" target="cspB" />
@@ -4542,16 +4220,13 @@
     <edge source="b4004" target="acrE" />
     <edge source="b4004" target="cpxP" />
     <edge source="b4004" target="exuR" />
-    <edge source="b4004" target="fliA" />
     <edge source="b4004" target="glnA" />
     <edge source="b4004" target="glnH" />
-    <edge source="b4004" target="rpoH" />
     <edge source="b4004" target="ssrA" />
     <edge source="b4004" target="raiA" />
     <edge source="b4004" target="rfaD" />
     <edge source="b4004" target="yhhY" />
     <edge source="b4004" target="sspA" />
-    <edge source="b4004" target="gadW" />
     <edge source="b4004" target="yhdW" />
     <edge source="b4004" target="mdtL" />
     <edge source="b4004" target="pnp" />
@@ -4560,10 +4235,15 @@
     <edge source="b4004" target="mgtA" />
     <edge source="b4004" target="fhuA" />
     <edge source="b4004" target="cspA" />
-    <edge source="b0817" target="dps" />
     <edge source="b0817" target="mntP" />
     <edge source="b0817" target="rybA" />
-    <edge source="b0817" target="mntH" />
+    <edge source="nrdH" target="b0413" />
+    <edge source="gadY" target="b3604" />
+    <edge source="gadX" target="b0399" />
+    <edge source="gadX" target="b2664" />
+    <edge source="gadX" target="b1988" />
+    <edge source="gadX" target="b1013" />
+    <edge source="gadX" target="b0995" />
     <edge source="b2916" target="lysP" />
     <edge source="b2916" target="gdhA" />
     <edge source="b2916" target="lysC" />
@@ -4571,44 +4251,74 @@
     <edge source="b2916" target="dapD" />
     <edge source="b2916" target="asd" />
     <edge source="b2916" target="argP" />
-    <edge source="b2916" target="argO" />
     <edge source="b2916" target="dnaA" />
-    <edge source="b2916" target="nrdA" />
     <edge source="b2916" target="dapB" />
-    <edge source="b2017" target="yefM" />
+    <edge source="lysP" target="b1988" />
+    <edge source="cadB" target="b3405" />
+    <edge source="cadB" target="b4133" />
     <edge source="b1508" target="hipB" />
     <edge source="b1508" target="relA" />
     <edge source="b1508" target="eutH" />
-    <edge source="b1508" target="fadH" />
+    <edge source="hipB" target="b1508;b1507" />
     <edge source="b1040" target="ubiT" />
     <edge source="b1040" target="fliF" />
     <edge source="b1040" target="fliE" />
     <edge source="b1040" target="csgI" />
     <edge source="b1040" target="csgB" />
-    <edge source="b1040" target="csgD" />
     <edge source="b1040" target="nlpA" />
     <edge source="b1040" target="wrbA" />
     <edge source="b1040" target="flgM" />
-    <edge source="b1040" target="fliA" />
     <edge source="b1040" target="pepD" />
     <edge source="b1040" target="dgcC" />
     <edge source="b1040" target="iraP" />
+    <edge source="ubiT" target="b1988" />
+    <edge source="fliF" target="b0315" />
+    <edge source="fliF" target="b1892;b1891" />
+    <edge source="fliE" target="b1892;b1891" />
+    <edge source="csgI" target="b2664" />
+    <edge source="csgI" target="b3405" />
+    <edge source="csgB" target="b1921" />
+    <edge source="csgB" target="b2125" />
+    <edge source="nlpA" target="b2664" />
+    <edge source="wrbA" target="b1988" />
+    <edge source="fumC" target="b4063" />
+    <edge source="soxR" target="b0464" />
+    <edge source="soxR" target="b4063" />
+    <edge source="soxS" target="b0464" />
+    <edge source="soxS" target="b4063" />
+    <edge source="nac" target="b3868" />
+    <edge source="nac" target="b1988" />
+    <edge source="glnK" target="b3868" />
+    <edge source="glnD" target="b1988" />
+    <edge source="gdhA" target="b2664" />
+    <edge source="gdhA" target="b1988" />
+    <edge source="nadC" target="b1988" />
+    <edge source="aaeX" target="b3243" />
+    <edge source="bhsA" target="b1111" />
+    <edge source="ampD" target="b1988" />
+    <edge source="grcA" target="b0113" />
     <edge source="b2624" target="intA" />
     <edge source="b2624" target="phoB" />
     <edge source="b2079" target="ycaC" />
     <edge source="b2079" target="acrD" />
     <edge source="b2079" target="mdtA" />
     <edge source="b2079" target="spy" />
+    <edge source="ycaC" target="b1988" />
+    <edge source="betT" target="b0313" />
+    <edge source="betI" target="b0313" />
     <edge source="b4324" target="lgoR" />
     <edge source="b4324" target="lgoD" />
     <edge source="b4324" target="uxuR" />
     <edge source="b4324" target="exuR" />
-    <edge source="b4324" target="uxuA" />
     <edge source="b4324" target="uidA" />
-    <edge source="b4324" target="gntP" />
     <edge source="b4324" target="fliC" />
     <edge source="b2783" target="mazE" />
-    <edge source="b2782;b2783" target="mazE" />
+    <edge source="mazE" target="b2782;b2783" />
+    <edge source="hfq" target="b1988" />
+    <edge source="yidQ" target="b1988" />
+    <edge source="lysA" target="b1988" />
+    <edge source="lysA" target="b2839" />
+    <edge source="fadM" target="b0113" />
     <edge source="b4398" target="malE" />
     <edge source="b4398" target="talA" />
     <edge source="b4398" target="ackA" />
@@ -4617,17 +4327,29 @@
     <edge source="b4398" target="cbrB" />
     <edge source="b4398" target="recG" />
     <edge source="b4398" target="creD" />
+    <edge source="malE" target="b2669" />
+    <edge source="malE" target="b3418" />
+    <edge source="malE" target="b3711" />
+    <edge source="malE" target="b3405" />
+    <edge source="ackA" target="b1988" />
+    <edge source="cbrB" target="b1988" />
     <edge source="b0225;b0226" target="cspE" />
-    <edge source="b0225;b0226" target="dinJ" />
+    <edge source="cspE" target="b1696" />
+    <edge source="argP" target="b0399" />
+    <edge source="dnaA" target="b1988" />
+    <edge source="dnaA" target="b3025" />
+    <edge source="rpoS" target="b0995" />
     <edge source="b3773" target="ilvC" />
     <edge source="b3773" target="ilvY" />
     <edge source="b3828" target="metE" />
     <edge source="b3828" target="metR" />
     <edge source="b3828" target="glyA" />
     <edge source="b3828" target="metH" />
-    <edge source="b3828" target="hmp" />
-    <edge source="b1111" target="bhsA" />
-    <edge source="b4124" target="dpiB" />
+    <edge source="metE" target="b1988" />
+    <edge source="metE" target="b3938" />
+    <edge source="metR" target="b1988" />
+    <edge source="metR" target="b3938" />
+    <edge source="glyA" target="b1658" />
     <edge source="b4124" target="aspA" />
     <edge source="b4124" target="pck" />
     <edge source="b4124" target="frdA" />
@@ -4635,11 +4357,7 @@
     <edge source="b4124" target="dcuB" />
     <edge source="b0113" target="glcD" />
     <edge source="b0113" target="mraZ" />
-    <edge source="b0113" target="pdhR" />
     <edge source="b0113" target="fecA" />
-    <edge source="b0113" target="grcA" />
-    <edge source="b0113" target="ndh" />
-    <edge source="b0113" target="cyoA" />
     <edge source="b0113" target="tomB" />
     <edge source="b0113" target="hemL" />
     <edge source="b0113" target="ppsA" />
@@ -4652,21 +4370,36 @@
     <edge source="b0113" target="ybcV" />
     <edge source="b0113" target="ybcW" />
     <edge source="b0113" target="fadL" />
-    <edge source="b0113" target="fadM" />
-    <edge source="b0113" target="fadH" />
+    <edge source="glcD" target="b2980" />
+    <edge source="glcD" target="b3604" />
+    <edge source="mraZ" target="b0081" />
+    <edge source="dadA" target="b1988" />
     <edge source="b2808" target="gcvB" />
     <edge source="b2808" target="gcvA" />
     <edge source="b2808" target="gcvT" />
+    <edge source="gcvA" target="b2664" />
+    <edge source="gcvT" target="b1988" />
+    <edge source="gcvT" target="b1658" />
+    <edge source="mcaS" target="b3237" />
     <edge source="b4327" target="cydA" />
     <edge source="b4327" target="metN" />
     <edge source="b4327" target="cysH" />
     <edge source="b4327" target="metB" />
     <edge source="b4327" target="fecA" />
+    <edge source="cydA" target="b1988" />
+    <edge source="metN" target="b3938" />
+    <edge source="metB" target="b3938" />
     <edge source="b0294" target="flhD" />
     <edge source="b0294" target="ecpA" />
     <edge source="b0294" target="matA" />
-    <edge source="b0294" target="fliA" />
     <edge source="b0294" target="fliC" />
+    <edge source="flhD" target="b1921" />
+    <edge source="flhD" target="b4365" />
+    <edge source="flhD" target="b0464" />
+    <edge source="flhD" target="b3025" />
+    <edge source="flhD" target="b2217;b1951" />
+    <edge source="flhD" target="b2289" />
+    <edge source="flhD" target="b3405" />
     <edge source="b4366;b2217" target="leuO" />
     <edge source="b4366;b2217" target="yehF" />
     <edge source="b4366;b2217" target="sfsB" />
@@ -4678,39 +4411,32 @@
     <edge source="b4366;b2217" target="ynbA" />
     <edge source="b4366;b2217" target="ynjI" />
     <edge source="b4366;b2217" target="bglG" />
-    <edge source="b2669" target="leuO" />
+    <edge source="leuO" target="b2669" />
+    <edge source="leuO" target="b1642" />
+    <edge source="leuO" target="b2289" />
+    <edge source="leuO" target="b1988" />
     <edge source="b2669" target="ssrS" />
-    <edge source="b2669" target="casA" />
-    <edge source="b2669" target="malE" />
     <edge source="b2669" target="stpA" />
     <edge source="b2669" target="bglG" />
     <edge source="b2669" target="proV" />
     <edge source="b1921" target="mlrA" />
     <edge source="b1921" target="pdeR" />
-    <edge source="b1921" target="gadE" />
-    <edge source="b1921" target="hdeA" />
-    <edge source="b1921" target="flhD" />
-    <edge source="b1921" target="gadB" />
     <edge source="b1921" target="yjbJ" />
-    <edge source="b1921" target="csgD" />
-    <edge source="b1921" target="csgB" />
     <edge source="b1921" target="osmY" />
+    <edge source="pdeR" target="b1013" />
+    <edge source="osmY" target="b1988" />
+    <edge source="fliC" target="b1988" />
+    <edge source="hcp" target="b2193" />
     <edge source="b3237" target="argA" />
     <edge source="b3237" target="lysO" />
     <edge source="b3237" target="yhcC" />
     <edge source="b3237" target="aroK" />
-    <edge source="b3237" target="aroP" />
     <edge source="b3237" target="cvpA" />
     <edge source="b3237" target="dacC" />
-    <edge source="b3237" target="dps" />
-    <edge source="b3237" target="eutS" />
     <edge source="b3237" target="ftsZ" />
-    <edge source="b3237" target="gltB" />
     <edge source="b3237" target="gltP" />
     <edge source="b3237" target="hchA" />
     <edge source="b3237" target="hisL" />
-    <edge source="b3237" target="mcaS" />
-    <edge source="b3237" target="lrp" />
     <edge source="b3237" target="mukE" />
     <edge source="b3237" target="pfkB" />
     <edge source="b3237" target="potF" />
@@ -4737,6 +4463,10 @@
     <edge source="b3237" target="artJ" />
     <edge source="b3237" target="argG" />
     <edge source="b3237" target="astC" />
+    <edge source="pdeL" target="b0315" />
+    <edge source="pdeL" target="b1988" />
+    <edge source="uxaC" target="b1988" />
+    <edge source="uxaC" target="b0694" />
     <edge source="b3868" target="argT" />
     <edge source="b3868" target="ddpX" />
     <edge source="b3868" target="rutA" />
@@ -4747,60 +4477,49 @@
     <edge source="b3868" target="" />
     <edge source="b3868" target="glnA" />
     <edge source="b3868" target="glnL" />
-    <edge source="b3868" target="glnK" />
-    <edge source="b3868" target="nac" />
     <edge source="b3868" target="glnH" />
     <edge source="b3868" target="cbl" />
     <edge source="b3868" target="yeaG" />
     <edge source="b3868" target="potF" />
     <edge source="b3868" target="astC" />
-    <edge source="b3868" target="yeaE" />
     <edge source="b3868" target="hisJ" />
-    <edge source="b0995" target="gadA" />
-    <edge source="b0995" target="hdeA" />
+    <edge source="rutA" target="b1013" />
     <edge source="b0995" target="torR" />
     <edge source="b0995" target="tnaC" />
     <edge source="b0995" target="torC" />
-    <edge source="b0995" target="rpoS" />
     <edge source="b0995" target="adiA" />
-    <edge source="b0995" target="adiC" />
-    <edge source="b0995" target="gadB" />
     <edge source="b0995" target="gadC" />
-    <edge source="b0995" target="gadE" />
     <edge source="b0995" target="mdtE" />
     <edge source="b0995" target="mdtF" />
-    <edge source="b0995" target="gadX" />
-    <edge source="b0995" target="slp" />
+    <edge source="rob" target="b3405" />
     <edge source="b2125" target="btsT" />
-    <edge source="b2125" target="csgB" />
-    <edge source="b2125" target="csgD" />
-    <edge source="b2125" target="pdhR" />
-    <edge source="b2125" target="mdh" />
     <edge source="b2125" target="yobF" />
     <edge source="b4113" target="yrbL" />
-    <edge source="b4113" target="csgD" />
     <edge source="b4113" target="eptA" />
     <edge source="b4113" target="arnB" />
-    <edge source="b4113" target="waaH" />
     <edge source="b4113" target="dgkA" />
     <edge source="b4113" target="tomB" />
-    <edge source="b4113" target="putA" />
     <edge source="b4113" target="cspI" />
     <edge source="b4113" target="fimB" />
     <edge source="b4113" target="qseB" />
     <edge source="b4113" target="emrD" />
     <edge source="b4113" target="glpA" />
+    <edge source="yrbL" target="b4063" />
+    <edge source="eptA" target="b1988" />
+    <edge source="tomB" target="b1988" />
+    <edge source="fimB" target="b3226" />
     <edge source="b0846" target="rcdA" />
     <edge source="b0846" target="ybjJ" />
     <edge source="b0846" target="sulA" />
     <edge source="b0846" target="bluF" />
     <edge source="b0846" target="asr" />
-    <edge source="b0846" target="csgD" />
     <edge source="b0846" target="ydeI" />
     <edge source="b0846" target="yagK" />
     <edge source="b0846" target="rsd" />
     <edge source="b0846" target="rmf" />
     <edge source="b1540" target="rspA" />
+    <edge source="asr" target="b1608" />
+    <edge source="asr" target="b0399" />
     <edge source="b0399" target="mipA" />
     <edge source="b0399" target="hiuH" />
     <edge source="b0399" target="rspR" />
@@ -4809,18 +4528,13 @@
     <edge source="b0399" target="sbcD" />
     <edge source="b0399" target="rcdB" />
     <edge source="b0399" target="yegH" />
-    <edge source="b0399" target="feaR" />
-    <edge source="b0399" target="prpR" />
     <edge source="b0399" target="phoQ" />
     <edge source="b0399" target="phoU" />
     <edge source="b0399" target="ompF" />
-    <edge source="b0399" target="gadX" />
     <edge source="b0399" target="tktB" />
-    <edge source="b0399" target="adiC" />
     <edge source="b0399" target="cra" />
     <edge source="b0399" target="ytfK" />
     <edge source="b0399" target="pstS" />
-    <edge source="b0399" target="asr" />
     <edge source="b0399" target="pitB" />
     <edge source="b0399" target="phoA" />
     <edge source="b0399" target="phoB" />
@@ -4830,12 +4544,20 @@
     <edge source="b0399" target="phnC" />
     <edge source="b0399" target="phoH" />
     <edge source="b0399" target="eda" />
-    <edge source="b0399" target="argP" />
     <edge source="b0399" target="amn" />
-    <edge source="b0399" target="waaH" />
     <edge source="b0399" target="agp" />
     <edge source="b0399" target="yoaI" />
     <edge source="b0399" target="yibT" />
+    <edge source="hiuH" target="b0571" />
+    <edge source="hiuH" target="b1969" />
+    <edge source="cusC" target="b1969" />
+    <edge source="cusC" target="b0571" />
+    <edge source="cusR" target="b1969" />
+    <edge source="cusR" target="b0571" />
+    <edge source="sbcD" target="b1988" />
+    <edge source="yegH" target="b1988" />
+    <edge source="hyaA" target="b2193" />
+    <edge source="hyaA" target="b0564" />
     <edge source="b2381" target="yhjX" />
     <edge source="b1328" target="ycjY" />
     <edge source="b1328" target="ycjG" />
@@ -4846,16 +4568,20 @@
     <edge source="b1570" target="dicC" />
     <edge source="b1570" target="dicA" />
     <edge source="b1570" target="dicB" />
-    <edge source="b1299" target="puuD" />
-    <edge source="b1299" target="puuA" />
+    <edge source="dicC" target="b4135" />
+    <edge source="dicA" target="b4135" />
+    <edge source="ompF" target="b1988" />
+    <edge source="ompF" target="b1608" />
+    <edge source="ompF" target="b3405" />
+    <edge source="ompF" target="b0566" />
+    <edge source="dinQ" target="b2664" />
     <edge source="b3753" target="purH" />
     <edge source="b3753" target="add" />
     <edge source="b3753" target="udk" />
     <edge source="b3753" target="rbsD" />
+    <edge source="purH" target="b1658" />
     <edge source="b1988" target="ydcS" />
-    <edge source="b1988" target="feaR" />
     <edge source="b1988" target="abgR" />
-    <edge source="b1988" target="ackA" />
     <edge source="b1988" target="cbrC" />
     <edge source="b1988" target="curA" />
     <edge source="b1988" target="cysQ" />
@@ -4864,7 +4590,6 @@
     <edge source="b1988" target="dld" />
     <edge source="b1988" target="eamA" />
     <edge source="b1988" target="elfA" />
-    <edge source="b1988" target="eptA" />
     <edge source="b1988" target="fdhD" />
     <edge source="b1988" target="fklB" />
     <edge source="b1988" target="gltP" />
@@ -4910,7 +4635,6 @@
     <edge source="b1988" target="ybhH" />
     <edge source="b1988" target="ybhI" />
     <edge source="b1988" target="ybhM" />
-    <edge source="b1988" target="ycaC" />
     <edge source="b1988" target="ycaD" />
     <edge source="b1988" target="ycaN" />
     <edge source="b1988" target="yccM" />
@@ -4974,17 +4698,14 @@
     <edge source="b1988" target="abgA" />
     <edge source="b1988" target="aceB" />
     <edge source="b1988" target="acrE" />
-    <edge source="b1988" target="ahpC" />
     <edge source="b1988" target="alaC" />
     <edge source="b1988" target="allR" />
     <edge source="b1988" target="amiB" />
     <edge source="b1988" target="amn" />
-    <edge source="b1988" target="ampD" />
     <edge source="b1988" target="ansB" />
     <edge source="b1988" target="ansP" />
     <edge source="b1988" target="araE" />
     <edge source="b1988" target="araF" />
-    <edge source="b1988" target="argO" />
     <edge source="b1988" target="argU" />
     <edge source="b1988" target="aroD" />
     <edge source="b1988" target="aroE" />
@@ -5002,7 +4723,6 @@
     <edge source="b1988" target="borD" />
     <edge source="b1988" target="bssS" />
     <edge source="b1988" target="caiF" />
-    <edge source="b1988" target="cbrB" />
     <edge source="b1988" target="ccmA" />
     <edge source="b1988" target="ccmB" />
     <edge source="b1988" target="ccmH" />
@@ -5019,43 +4739,31 @@
     <edge source="b1988" target="glaH" />
     <edge source="b1988" target="csiE" />
     <edge source="b1988" target="cycA" />
-    <edge source="b1988" target="cydA" />
     <edge source="b1988" target="cynR" />
     <edge source="b1988" target="cynT" />
     <edge source="b1988" target="cysJ" />
     <edge source="b1988" target="cysS" />
-    <edge source="b1988" target="dadA" />
     <edge source="b1988" target="dapB" />
     <edge source="b1988" target="dcm" />
     <edge source="b1988" target="dcyD" />
     <edge source="b1988" target="ddpC" />
     <edge source="b1988" target="dhaK" />
     <edge source="b1988" target="dhaR" />
-    <edge source="b1988" target="dinJ" />
     <edge source="b1988" target="dkgA" />
-    <edge source="b1988" target="dnaA" />
     <edge source="b1988" target="dppA" />
     <edge source="b1988" target="dsbA" />
-    <edge source="b1988" target="dsbG" />
     <edge source="b1988" target="ecnA" />
     <edge source="b1988" target="ecnB" />
     <edge source="b1988" target="elfG" />
     <edge source="b1988" target="emrK" />
-    <edge source="b1988" target="eutS" />
     <edge source="b1988" target="evgA" />
-    <edge source="b1988" target="exuT" />
     <edge source="b1988" target="fdoG" />
     <edge source="b1988" target="feaB" />
     <edge source="b1988" target="fepE" />
-    <edge source="b1988" target="fhuF" />
-    <edge source="b1988" target="fliC" />
     <edge source="b1988" target="fliD" />
     <edge source="b1988" target="ftnB" />
     <edge source="b1988" target="fucA" />
-    <edge source="b1988" target="gadE" />
-    <edge source="b1988" target="gadX" />
     <edge source="b1988" target="gatA" />
-    <edge source="b1988" target="gcvT" />
     <edge source="b1988" target="glcA" />
     <edge source="b1988" target="glpK" />
     <edge source="b1988" target="gltA" />
@@ -5073,12 +4781,9 @@
     <edge source="b1988" target="hcaR" />
     <edge source="b1988" target="hchA" />
     <edge source="b1988" target="hemB" />
-    <edge source="b1988" target="hemH" />
     <edge source="b1988" target="hemN" />
-    <edge source="b1988" target="hfq" />
     <edge source="b1988" target="hofC" />
     <edge source="b1988" target="holE" />
-    <edge source="b1988" target="htpG" />
     <edge source="b1988" target="htpX" />
     <edge source="b1988" target="htrE" />
     <edge source="b1988" target="hupA" />
@@ -5092,45 +4797,33 @@
     <edge source="b1988" target="intD" />
     <edge source="b1988" target="iraP" />
     <edge source="b1988" target="ispD" />
-    <edge source="b1988" target="katG" />
     <edge source="b1988" target="kbaY" />
     <edge source="b1988" target="kbl" />
     <edge source="b1988" target="kdsA" />
     <edge source="b1988" target="lepA" />
     <edge source="b1988" target="lepB" />
     <edge source="b1988" target="leuL" />
-    <edge source="b1988" target="leuO" />
     <edge source="b1988" target="leuU" />
     <edge source="b1988" target="livH" />
     <edge source="b1988" target="livK" />
     <edge source="b1988" target="livM" />
     <edge source="b1988" target="lpxH" />
-    <edge source="b1988" target="lrp" />
-    <edge source="b1988" target="lysA" />
-    <edge source="b1988" target="lysP" />
     <edge source="b1988" target="lysR" />
     <edge source="b1988" target="lysU" />
     <edge source="b1988" target="macA" />
-    <edge source="b1988" target="malI" />
     <edge source="b1988" target="malY" />
     <edge source="b1988" target="map" />
-    <edge source="b1988" target="marR" />
-    <edge source="b1988" target="mcbA" />
     <edge source="b1988" target="mcrB" />
     <edge source="b1988" target="mdtE" />
-    <edge source="b1988" target="metE" />
-    <edge source="b1988" target="metR" />
     <edge source="b1988" target="metY" />
     <edge source="b1988" target="mglA" />
     <edge source="b1988" target="mglB" />
     <edge source="b1988" target="micC" />
-    <edge source="b1988" target="mntH" />
     <edge source="b1988" target="mobA" />
     <edge source="b1988" target="moeA" />
     <edge source="b1988" target="mreC" />
     <edge source="b1988" target="mscL" />
     <edge source="b1988" target="msrA" />
-    <edge source="b1988" target="nadC" />
     <edge source="b1988" target="nadD" />
     <edge source="b1988" target="nanA" />
     <edge source="b1988" target="nanK" />
@@ -5148,14 +4841,10 @@
     <edge source="b1988" target="nusA" />
     <edge source="b1988" target="nusB" />
     <edge source="b1988" target="ompA" />
-    <edge source="b1988" target="ompF" />
     <edge source="b1988" target="ompN" />
     <edge source="b1988" target="ompR" />
-    <edge source="b1988" target="ompT" />
-    <edge source="b1988" target="oppA" />
     <edge source="b1988" target="oppC" />
     <edge source="b1988" target="osmB" />
-    <edge source="b1988" target="osmY" />
     <edge source="b1988" target="pabC" />
     <edge source="b1988" target="pdxK" />
     <edge source="b1988" target="pfkB" />
@@ -5166,7 +4855,6 @@
     <edge source="b1988" target="pldA" />
     <edge source="b1988" target="pntA" />
     <edge source="b1988" target="polA" />
-    <edge source="b1988" target="ppc" />
     <edge source="b1988" target="ppdC" />
     <edge source="b1988" target="ppiB" />
     <edge source="b1988" target="prmB" />
@@ -5183,12 +4871,10 @@
     <edge source="b1988" target="rimP" />
     <edge source="b1988" target="rluE" />
     <edge source="b1988" target="rnlB" />
-    <edge source="b1988" target="rplU" />
     <edge source="b1988" target="rpmH" />
     <edge source="b1988" target="rpoZ" />
     <edge source="b1988" target="rsd" />
     <edge source="b1988" target="rutB" />
-    <edge source="b1988" target="sbcD" />
     <edge source="b1988" target="scpB" />
     <edge source="b1988" target="sdaA" />
     <edge source="b1988" target="sdhC" />
@@ -5209,12 +4895,10 @@
     <edge source="b1988" target="tfaR" />
     <edge source="b1988" target="tff" />
     <edge source="b1988" target="thiL" />
-    <edge source="b1988" target="thrS" />
     <edge source="b1988" target="tnaA" />
     <edge source="b1988" target="tnaB" />
     <edge source="b1988" target="tnaC" />
     <edge source="b1988" target="tolB" />
-    <edge source="b1988" target="tomB" />
     <edge source="b1988" target="torA" />
     <edge source="b1988" target="trxB" />
     <edge source="b1988" target="ubiA" />
@@ -5222,12 +4906,10 @@
     <edge source="b1988" target="uspA" />
     <edge source="b1988" target="uspG" />
     <edge source="b1988" target="uvrY" />
-    <edge source="b1988" target="uxaC" />
     <edge source="b1988" target="waaF" />
     <edge source="b1988" target="waaG" />
     <edge source="b1988" target="wcaE" />
     <edge source="b1988" target="wcaF" />
-    <edge source="b1988" target="wrbA" />
     <edge source="b1988" target="wza" />
     <edge source="b1988" target="wzb" />
     <edge source="b1988" target="wzc" />
@@ -5237,11 +4919,9 @@
     <edge source="b1988" target="yadC" />
     <edge source="b1988" target="yadM" />
     <edge source="b1988" target="yafD" />
-    <edge source="b1988" target="yafN" />
     <edge source="b1988" target="yafO" />
     <edge source="b1988" target="yafQ" />
     <edge source="b1988" target="yafV" />
-    <edge source="b1988" target="pdeL" />
     <edge source="b1988" target="yaiZ" />
     <edge source="b1988" target="yajO" />
     <edge source="b1988" target="ybaL" />
@@ -5266,7 +4946,6 @@
     <edge source="b1988" target="ydcI" />
     <edge source="b1988" target="ortT" />
     <edge source="b1988" target="ydcZ" />
-    <edge source="b1988" target="ydeP" />
     <edge source="b1988" target="ydeQ" />
     <edge source="b1988" target="ydfK" />
     <edge source="b1988" target="ydfR" />
@@ -5279,9 +4958,7 @@
     <edge source="b1988" target="yecE" />
     <edge source="b1988" target="yecF" />
     <edge source="b1988" target="hprR" />
-    <edge source="b1988" target="yegH" />
     <edge source="b1988" target="yegL" />
-    <edge source="b1988" target="yegR" />
     <edge source="b1988" target="yejB" />
     <edge source="b1988" target="yejG" />
     <edge source="b1988" target="lapC" />
@@ -5290,7 +4967,6 @@
     <edge source="b1988" target="yfcP" />
     <edge source="b1988" target="yfeK" />
     <edge source="b1988" target="yfeS" />
-    <edge source="b1988" target="pdeF" />
     <edge source="b1988" target="yfgG" />
     <edge source="b1988" target="yfgH" />
     <edge source="b1988" target="yfhL" />
@@ -5313,14 +4989,12 @@
     <edge source="b1988" target="ygiM" />
     <edge source="b1988" target="ygiZ" />
     <edge source="b1988" target="yhaB" />
-    <edge source="b1988" target="ubiT" />
     <edge source="b1988" target="ubiU" />
     <edge source="b1988" target="yhcA" />
     <edge source="b1988" target="yhcD" />
     <edge source="b1988" target="yhfZ" />
     <edge source="b1988" target="yhhZ" />
     <edge source="b1988" target="yicJ" />
-    <edge source="b1988" target="yidQ" />
     <edge source="b1988" target="yieE" />
     <edge source="b1988" target="yieP" />
     <edge source="b1988" target="yifB" />
@@ -5344,10 +5018,8 @@
     <edge source="b1988" target="ykgH" />
     <edge source="b1988" target="ynaK" />
     <edge source="b1988" target="yneK" />
-    <edge source="b1988" target="mgtS" />
     <edge source="b1988" target="ynfB" />
     <edge source="b1988" target="ynfD" />
-    <edge source="b1988" target="ynfE" />
     <edge source="b1988" target="ynfF" />
     <edge source="b1988" target="ynfG" />
     <edge source="b1988" target="bidA" />
@@ -5367,42 +5039,36 @@
     <edge source="b1988" target="ytfK" />
     <edge source="b1988" target="ytfP" />
     <edge source="b1988" target="znuA" />
-    <edge source="b1988" target="gltB" />
     <edge source="b1988" target="gabD" />
-    <edge source="b1988" target="nac" />
     <edge source="b1988" target="serA" />
     <edge source="b1988" target="codB" />
     <edge source="b1988" target="asnC" />
-    <edge source="b1988" target="gdhA" />
-    <edge source="b1988" target="glnD" />
     <edge source="b1988" target="moaB" />
     <edge source="b1988" target="gmd" />
+    <edge source="rmf" target="b1642" />
+    <edge source="rmf" target="b0487" />
+    <edge source="rmf" target="b0694" />
+    <edge source="rmf" target="b3292" />
+    <edge source="rpsF" target="b2664" />
+    <edge source="nrdD" target="b0413" />
     <edge source="b3226" target="nanX" />
     <edge source="b3226" target="nanC" />
     <edge source="b3226" target="nanA" />
-    <edge source="b3226" target="fimB" />
+    <edge source="qseB" target="b3025" />
     <edge source="b1384" target="tynA" />
     <edge source="b1384" target="feaB" />
     <edge source="b0305" target="rclA" />
-    <edge source="b1508;b1507" target="relA" />
-    <edge source="b1508;b1507" target="hipB" />
-    <edge source="b0081" target="mraZ" />
+    <edge source="relA" target="b1508;b1507" />
     <edge source="b0081" target="mioC" />
     <edge source="b1399" target="paaX" />
     <edge source="b1399" target="paaA" />
     <edge source="b1399" target="paaZ" />
-    <edge source="b0464" target="marR" />
-    <edge source="b0464" target="soxR" />
-    <edge source="b0464" target="soxS" />
-    <edge source="b0464" target="flhD" />
     <edge source="b0464" target="micF" />
     <edge source="b0464" target="acrA" />
     <edge source="b0464" target="acrR" />
-    <edge source="b0464" target="puuA" />
     <edge source="b0464" target="mdtU" />
     <edge source="b1275" target="yciW" />
     <edge source="b1275" target="ygeH" />
-    <edge source="b1275" target="ybdN" />
     <edge source="b1275" target="dgcZ" />
     <edge source="b1275" target="yfbR" />
     <edge source="b1275" target="yoaC" />
@@ -5410,7 +5076,6 @@
     <edge source="b1275" target="tcyP" />
     <edge source="b1275" target="tcyJ" />
     <edge source="b1275" target="tauA" />
-    <edge source="b1275" target="cysB" />
     <edge source="b1275" target="cysK" />
     <edge source="b1275" target="cysD" />
     <edge source="b1275" target="cysJ" />
@@ -5418,58 +5083,39 @@
     <edge source="b1275" target="ssuE" />
     <edge source="b1275" target="cbl" />
     <edge source="b1275" target="hslJ" />
+    <edge source="yoaC" target="b2157" />
     <edge source="b1434" target="sutR" />
     <edge source="b1434" target="ydcO" />
-    <edge source="b1434" target="fliA" />
     <edge source="b1434" target="cysE" />
     <edge source="b1434" target="pfkB" />
     <edge source="b1434" target="ypfN" />
-    <edge source="b0571" target="hiuH" />
-    <edge source="b0571" target="cyoA" />
-    <edge source="b0571" target="cusC" />
-    <edge source="b0571" target="cusR" />
-    <edge source="b1969" target="hiuH" />
-    <edge source="b1969" target="cyoA" />
-    <edge source="b1969" target="cusR" />
-    <edge source="b1969" target="cusC" />
+    <edge source="appC" target="b0564" />
     <edge source="b3405" target="pgaA" />
-    <edge source="b3405" target="cadB" />
-    <edge source="b3405" target="cadC" />
     <edge source="b3405" target="speFL" />
     <edge source="b3405" target="acrR" />
     <edge source="b3405" target="fadE" />
     <edge source="b3405" target="gmhA" />
     <edge source="b3405" target="lpp" />
     <edge source="b3405" target="ompX" />
-    <edge source="b3405" target="pdhR" />
     <edge source="b3405" target="rhtA" />
-    <edge source="b3405" target="rob" />
     <edge source="b3405" target="sstT" />
     <edge source="b3405" target="tolC" />
-    <edge source="b3405" target="tsgA" />
     <edge source="b3405" target="micF" />
-    <edge source="b3405" target="ompF" />
-    <edge source="b3405" target="csgD" />
     <edge source="b3405" target="bolA" />
-    <edge source="b3405" target="feoA" />
     <edge source="b3405" target="fadL" />
     <edge source="b3405" target="ompC" />
     <edge source="b3405" target="nmpC" />
-    <edge source="b3405" target="flhD" />
     <edge source="b3405" target="sra" />
     <edge source="b3405" target="dtpA" />
     <edge source="b3405" target="omrA" />
     <edge source="b3405" target="omrB" />
     <edge source="b3405" target="ecnB" />
-    <edge source="b3405" target="csgI" />
     <edge source="b3405" target="htpX" />
     <edge source="b3405" target="nuoN" />
     <edge source="b3405" target="queE" />
-    <edge source="b3405" target="galP" />
     <edge source="b3405" target="alx" />
     <edge source="b3405" target="znuA" />
     <edge source="b3405" target="narU" />
-    <edge source="b3405" target="malE" />
     <edge source="b3405" target="copA" />
     <edge source="b3405" target="yobB" />
     <edge source="b0959;b3357" target="sxy" />
@@ -5478,6 +5124,7 @@
     <edge source="b4046" target="znuA" />
     <edge source="b4046" target="zinT" />
     <edge source="b4046" target="ykgM" />
+    <edge source="pliG" target="b2664" />
     <edge source="b1790" target="nimT" />
     <edge source="b1790" target="nimR" />
     <edge source="b1853" target="yebK" />
@@ -5485,38 +5132,32 @@
     <edge source="b4365" target="yfiR" />
     <edge source="b4365" target="ymiA" />
     <edge source="b4365" target="gfcA" />
-    <edge source="b4365" target="flhD" />
     <edge source="b4365" target="ompC" />
-    <edge source="b2193" target="ydeP" />
-    <edge source="b2193" target="hyaA" />
+    <edge source="yfiR" target="b2664" />
+    <edge source="ompC" target="b0566" />
+    <edge source="accB" target="b3255" />
     <edge source="b2193" target="nirB" />
     <edge source="b2193" target="napF" />
-    <edge source="b2193" target="fdhF" />
     <edge source="b2193" target="fdnG" />
-    <edge source="b2193" target="nrfA" />
-    <edge source="b2193" target="hcp" />
     <edge source="b2193" target="norV" />
-    <edge source="b2193" target="yeaR" />
     <edge source="b2193" target="ytfE" />
     <edge source="b2193" target="ydhY" />
-    <edge source="b1914" target="ydeP" />
     <edge source="b1914" target="uhpT" />
     <edge source="b1914" target="csrB" />
     <edge source="b1914" target="csrC" />
     <edge source="b1914" target="luxS" />
+    <edge source="uhpT" target="b3669" />
     <edge source="b3569" target="araC" />
     <edge source="b3569" target="xylE" />
-    <edge source="b3569" target="xylA" />
     <edge source="b3569" target="xylF" />
+    <edge source="tyrR" target="b1323" />
     <edge source="b0796" target="cecR" />
     <edge source="b0796" target="rhlE" />
+    <edge source="cspA" target="b1696" />
     <edge source="b0447" target="cyuP" />
     <edge source="b3082" target="higB" />
-    <edge source="b3082;b3083" target="higB" />
-    <edge source="b0315" target="pdeL" />
+    <edge source="higB" target="b3082;b3083" />
     <edge source="b0315" target="yghJ" />
-    <edge source="b0315" target="fliF" />
-    <edge source="b0315" target="wecA" />
     <edge source="b3105" target="yhaK" />
     <edge source="b3105" target="bssS" />
     <edge source="b3105" target="ybiJ" />
@@ -5524,44 +5165,32 @@
     <edge source="b3105" target="yqjF" />
     <edge source="b3105" target="ygiD" />
     <edge source="b3105" target="yhaJ" />
+    <edge source="bssS" target="b2664" />
     <edge source="b0357" target="frmR" />
     <edge source="b1642" target="fecI" />
-    <edge source="b1642" target="casA" />
     <edge source="b1642" target="elfA" />
     <edge source="b1642" target="paaA" />
     <edge source="b1642" target="sgcX" />
     <edge source="b1642" target="mdtM" />
     <edge source="b1642" target="slyA" />
-    <edge source="b1642" target="gspC" />
-    <edge source="b1642" target="leuO" />
     <edge source="b1642" target="pagP" />
     <edge source="b1642" target="rsd" />
-    <edge source="b1642" target="rmf" />
     <edge source="b1642" target="hlyE" />
-    <edge source="b2289" target="leuO" />
+    <edge source="paaA" target="b2921" />
+    <edge source="alaE" target="b2664" />
     <edge source="b2289" target="fimE" />
-    <edge source="b2289" target="flhD" />
     <edge source="b2289" target="lrhA" />
-    <edge source="b3025" target="feaR" />
     <edge source="b3025" target="fimA" />
-    <edge source="b3025" target="dnaA" />
-    <edge source="b3025" target="flhD" />
-    <edge source="b3025" target="qseB" />
     <edge source="b0272" target="yagA" />
     <edge source="b0272" target="yagE" />
     <edge source="b1356" target="ydaS" />
+    <edge source="csqR" target="b3884" />
     <edge source="b4063" target="aroF" />
-    <edge source="b4063" target="yrbL" />
-    <edge source="b4063" target="sodA" />
     <edge source="b4063" target="yjcB" />
-    <edge source="b4063" target="soxS" />
-    <edge source="b4063" target="soxR" />
-    <edge source="b4063" target="fumC" />
+    <edge source="aroF" target="b1323" />
     <edge source="b1658" target="purT" />
     <edge source="b1658" target="purC" />
-    <edge source="b1658" target="purH" />
     <edge source="b1658" target="purL" />
-    <edge source="b1658" target="pyrC" />
     <edge source="b1658" target="hflD" />
     <edge source="b1658" target="cvpA" />
     <edge source="b1658" target="pyrD" />
@@ -5569,30 +5198,34 @@
     <edge source="b1658" target="glnB" />
     <edge source="b1658" target="purR" />
     <edge source="b1658" target="codB" />
-    <edge source="b1658" target="gcvT" />
     <edge source="b1658" target="purM" />
     <edge source="b1658" target="carA" />
-    <edge source="b1658" target="glyA" />
     <edge source="b1658" target="prs" />
     <edge source="b1658" target="speA" />
     <edge source="b1658" target="guaB" />
     <edge source="b1658" target="purA" />
     <edge source="b0435" target="mreB" />
     <edge source="b0435" target="csgA" />
-    <edge source="b0435" target="csgD" />
     <edge source="b0435" target="fimH" />
     <edge source="b0435" target="ampC" />
     <edge source="b0435" target="dacC" />
-    <edge source="b3884" target="csqR" />
     <edge source="b3884" target="yihV" />
     <edge source="b3884" target="yihU" />
+    <edge source="rsd" target="b0487" />
+    <edge source="rsd" target="b0694" />
+    <edge source="rsd" target="b3292" />
     <edge source="b4479" target="dgoR" />
+    <edge source="ycgJ" target="b2664" />
+    <edge source="ycgV" target="b2664" />
+    <edge source="yehE" target="b2664" />
+    <edge source="yfdV" target="b2664" />
+    <edge source="ygdR" target="b2398" />
+    <edge source="ygjI" target="b2664" />
     <edge source="b2664" target="glaH" />
     <edge source="b2664" target="yidB" />
     <edge source="b2664" target="smg" />
     <edge source="b2664" target="chaA" />
     <edge source="b2664" target="kdgT" />
-    <edge source="b2664" target="yehE" />
     <edge source="b2664" target="yadN" />
     <edge source="b2664" target="yfdC" />
     <edge source="b2664" target="yfjD" />
@@ -5600,7 +5233,6 @@
     <edge source="b2664" target="orn" />
     <edge source="b2664" target="yjfY" />
     <edge source="b2664" target="bdcR" />
-    <edge source="b2664" target="ygjI" />
     <edge source="b2664" target="ybaN" />
     <edge source="b2664" target="yqhC" />
     <edge source="b2664" target="ygiV" />
@@ -5610,29 +5242,17 @@
     <edge source="b2664" target="ydcK" />
     <edge source="b2664" target="ydfI" />
     <edge source="b2664" target="pdeG" />
-    <edge source="b2664" target="ycgV" />
     <edge source="b2664" target="ydhS" />
     <edge source="b2664" target="yodB" />
     <edge source="b2664" target="chaB" />
-    <edge source="b2664" target="alaE" />
     <edge source="b2664" target="apt" />
     <edge source="b2664" target="aroB" />
-    <edge source="b2664" target="aroP" />
     <edge source="b2664" target="baeS" />
-    <edge source="b2664" target="bdcA" />
-    <edge source="b2664" target="bssS" />
-    <edge source="b2664" target="cadC" />
-    <edge source="b2664" target="casA" />
     <edge source="b2664" target="cysN" />
     <edge source="b2664" target="cysS" />
     <edge source="b2664" target="dctR" />
-    <edge source="b2664" target="dinQ" />
     <edge source="b2664" target="elfC" />
     <edge source="b2664" target="fhuE" />
-    <edge source="b2664" target="gadW" />
-    <edge source="b2664" target="gadX" />
-    <edge source="b2664" target="gcvA" />
-    <edge source="b2664" target="gdhA" />
     <edge source="b2664" target="gltF" />
     <edge source="b2664" target="hinT" />
     <edge source="b2664" target="htrE" />
@@ -5645,12 +5265,9 @@
     <edge source="b2664" target="mglA" />
     <edge source="b2664" target="mrdA" />
     <edge source="b2664" target="murD" />
-    <edge source="b2664" target="nlpA" />
     <edge source="b2664" target="oxc" />
-    <edge source="b2664" target="pdhR" />
     <edge source="b2664" target="pdxA" />
     <edge source="b2664" target="phoH" />
-    <edge source="b2664" target="pliG" />
     <edge source="b2664" target="ppiB" />
     <edge source="b2664" target="ppx" />
     <edge source="b2664" target="priC" />
@@ -5658,26 +5275,17 @@
     <edge source="b2664" target="rfbB" />
     <edge source="b2664" target="rhsD" />
     <edge source="b2664" target="rpiB" />
-    <edge source="b2664" target="rpsF" />
     <edge source="b2664" target="rssB" />
-    <edge source="b2664" target="safA" />
     <edge source="b2664" target="sgcC" />
     <edge source="b2664" target="tam" />
     <edge source="b2664" target="tar" />
-    <edge source="b2664" target="tehA" />
-    <edge source="b2664" target="ttdA" />
-    <edge source="b2664" target="ttdR" />
     <edge source="b2664" target="ycbU" />
     <edge source="b2664" target="ycbV" />
-    <edge source="b2664" target="csgI" />
-    <edge source="b2664" target="ycgJ" />
     <edge source="b2664" target="ycgY" />
     <edge source="b2664" target="ychQ" />
     <edge source="b2664" target="yciU" />
     <edge source="b2664" target="ycjP" />
-    <edge source="b2664" target="ydeO" />
     <edge source="b2664" target="ydfK" />
-    <edge source="b2664" target="yeaE" />
     <edge source="b2664" target="yehD" />
     <edge source="b2664" target="yehS" />
     <edge source="b2664" target="yfbN" />
@@ -5686,10 +5294,8 @@
     <edge source="b2664" target="yfbU" />
     <edge source="b2664" target="yfcO" />
     <edge source="b2664" target="yfcV" />
-    <edge source="b2664" target="yfdV" />
     <edge source="b2664" target="yfiL" />
     <edge source="b2664" target="dgcN" />
-    <edge source="b2664" target="yfiR" />
     <edge source="b2664" target="ygiW" />
     <edge source="b2664" target="yhcD" />
     <edge source="b2664" target="yigG" />
@@ -5702,309 +5308,237 @@
     <edge source="b2664" target="yobD" />
     <edge source="b2664" target="ypdC" />
     <edge source="b2664" target="zraR" />
+    <edge source="lacZ" target="b0345" />
     <edge source="b1320" target="ycjM" />
     <edge source="b1438" target="hicA" />
-    <edge source="b4000;b0440" target="micF" />
+    <edge source="gltF" target="b2157" />
+    <edge source="yobF" target="b3202" />
+    <edge source="pncB" target="b4390" />
+    <edge source="puuB" target="b0535" />
+    <edge source="carA" target="b1013" />
+    <edge source="fadE" target="b3604" />
+    <edge source="folE" target="b3938" />
+    <edge source="glpD" target="b3423" />
+    <edge source="micF" target="b4000;b0440" />
+    <edge source="acrR" target="b1526" />
+    <edge source="fhuE" target="b2667" />
+    <edge source="idnD" target="b4264" />
+    <edge source="idnD" target="b3438" />
+    <edge source="idnK" target="b4264" />
+    <edge source="idnK" target="b3438" />
+    <edge source="rpiB" target="b4089" />
+    <edge source="adhE" target="b2921" />
+    <edge source="adhE" target="b1892;b1891" />
+    <edge source="garD" target="b0162" />
+    <edge source="narG" target="b1608" />
+    <edge source="yfcZ" target="b3202" />
+    <edge source="aceB" target="b4018" />
+    <edge source="aceB" target="b1892;b1891" />
+    <edge source="metK" target="b3938" />
+    <edge source="mtr" target="b1323" />
+    <edge source="mtr" target="b4000;b0440" />
+    <edge source="mtr" target="b4393" />
+    <edge source="tyrP" target="b1323" />
+    <edge source="tyrP" target="b4000;b0440" />
+    <edge source="alaC" target="b0069" />
+    <edge source="asnA" target="b3743" />
+    <edge source="cdaR" target="b0162" />
+    <edge source="cynR" target="b0338" />
+    <edge source="cynT" target="b0338" />
+    <edge source="cysJ" target="b2157" />
+    <edge source="cysJ" target="b0208" />
+    <edge source="dhaK" target="b1201" />
+    <edge source="dhaK" target="b2921" />
+    <edge source="dhaR" target="b1201" />
+    <edge source="fliD" target="b1892;b1891" />
+    <edge source="fucA" target="b2805" />
+    <edge source="fucA" target="b2921" />
+    <edge source="hcaE" target="b2537" />
+    <edge source="hcaR" target="b2537" />
+    <edge source="iraP" target="b1422" />
+    <edge source="lysR" target="b2839" />
+    <edge source="mglB" target="b1892;b1891" />
+    <edge source="narX" target="b0761" />
+    <edge source="nfrB" target="b1892;b1891" />
+    <edge source="rcsA" target="b2217;b1951" />
+    <edge source="rcsA" target="b1358" />
+    <edge source="rpmH" target="b2398" />
+    <edge source="ssuE" target="b1987" />
+    <edge source="tauA" target="b1987" />
+    <edge source="tdcA" target="b3118" />
+    <edge source="tdcA" target="b3119" />
+    <edge source="wza" target="b2217;b1951" />
+    <edge source="yieP" target="b3755" />
+    <edge source="ykgE" target="b3755" />
     <edge source="b4000;b0440" target="galE" />
-    <edge source="b4000;b0440" target="tyrP" />
-    <edge source="b4000;b0440" target="mtr" />
     <edge source="b4000;b0440" target="seqA" />
-    <edge source="b0564" target="hyaA" />
-    <edge source="b0564" target="appC" />
-    <edge source="b3938" target="metK" />
     <edge source="b3938" target="metA" />
     <edge source="b3938" target="metF" />
-    <edge source="b3938" target="ahpC" />
     <edge source="b3938" target="metC" />
-    <edge source="b3938" target="metE" />
-    <edge source="b3938" target="metR" />
-    <edge source="b3938" target="metB" />
-    <edge source="b3938" target="metN" />
-    <edge source="b3938" target="folE" />
-    <edge source="b0069" target="sgrS" />
     <edge source="b0069" target="sgrR" />
-    <edge source="b0069" target="alaC" />
-    <edge source="b2213" target="aidB" />
     <edge source="b2213" target="alkA" />
     <edge source="b2213" target="ada" />
     <edge source="b1594" target="mlc" />
-    <edge source="b1594" target="ptsH" />
     <edge source="b1594" target="malT" />
-    <edge source="b1594" target="manX" />
     <edge source="b1594" target="ptsG" />
-    <edge source="b1608" target="csgD" />
-    <edge source="b1608" target="ompF" />
-    <edge source="b1608" target="asr" />
-    <edge source="b1608" target="narG" />
-    <edge source="b3906" target="rhaS" />
     <edge source="b2405" target="xapA" />
-    <edge source="b0566" target="ompF" />
-    <edge source="b0566" target="ompC" />
-    <edge source="b1892;b1891" target="mglB" />
+    <edge source="pfkA" target="b1892;b1891" />
+    <edge source="gabD" target="b1526" />
     <edge source="b1892;b1891" target="ygbK" />
     <edge source="b1892;b1891" target="ppdA" />
     <edge source="b1892;b1891" target="glpA" />
     <edge source="b1892;b1891" target="fliL" />
     <edge source="b1892;b1891" target="napF" />
     <edge source="b1892;b1891" target="hydN" />
-    <edge source="b1892;b1891" target="fliA" />
-    <edge source="b1892;b1891" target="mdh" />
-    <edge source="b1892;b1891" target="nrfA" />
     <edge source="b1892;b1891" target="ycgR" />
     <edge source="b1892;b1891" target="pdeH" />
-    <edge source="b1892;b1891" target="fliD" />
-    <edge source="b1892;b1891" target="fliE" />
-    <edge source="b1892;b1891" target="fliF" />
     <edge source="b1892;b1891" target="gltI" />
     <edge source="b1892;b1891" target="flgA" />
     <edge source="b1892;b1891" target="flgB" />
     <edge source="b1892;b1891" target="yecR" />
     <edge source="b1892;b1891" target="flhB" />
-    <edge source="b1892;b1891" target="nfrB" />
     <edge source="b1892;b1891" target="csgC" />
     <edge source="b1892;b1891" target="ymdA" />
-    <edge source="b1892;b1891" target="ptsH" />
-    <edge source="b1892;b1891" target="fruB" />
     <edge source="b1892;b1891" target="setB" />
-    <edge source="b1892;b1891" target="pfkA" />
     <edge source="b1892;b1891" target="epd" />
-    <edge source="b1892;b1891" target="adhE" />
-    <edge source="b1892;b1891" target="aceB" />
     <edge source="b1892;b1891" target="iclR" />
-    <edge source="b2217;b1951" target="csgD" />
     <edge source="b2217;b1951" target="yjbE" />
-    <edge source="b2217;b1951" target="flhD" />
-    <edge source="b2217;b1951" target="rcsA" />
-    <edge source="b2217;b1951" target="wza" />
-    <edge source="b1422" target="isrC" />
+    <edge source="alaS" target="b2697" />
+    <edge source="aroG" target="b1323" />
+    <edge source="rdcA" target="b1284" />
+    <edge source="fadL" target="b3202" />
+    <edge source="fadL" target="b3604" />
+    <edge source="modA" target="b0761" />
+    <edge source="napF" target="b0761" />
+    <edge source="pspG" target="b1303" />
+    <edge source="sad" target="b1526" />
     <edge source="b1422" target="smrB" />
-    <edge source="b1422" target="iraP" />
-    <edge source="b1422" target="gadB" />
-    <edge source="b3375" target="frlA" />
-    <edge source="b3418" target="malP" />
-    <edge source="b3418" target="malE" />
+    <edge source="frlA" target="b3375" />
+    <edge source="malP" target="b3418" />
     <edge source="b3418" target="malK" />
     <edge source="b3418" target="malS" />
     <edge source="b3418" target="malZ" />
     <edge source="b4118" target="melR" />
     <edge source="b4118" target="melA" />
-    <edge source="b3423" target="glpA" />
-    <edge source="b3423" target="glpD" />
+    <edge source="glpA" target="b3423" />
     <edge source="b3423" target="glpT" />
     <edge source="b3423" target="glpF" />
     <edge source="b0694" target="kdpF" />
-    <edge source="b0694" target="rmf" />
-    <edge source="b0694" target="rsd" />
-    <edge source="b0694" target="uxaC" />
     <edge source="b0694" target="adeP" />
-    <edge source="b0345" target="lacZ" />
-    <edge source="b4018" target="aceB" />
     <edge source="b4018" target="iclR" />
-    <edge source="b1323" target="aroF" />
-    <edge source="b1323" target="aroG" />
     <edge source="b1323" target="aroL" />
-    <edge source="b1323" target="aroP" />
     <edge source="b1323" target="tyrB" />
-    <edge source="b1323" target="tyrP" />
-    <edge source="b1323" target="mtr" />
-    <edge source="b1323" target="tyrR" />
     <edge source="b1323" target="folA" />
     <edge source="b4393" target="aroH" />
     <edge source="b4393" target="aroL" />
-    <edge source="b4393" target="mtr" />
     <edge source="b4393" target="trpL" />
     <edge source="b4393" target="trpR" />
-    <edge source="b0840" target="deoC" />
-    <edge source="b0840" target="nupG" />
-    <edge source="b0840" target="tsx" />
-    <edge source="b0761" target="deoC" />
-    <edge source="b0761" target="napF" />
-    <edge source="b0761" target="modA" />
-    <edge source="b0761" target="narX" />
-    <edge source="b0761" target="oppA" />
-    <edge source="b0761" target="hycA" />
+    <edge source="cirA" target="b2667" />
     <edge source="b0761" target="dmsA" />
     <edge source="b0761" target="moaA" />
-    <edge source="b3481" target="nikA" />
-    <edge source="b2491" target="hyfA" />
-    <edge source="b0162" target="garP" />
-    <edge source="b0162" target="garD" />
+    <edge source="nikA" target="b3481" />
+    <edge source="hyfA" target="b2491" />
+    <edge source="acrA" target="b3264" />
+    <edge source="acrA" target="b2684" />
+    <edge source="acrA" target="b1526" />
     <edge source="b0162" target="gudP" />
-    <edge source="b0162" target="cdaR" />
-    <edge source="b1987" target="tauA" />
-    <edge source="b1987" target="ssuE" />
+    <edge source="nmpC" target="b2684" />
+    <edge source="paaZ" target="b2921" />
     <edge source="b1735" target="chbB" />
     <edge source="b3604" target="lldP" />
-    <edge source="b3604" target="fadE" />
-    <edge source="b3604" target="fadL" />
     <edge source="b3604" target="lpxP" />
     <edge source="b3604" target="yfdY" />
-    <edge source="b3604" target="glcD" />
     <edge source="b3604" target="yhcO" />
-    <edge source="b3604" target="gadY" />
-    <edge source="b3604" target="gadW" />
-    <edge source="b3422" target="rtcB" />
+    <edge source="rtcB" target="b3422" />
     <edge source="b3501" target="arsR" />
-    <edge source="b2839" target="lysA" />
-    <edge source="b2839" target="lysR" />
-    <edge source="b1620" target="malI" />
     <edge source="b1620" target="malX" />
-    <edge source="b4264" target="gntK" />
-    <edge source="b4264" target="idnK" />
-    <edge source="b4264" target="idnD" />
-    <edge source="b3438" target="gntK" />
+    <edge source="gntK" target="b4264" />
+    <edge source="gntK" target="b3438" />
     <edge source="b3438" target="gntT" />
-    <edge source="b3438" target="edd" />
     <edge source="b3438" target="yhgH" />
-    <edge source="b3438" target="idnK" />
-    <edge source="b3438" target="idnD" />
-    <edge source="b2364" target="dsdX" />
-    <edge source="b2364" target="dsdC" />
+    <edge source="dsdX" target="b2364" />
     <edge source="b2364" target="dsdA" />
-    <edge source="b1512" target="lsrA" />
-    <edge source="b1512" target="lsrR" />
-    <edge source="b0313" target="betI" />
-    <edge source="b0313" target="betT" />
-    <edge source="b4133" target="cadC" />
-    <edge source="b4133" target="cadB" />
-    <edge source="b3963" target="fabA" />
+    <edge source="rbsD" target="b3711" />
+    <edge source="rpsU" target="b2398" />
+    <edge source="fepB" target="b1013" />
+    <edge source="fabA" target="b3963" />
     <edge source="b3963" target="fabB" />
-    <edge source="b2706" target="srlA" />
-    <edge source="b2707" target="srlA" />
-    <edge source="b2805" target="fucA" />
+    <edge source="srlA" target="b2706" />
+    <edge source="srlA" target="b2707" />
     <edge source="b2805" target="fucP" />
+    <edge source="fucP" target="b2921" />
     <edge source="b3973" target="bioB" />
     <edge source="b3973" target="bioA" />
-    <edge source="b3556" target="hns" />
+    <edge source="hns" target="b3556" />
     <edge source="b3556" target="gyrA" />
-    <edge source="b3118" target="tdcA" />
-    <edge source="b3119" target="tdcA" />
     <edge source="b4390" target="nadB" />
-    <edge source="b4390" target="pncB" />
     <edge source="b4390" target="nadA" />
-    <edge source="b4498" target="gatY" />
-    <edge source="b3075" target="ebgA" />
-    <edge source="b0338" target="cynT" />
-    <edge source="b0338" target="cynR" />
+    <edge source="gatY" target="b4498" />
+    <edge source="ebgA" target="b3075" />
     <edge source="b2220" target="atoD" />
-    <edge source="b3131" target="kbaZ" />
+    <edge source="kbaZ" target="b3131" />
     <edge source="b3131" target="agaR" />
     <edge source="b3131" target="agaS" />
-    <edge source="b3669" target="uhpT" />
-    <edge source="b1530" target="marR" />
-    <edge source="b3743" target="asnC" />
-    <edge source="b3743" target="asnA" />
-    <edge source="b4241" target="treB" />
-    <edge source="b3255" target="accB" />
+    <edge source="asnC" target="b3743" />
+    <edge source="treB" target="b4241" />
     <edge source="b2163" target="yeiL" />
-    <edge source="b2980" target="glcC" />
-    <edge source="b2980" target="glcD" />
-    <edge source="b1201" target="dhaR" />
-    <edge source="b1201" target="dhaK" />
     <edge source="b0506" target="allA" />
     <edge source="b0506" target="allS" />
     <edge source="b0506" target="gcl" />
     <edge source="b0504" target="allD" />
-    <edge source="b2537" target="hcaR" />
-    <edge source="b2537" target="hcaE" />
-    <edge source="b0330" target="prpR" />
-    <edge source="b0330" target="prpB" />
-    <edge source="b2697" target="alaS" />
-    <edge source="b1303" target="pspG" />
     <edge source="b1303" target="pspA" />
     <edge source="b1303" target="pspF" />
-    <edge source="b1618" target="uidA" />
+    <edge source="uidA" target="b1618" />
     <edge source="b1618" target="uidR" />
-    <edge source="b4191" target="ulaA" />
+    <edge source="ulaA" target="b4191" />
     <edge source="b4191" target="ulaG" />
-    <edge source="b2709" target="norV" />
-    <edge source="b2709" target="norR" />
-    <edge source="b4089" target="rpiB" />
+    <edge source="norV" target="b2709" />
     <edge source="b4089" target="alsR" />
     <edge source="b2684" target="mprA" />
-    <edge source="b2684" target="nmpC" />
-    <edge source="b2684" target="acrA" />
     <edge source="b0487" target="copA" />
     <edge source="b0487" target="cueO" />
     <edge source="b0487" target="moaA" />
-    <edge source="b0487" target="rsd" />
-    <edge source="b0487" target="rmf" />
-    <edge source="b0346" target="mhpA" />
-    <edge source="b0413" target="nrdA" />
-    <edge source="b0413" target="nrdH" />
-    <edge source="b0413" target="nrdD" />
-    <edge source="b1013" target="pdeR" />
-    <edge source="b1013" target="carA" />
-    <edge source="b1013" target="gadX" />
+    <edge source="mhpA" target="b0346" />
+    <edge source="dcuC" target="b2157" />
+    <edge source="dicB" target="b4135" />
     <edge source="b1013" target="rutR" />
-    <edge source="b1013" target="rutA" />
     <edge source="b1013" target="nemR" />
-    <edge source="b1013" target="fepB" />
-    <edge source="b3264" target="acrA" />
+    <edge source="pflB" target="b2157" />
+    <edge source="pflB" target="b2921" />
     <edge source="b1649" target="nemR" />
-    <edge source="b3243" target="aaeX" />
     <edge source="b1659" target="punC" />
     <edge source="b1284" target="cusF" />
-    <edge source="b1284" target="rdcA" />
     <edge source="b1284" target="bsmA" />
     <edge source="b1284" target="ybiY" />
     <edge source="b2398" target="yfeC" />
-    <edge source="b2398" target="ygdR" />
     <edge source="b2398" target="hybE" />
-    <edge source="b2398" target="rpsU" />
     <edge source="b2398" target="rpmB" />
-    <edge source="b2398" target="rpmH" />
     <edge source="b3711" target="rof" />
-    <edge source="b3711" target="rbsD" />
     <edge source="b3711" target="ppiC" />
-    <edge source="b3711" target="malE" />
     <edge source="b3202" target="mutM" />
     <edge source="b3202" target="nth" />
-    <edge source="b3202" target="yobF" />
     <edge source="b3202" target="cspC" />
-    <edge source="b3202" target="yfcZ" />
-    <edge source="b3202" target="fadL" />
     <edge source="b2735" target="ygbJ" />
-    <edge source="b3755" target="ykgE" />
+    <edge source="mdtF" target="b2157" />
     <edge source="b3755" target="cusA" />
     <edge source="b3755" target="ybiX" />
     <edge source="b3755" target="dauA" />
     <edge source="b3755" target="yohJ" />
     <edge source="b3755" target="rydC" />
-    <edge source="b3755" target="yieP" />
-    <edge source="b2157" target="dcuC" />
     <edge source="b2157" target="infA" />
-    <edge source="b2157" target="pflB" />
     <edge source="b2157" target="ssuA" />
-    <edge source="b2157" target="putA" />
     <edge source="b2157" target="uspF" />
     <edge source="b2157" target="ydcT" />
     <edge source="b2157" target="sodC" />
-    <edge source="b2157" target="yoaC" />
     <edge source="b2157" target="ftp" />
-    <edge source="b2157" target="cysJ" />
-    <edge source="b2157" target="argO" />
-    <edge source="b2157" target="gltF" />
-    <edge source="b2157" target="mdtF" />
     <edge source="b2157" target="yibQ" />
-    <edge source="b0208" target="cysJ" />
+    <edge source="cdgI" target="b2921" />
     <edge source="b3292" target="zntA" />
-    <edge source="b3292" target="rsd" />
-    <edge source="b3292" target="rmf" />
-    <edge source="b2921" target="dinJ" />
     <edge source="b2921" target="yafL" />
     <edge source="b2921" target="bluR" />
-    <edge source="b2921" target="paaZ" />
-    <edge source="b2921" target="paaA" />
-    <edge source="b2921" target="cdgI" />
     <edge source="b2921" target="yfdO" />
     <edge source="b2921" target="yfdP" />
-    <edge source="b2921" target="fucP" />
-    <edge source="b2921" target="fucA" />
     <edge source="b2921" target="hycB" />
-    <edge source="b2921" target="pflB" />
-    <edge source="b2921" target="dhaK" />
-    <edge source="b2921" target="adhE" />
     <edge source="b2921" target="narZ" />
     <edge source="b3585" target="yiaT" />
     <edge source="b3585" target="yiaW" />
@@ -6013,27 +5547,8 @@
     <edge source="b3585" target="gltD" />
     <edge source="b0603" target="citR" />
     <edge source="b0535" target="sfmA" />
-    <edge source="b0535" target="puuD" />
     <edge source="b0535" target="puuC" />
-    <edge source="b0535" target="puuB" />
-    <edge source="b1526" target="sad" />
-    <edge source="b1526" target="gabD" />
-    <edge source="b1526" target="gadA" />
-    <edge source="b1526" target="gadB" />
-    <edge source="b1526" target="acrA" />
-    <edge source="b1526" target="acrR" />
-    <edge source="b1526" target="puuC" />
-    <edge source="b1526" target="puuA" />
-    <edge source="b1696" target="cspE" />
-    <edge source="b1696" target="cspA" />
-    <edge source="b4135" target="dicA" />
-    <edge source="b4135" target="dicB" />
-    <edge source="b4135" target="dicC" />
+    <edge source="puuC" target="b1526" />
     <edge source="b2101" target="yegT" />
-    <edge source="b1358" target="rcsA" />
-    <edge source="b2667" target="fhuE" />
-    <edge source="b2667" target="fhuF" />
-    <edge source="b2667" target="nfeF" />
-    <edge source="b2667" target="cirA" />
   </graph>
 </graphml>
