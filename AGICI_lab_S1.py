@@ -101,7 +101,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
 
     with open (tf_riset_filename, newline='') as file:
         tsv_reader = csv.reader(file,delimiter='\t')
-        for row in tsv_reader:
+        for index, row in tsv_reader:
             if len(row) < 27:
                 continue
             if index > 45 and row[3] in tf_dict:
@@ -115,14 +115,6 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     info_gene = feature_list(genome,node2)
                     G.add_node(node2)
                 G.add_edge(tf_dict[node1],node2)
-
-
-
-    TF_dict :dict[str, str] = {}
-    
-    with open(tf_riset_filename, newline='') as tsv_file:
-        pass
-    
     
     # ----------------- END OF FUNCTION --------------------- #
     
