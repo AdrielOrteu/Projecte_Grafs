@@ -42,7 +42,7 @@ def gene_qualifier(query: str, query_field: str,
     - param: query_field: str
         query type indicator (gene/locus_tag/protein_id/product)
     - param: target_field: str
-        target type indicator (gene/locus_tag/protein_id/product)
+        target type indicator (gen e/locus_tag/protein_id/product)
     - param: genome : SeqRecord
         genome SeqRecord object containing features
     - return: tuple
@@ -62,6 +62,35 @@ def gene_qualifier(query: str, query_field: str,
         else:
             feat_num = feat_num + 1
     return feat_num, ret_value
+
+'''
+i = index
+referencia = genome[index].final + 100
+while genome[i].inical < referencia :
+    llista.genome[i].locustag
+    i += 1
+'''
+def operon(locus_tag: str, max_intergenic_dist: int, genome: SeqRecord) -> list:
+    '''
+    Obtain the locus_tag identifier for a given gene name
+    - param: locus_tag : str
+        locus_tag of lead operon gene
+    - param: max_intergenic_dist : int
+        maximum distance between consecutive, same strand genes
+    - param: genome : SeqRecord
+        genome SeqRecord object for operon inference
+    - return: list
+        list of locus_tags conforming operon (including query)
+    '''
+
+    operon = []
+    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    valor, index = gene_qualifier(locus_tag,'','locus_tag',genome)
+    gene_inicial = genome.features[index]
+
+
+    # ----------------- END OF FUNCTION --------------------- #
+    return operon
 
 def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                    detect_operons: bool, max_intergenic_dist: int,
@@ -103,6 +132,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
             if index != 35:
                 tf_dict[row[1]] = row[4]
 
+
     with open (tf_riset_filename, newline='') as file:
         tsv_reader = csv.reader(file,delimiter='\t')
         for row in tsv_reader:
@@ -114,11 +144,14 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                 if node1 not in nodes:
                     nodes[node1] = True
                     G.add_node((tf_dict[node1]))
+                TG_locus_tag = gene_qualifier(node2, 'gene', 'locus_tag', genome)[1]
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
-                    G.add_node(node2)
-                G.add_edge(tf_dict[node1],node2)
+                    G.add_node(TG_locus_tag)
+                operons = operon
+
+
 
 
     # ----------------- END OF FUNCTION --------------------- #
