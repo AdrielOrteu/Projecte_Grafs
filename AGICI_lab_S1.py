@@ -137,8 +137,9 @@ if __name__ == "__main__":
     genome = SeqIO.read('dataset/sequence.gb' , 'genbank')
 
     # parse TF_RISet file to obtain networks
-    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,False)
-    Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,False) #Graf per mirar PowerLaw
+    #miniTF-RISet.tsv para pruebas pequeñas
+    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True)
+    Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
 
     # report basic network stats
     '''
@@ -158,6 +159,9 @@ if __name__ == "__main__":
     plt.show()
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
+    nx.draw(G1)
+    print(len(G1))
+    print(G1.number_of_edges())
 
     print("--- %s seconds ---" % (time.time() - start_time))
 
