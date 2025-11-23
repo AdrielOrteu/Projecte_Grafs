@@ -23,7 +23,7 @@ def feature_list(genome: SeqRecord, query: str) -> list:
     - return list
         list of tuples (locus_tag, protein_id) matching descriptor.
     """
-
+    
     ret_list = []
     for feat in genome.features:
         if feat.type == 'CDS':
@@ -70,7 +70,7 @@ while genome[i].inical < referencia :
     llista.genome[i].locustag
     i += 1
 '''
-def operon(locus_tag: str, max_intergenic_dist: int, genome: SeqRecord) -> list:
+def operon(locus_tag: str='', max_intergenic_dist: int=100, genome: SeqRecord=None) -> list:
     '''
     Obtain the locus_tag identifier for a given gene name
     - param: locus_tag : str
@@ -82,13 +82,45 @@ def operon(locus_tag: str, max_intergenic_dist: int, genome: SeqRecord) -> list:
     - return: list
         list of locus_tags conforming operon (including query)
     '''
-
-    operon = []
+    operon = [locus_tag]
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    valor, index = gene_qualifier(locus_tag,'','locus_tag',genome)
-    gene_inicial = genome.features[index]
-
-
+    
+    
+    
+    print()
+    index, data = gene_qualifier(query=locus_tag, query_field='locus_tag', target_field='locus_tag', genome=genome)
+    if data != '': # Comprovamos que se ha encontrado el gen/locus_tag que buscamos
+        gene_feat = genome.features[index]
+        operon_direction = gene_feat.location.strand
+        g_end = int(gene_feat.location.end)
+        if operon_direction == 1:
+            global pos_strands
+            if 'pos_strands' not in globals():
+                pos_strands = []
+                for feat in genome.features:
+                    if feat.type == 'gene':
+                        if feat.location.strand == operon_direction: # operon_direction is 1
+                            pos_strands.append(feat)
+                pos_strands.sort(key=lambda f: int(f.location.start))
+            strands = pos_strands
+        else:
+            global neg_strands
+            if 'neg_strands' not in globals():
+                neg_strands = []
+                for feat in genome.features:
+                    if feat.type == 'gene':
+                        if feat.location.strand == operon_direction: # operon_direction is -1
+                            neg_strands.append(feat)
+                neg_strands.sort(key=lambda f: int(f.location.start), reverse=True)
+            strands = neg_strands
+        
+        
+        for feat in strands[ strands.index(gene_feat) : ]:
+            if feat.location.start - g_end < max_intergenic_dist:
+                operon.append(feat.qualifiers['locus_tag'])
+            else:
+                break
+    
     # ----------------- END OF FUNCTION --------------------- #
     return operon
 
@@ -117,6 +149,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
         genome SeqRecord object to extract information from
     - return: TF dictionary
     """
+    # a = feature_list(genome=genome,query="a")
     if mode:
         G = nx.DiGraph()
     else:
@@ -149,7 +182,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
                     G.add_node(TG_locus_tag)
-                operons = operon
+                operons = operon(locus_tag=TG_locus_tag, genome=genome)
 
 
 
@@ -159,7 +192,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
     return G
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and False: # temporarily disabled main to test specific parts of the code
 
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
 
@@ -173,7 +206,7 @@ if __name__ == "__main__":
     #miniTF-RISet.tsv para pruebas pequeñas
     G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True)
     Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
-
+    
     # report basic network stats
     '''
     Hay que añadir otras pruebas tipo grado medio camino mas corto medio y por delante
@@ -193,6 +226,7 @@ if __name__ == "__main__":
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
     nx.draw(G1)
+    plt.show()
     print(len(G1))
     print(G1.number_of_edges())
 
