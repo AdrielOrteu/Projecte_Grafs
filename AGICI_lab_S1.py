@@ -8,6 +8,9 @@ import numpy as np
 import math
 import copy
 
+from networkx.algorithms.bipartite import color
+
+
 # ------- IMPLEMENT HERE ANY AUXILIARY FUNCTIONS NEEDED ------- #
 
 
@@ -84,42 +87,25 @@ def operon(locus_tag: str='', max_intergenic_dist: int=100, genome: SeqRecord=No
     '''
     operon = [locus_tag]
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+
+    index, locus_tag_value = gene_qualifier(query=locus_tag, query_field='locus_tag', target_field='locus_tag', genome=genome)
+    if locus_tag_value == "":  # Comprovamos que se ha encontrado el gen/locus_tag que buscamos
+        return operon
+    gene_feat = genome.features[index]
+    gene_strand = gene_feat.location.strand
     
+    genes = [f for f in genome.features if f.type == "gene" and f.location.strand == gene_strand]
+    genes.sort(key=lambda f: int(f.location.start), reverse=(gene_strand==-1) )
     
-    
-    print()
-    index, data = gene_qualifier(query=locus_tag, query_field='locus_tag', target_field='locus_tag', genome=genome)
-    if data != '': # Comprovamos que se ha encontrado el gen/locus_tag que buscamos
-        gene_feat = genome.features[index]
-        operon_direction = gene_feat.location.strand
-        g_end = int(gene_feat.location.end)
-        if operon_direction == 1:
-            global pos_strands
-            if 'pos_strands' not in globals():
-                pos_strands = []
-                for feat in genome.features:
-                    if feat.type == 'gene':
-                        if feat.location.strand == operon_direction: # operon_direction is 1
-                            pos_strands.append(feat)
-                pos_strands.sort(key=lambda f: int(f.location.start))
-            strands = pos_strands
+    start_index = genes.index(gene_feat)
+    prev_pos = int(gene_feat.location.end) if gene_strand == 1 else int(gene_feat.location.start)
+    for gene in genes[start_index+1:]:
+        curr_pos = int(gene.location.start) if gene_strand == 1 else int(gene.location.end)
+        if abs(curr_pos - prev_pos) <= max_intergenic_dist:
+            operon.append(gene.qualifiers['locus_tag'][0])
+            prev_pos = int(gene.location.end) if gene_strand == 1 else int(gene.location.start)
         else:
-            global neg_strands
-            if 'neg_strands' not in globals():
-                neg_strands = []
-                for feat in genome.features:
-                    if feat.type == 'gene':
-                        if feat.location.strand == operon_direction: # operon_direction is -1
-                            neg_strands.append(feat)
-                neg_strands.sort(key=lambda f: int(f.location.start), reverse=True)
-            strands = neg_strands
-        
-        
-        for feat in strands[ strands.index(gene_feat) : ]:
-            if feat.location.start - g_end < max_intergenic_dist:
-                operon.append(feat.qualifiers['locus_tag'])
-            else:
-                break
+            break
     
     # ----------------- END OF FUNCTION --------------------- #
     return operon
@@ -176,13 +162,12 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                 node2 = row[16]
                 if node1 not in nodes:
                     nodes[node1] = True
-                    G.add_node((tf_dict[node1]))
+                    G.add_node((tf_dict[node1]), color="red")
                 TG_locus_tag = gene_qualifier(node2, 'gene', 'locus_tag', genome)[1]
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
-                    G.add_node(TG_locus_tag)
-                operons = operon(locus_tag=TG_locus_tag, genome=genome)
+                    G.add_nodes_from(operon(locus_tag=TG_locus_tag, genome=genome))
 
 
 
@@ -192,7 +177,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
     return G
 
 
-if __name__ == "__main__" and False: # temporarily disabled main to test specific parts of the code
+if __name__ == "__main__": # temporarily disabled main to test specific parts of the code
 
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
 
@@ -211,21 +196,22 @@ if __name__ == "__main__" and False: # temporarily disabled main to test specifi
     '''
     Hay que añadir otras pruebas tipo grado medio camino mas corto medio y por delante
     '''
-    degress = [ x[1] for x in Gpruebas.degree] #Sagar el grado de cada nodo
-    frequencias = Counter(degress) # Sacar el Counter {valor  del grado: Cuantos veces sale el valor}
-    list_x = list(frequencias) # Sacar las claves del counter (valores del grado)
-    list_y = list(frequencias.values()) # Sacar los valores del counter (frequencias)
-    y_punts = np.array(copy.deepcopy(list_y)) # Valores para grafo de puntos normal x
-    x_punts = np.array(copy.deepcopy(list_x)) # Valores para grafo de puntos normal y
-    x_punts_plaw = np.array(list(map(math.log,copy.deepcopy(list_x)))) #Valores para power law x
-    y_punts_plaw = np.array(list(map(math.log, copy.deepcopy(list_y)))) #Valores para power law y
-    fig, ax = plt.subplots(2, 1)
-    ax[0].plot(x_punts, y_punts, 'o')
-    ax[1].plot(x_punts_plaw, y_punts_plaw, 'o')
-    plt.show()
+    #degress = [ x[1] for x in Gpruebas.degree] #Sagar el grado de cada nodo
+    #frequencias = Counter(degress) # Sacar el Counter {valor  del grado: Cuantos veces sale el valor}
+    #list_x = list(frequencias) # Sacar las claves del counter (valores del grado)
+    #list_y = list(frequencias.values()) # Sacar los valores del counter (frequencias)
+    #y_punts = np.array(copy.deepcopy(list_y)) # Valores para grafo de puntos normal x
+    #x_punts = np.array(copy.deepcopy(list_x)) # Valores para grafo de puntos normal y
+    #x_punts_plaw = np.array(list(map(math.log,copy.deepcopy(list_x)))) #Valores para power law x
+    #y_punts_plaw = np.array(list(map(math.log, copy.deepcopy(list_y)))) #Valores para power law y
+    #fig, ax = plt.subplots(2, 1)
+    #ax[0].plot(x_punts, y_punts, 'o')
+    #ax[1].plot(x_punts_plaw, y_punts_plaw, 'o')
+    #plt.show()
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
-    nx.draw(G1)
+    node_colors = [G1.nodes[n].get('color', 'blue') for n in G1.nodes()]
+    nx.draw(G1, node_color=node_colors)
     plt.show()
     print(len(G1))
     print(G1.number_of_edges())
