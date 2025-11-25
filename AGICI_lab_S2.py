@@ -164,12 +164,20 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     nodes[node1] = True
                     G.add_node((tf_dict[node1]), color="red")
                 TG_locus_tag = gene_qualifier(node2, 'gene', 'locus_tag', genome)[1]
-                if detect_operons:
-                    operon_genes = operon(TG_locus_tag,100,genome)
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
-                    G.add_nodes_from(operon(locus_tag=TG_locus_tag, genome=genome))
+                    G.add_node((TG_locus_tag))
+                G.add_edge(node1,node2)
+                if detect_operons:
+                    operones = operon(locus_tag=TG_locus_tag, genome=genome)
+                    if operones:
+                        G.add_nodes_from(operones)
+                    for genes in operones:
+                        G.add_edge(node1,operon)
+                
+
+
 
 
 
