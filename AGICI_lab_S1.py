@@ -175,7 +175,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     operones = (operon(locus_tag=TG_locus_tag, genome=genome))
                     if operones:
                         G.add_nodes_from(operones)
-                    for operon in operones:
+                    for genes in operones:
                         G.add_edge(node1,operon)
                 
 
