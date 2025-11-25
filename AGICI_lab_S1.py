@@ -169,7 +169,17 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
-                    G.add_nodes_from(operon(locus_tag=TG_locus_tag, genome=genome))
+                    G.add_node((TG_locus_tag))
+                G.add_edge(node1,node2)
+                if detect_operons:
+                    operones = (operon(locus_tag=TG_locus_tag, genome=genome))
+                    if operones:
+                        G.add_nodes_from(operones)
+                    for operon in operones:
+                        G.add_edge(node1,operon)
+                
+
+
 
 
 
