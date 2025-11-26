@@ -85,7 +85,7 @@ def operon(locus_tag: str='', max_intergenic_dist: int=100, genome: SeqRecord=No
     - return: list
         list of locus_tags conforming operon (including query)
     '''
-    operon = [locus_tag]
+    operon = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
 
     index, locus_tag_value = gene_qualifier(query=locus_tag, query_field='locus_tag', target_field='locus_tag', genome=genome)
@@ -176,7 +176,7 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     if operones:
                         G.add_nodes_from(operones)
                     for genes in operones:
-                        G.add_edge(node1,operon)
+                        G.add_edge(node1,genes)
                 
 
 
