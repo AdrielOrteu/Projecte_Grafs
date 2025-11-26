@@ -188,6 +188,25 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
 
     return G
 
+def largest_CC_graph(G : nx.Graph) -> nx.Graph:
+ '''Generate the largest connected component graph.
+ Parameters
+ ----------
+ - param: G : Networkx graph
+ Graph to analyze
+ - return: Networkx graph
+ the graph corresponding to the largest connected component in G
+ '''
+ # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+ x = G.to_undirected()
+ print(nx.number_connected_components(x))
+ subG = sorted(nx.weakly_connected_components(G), key=len, reverse=True)[0]
+ subG = G.subgraph(subG)
+ nx.draw(subG)
+ print(subG.number_of_edges())
+ print(subG.number_of_nodes())
+ return subG
+ # ----------------- END OF FUNCTION --------------------- #
 
 if __name__ == "__main__": # temporarily disabled main to test specific parts of the code
 
@@ -201,8 +220,8 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
 
     # parse TF_RISet file to obtain networks
     #miniTF-RISet.tsv para pruebas pequeñas
-    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True)
-    Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
+    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', True, 100, genome,True)
+    #Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
     
     # report basic network stats
     '''
@@ -227,6 +246,7 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     plt.show()
     print(len(G1))
     print(G1.number_of_edges())
+    largest_CC_graph(G1)
 
     print("--- %s seconds ---" % (time.time() - start_time))
 
