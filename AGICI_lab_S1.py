@@ -170,13 +170,12 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
                     G.add_node((TG_locus_tag))
-                G.add_edge(node1,node2)
+                G.add_edge(tf_dict[node1],TG_locus_tag)
                 if detect_operons:
                     operones = (operon(locus_tag=TG_locus_tag, genome=genome))
                     if operones:
-                        G.add_nodes_from(operones)
-                    for genes in operones:
-                        G.add_edge(node1,genes)
+                        for genes in operones:
+                            G.add_edge(tf_dict[node1],genes)
                 
 
 
@@ -203,8 +202,8 @@ def largest_CC_graph(G : nx.Graph) -> nx.Graph:
  subG = sorted(nx.weakly_connected_components(G), key=len, reverse=True)[0]
  subG = G.subgraph(subG)
  nx.draw(subG)
- print(subG.number_of_edges())
- print(subG.number_of_nodes())
+ print("Num edges de la CC més gran:", subG.number_of_edges())
+ print("Num nodes de la CC més gran:",subG.number_of_nodes())
  return subG
  # ----------------- END OF FUNCTION --------------------- #
 
