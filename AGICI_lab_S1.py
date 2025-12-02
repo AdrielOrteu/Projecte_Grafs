@@ -110,6 +110,42 @@ def operon(locus_tag: str='', max_intergenic_dist: int=100, genome: SeqRecord=No
     # ----------------- END OF FUNCTION --------------------- #
     return operon
 
+def degree_distribution(G : nx.DiGraph, degree_type : str, \
+        node_type : str, bestN : int) -> tuple:
+        '''Compute the in-, out- or general degree distribution.
+        Parameters
+        ----------
+        - param: G : Networkx graph
+        Graph to analyze
+        - param: degree_type : str
+        Type of degree to compute ('in', 'out', 'general')
+        - param: node_type : str
+        Type of nodes on which we report degrees ('TG', 'TG', 'all')
+
+        - return: list
+        list with degree frequency distribution
+        - return: dict
+        dictionary with node names as keys and their degrees as values
+        for the top N nodes in the degree distribution
+
+        '''
+        # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+        data_nodes = [nodes[0] for nodes in G.nodes(data=True)]
+        if node_type == 'TF':
+            data_nodes = [nodes[0] for nodes in [nodes for nodes in G.nodes(data=True)] if nodes[1]['type'] == 'TF']
+        if node_type == 'TG':
+            data_nodes = [nodes[0] for nodes in [nodes for nodes in G.nodes(data=True)] if nodes[1]['type'] == 'TG']
+        if degree_type == 'in':
+            degrees = [ x for x in G.in_degree() if x[0] in data_nodes]
+        if degree_type == 'out':
+            degrees = [ x for x in G.out_degree() if x[0] in data_nodes]
+        if degree_type == 'general':
+            degrees = [ x for x in G.degree() if x[0] in data_nodes]
+        frequencias = Counter([x[1] for x in degrees])
+        bestitems = sorted(degrees, key=lambda  x : x[1], reverse=True)[:bestN]
+        return frequencias, bestitems
+        # ----------------- END OF FUNCTION --------------------- #
+
 def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                    detect_operons: bool, max_intergenic_dist: int,
                    genome: SeqRecord, mode:bool = False) -> nx.DiGraph:
@@ -162,19 +198,19 @@ def TF_RISet_parse(tf_riset_filename: str, tf_set_filename: str,
                 node2 = row[16]
                 if node1 not in nodes:
                     nodes[node1] = True
-                    G.add_node((tf_dict[node1]), color="red")
+                    G.add_node((tf_dict[node1]), color="red", name='node1', type='TF')
                 TG_locus_tag = gene_qualifier(node2, 'gene', 'locus_tag', genome)[1]
                 if detect_operons:
                     operon_genes = operon(TG_locus_tag,100,genome)
                 if node2 not in nodes:
                     nodes[node2] = True
                     info_gene = feature_list(genome,node2)
-                    G.add_node((TG_locus_tag))
-                G.add_edge(node1,node2)
+                    G.add_node((TG_locus_tag), type='TG')
+                G.add_edge(tf_dict[node1],TG_locus_tag)
                 if detect_operons:
                     operones = (operon(locus_tag=TG_locus_tag, genome=genome))
                     if operones:
-                        G.add_nodes_from(operones)
+                        G.add_nodes_from(operones, type='TG')
                     for genes in operones:
                         G.add_edge(node1,genes)
                 
@@ -201,13 +237,13 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
 
     # parse TF_RISet file to obtain networks
     #miniTF-RISet.tsv para pruebas pequeñas
-    G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True)
-    Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
-    
+
+    #G1 = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True)
+    #Gpruebas = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome,True) #Graf per mirar PowerLaw
+    #allo = degree_distribution(G1, 'in', 'all', 5)
     # report basic network stats
     '''
     Hay que añadir otras pruebas tipo grado medio camino mas corto medio y por delante
-    '''
     #degress = [ x[1] for x in Gpruebas.degree] #Sagar el grado de cada nodo
     #frequencias = Counter(degress) # Sacar el Counter {valor  del grado: Cuantos veces sale el valor}
     #list_x = list(frequencias) # Sacar las claves del counter (valores del grado)
@@ -223,11 +259,79 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
     node_colors = [G1.nodes[n].get('color', 'blue') for n in G1.nodes()]
-    nx.draw(G1, node_color=node_colors)
     plt.show()
     print(len(G1))
     print(G1.number_of_edges())
 
     print("--- %s seconds ---" % (time.time() - start_time))
+    '''
 
+    # ------------------- Comparaciones ----------------------#
+    G_no = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome, True)
+    G_so = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', True, 100, genome,True)
+    in_degree_dist_no = degree_distribution(G_no, 'in', 'All', 5)
+    in_degree_dist_so = degree_distribution(G_so, 'in', 'All', 5)
+    out_degree_dist_no = degree_distribution(G_no, 'out', 'All', 5)
+    out_degree_dist_soo = degree_distribution(G_so, 'out', 'All', 5)
+    general_degree_dist_no = degree_distribution(G_no, 'general', 'All', 5)
+    general_degree_dist_so = degree_distribution(G_so, 'general', 'All', 5)
+
+    list_x_in_no = list(in_degree_dist_no[0])
+    list_x_in_so = list(in_degree_dist_so[0])
+    list_x_out_no = list(out_degree_dist_no[0])
+    list_x_out_so = list(out_degree_dist_soo[0])
+    list_x_general_no = list(general_degree_dist_no[0])
+    list_x_general_so = list(general_degree_dist_so[0]) # Sacar las claves del counter (valores del grado)
+    list_y_in_no = list(in_degree_dist_no[0].values())
+    list_y_in_so = list(in_degree_dist_so[0].values())
+    list_y_out_no = list(out_degree_dist_no[0].values())
+    list_y_out_so = list(out_degree_dist_soo[0].values())
+    list_y_general_no = list(general_degree_dist_no[0].values())
+    list_y_general_so = list(general_degree_dist_so[0].values()) # Sacar los valores del counter (frequencias)
+    y_punts_in_no = np.array(copy.deepcopy(list_y_in_no))
+    y_punts_in_so = np.array(copy.deepcopy(list_y_in_so))
+    y_punts_out_no = np.array(copy.deepcopy(list_y_out_no))
+    y_punts_out_so = np.array(copy.deepcopy(list_y_out_so)) 
+    y_punts_general_no = np.array(copy.deepcopy(list_y_general_no))
+    y_punts_general_so = np.array(copy.deepcopy(list_y_general_so))
+    x_punts_in_no = np.array(copy.deepcopy(list_x_in_no))
+    x_punts_in_so = np.array(copy.deepcopy(list_x_in_so))
+    x_punts_out_no = np.array(copy.deepcopy(list_x_out_no))
+    x_punts_out_so = np.array(copy.deepcopy(list_x_out_so))
+    x_punts_general_no = np.array(copy.deepcopy(list_x_general_no))
+    x_punts_general_so = np.array(copy.deepcopy(list_x_general_so))
+    #x_punts_plaw_in_no = np.array(list(map(math.log , copy.deepcopy(list_x_in_no))))
+    #x_punts_plaw_in_so = np.array(list(map(math.log,copy.deepcopy(list_x_in_so))))
+    #x_punts_plaw_out_no = np.array(list(map(math.log,copy.deepcopy(list_x_out_no))))
+    #x_punts_plaw_out_so = np.array(list(map(math.log,copy.deepcopy(list_x_out_so))))
+    #x_punts_plaw_general_no = np.array(list(map(math.log,copy.deepcopy(list_x_general_no))))
+    #x_punts_plaw_general_so = np.array(list(map(math.log,copy.deepcopy(list_x_general_so))))
+    #y_punts_plaw_in_no = np.array(list(map(math.log, copy.deepcopy(list_y_in_no))))
+    #y_punts_plaw_in_so = np.array(list(map(math.log, copy.deepcopy(list_y_in_so))))
+    #y_punts_plaw_out_no = np.array(list(map(math.log, copy.deepcopy(list_y_out_no))))
+    #y_punts_plaw_out_so = np.array(list(map(math.log, copy.deepcopy(list_y_out_so))))
+    #y_punts_plaw_general_no = np.array(list(map(math.log, copy.deepcopy(list_y_general_no))))
+    #y_punts_plaw_general_so = np.array(list(map(math.log, copy.deepcopy(list_y_general_so))))   
+    fig, ax = plt.subplots(3, 2)
+    ax[0,0].set_title('In Degree Distribution') 
+    ax[0,0].plot(x_punts_in_no, y_punts_in_no, 'o', label='Without Operons')
+    ax[0,0].plot(x_punts_in_so, y_punts_in_so, 'o', label='With Operons')
+    #ax[0,1].plot(x_punts_plaw_in_no, y_punts_plaw_in_no, 'o', label='Without Operons')
+    #ax[0,1].plot(x_punts_plaw_in_so, y_punts_plaw_in_so, 'o', label='With Operons')
+    ax[0,1].set_title('In Degree Distribution Power Law')
+    ax[1,0].set_title('Out Degree Distribution')
+    ax[1,0].plot(x_punts_out_no, y_punts_out_no, 'o', label='Without Operons')
+    ax[1,0].plot(x_punts_out_so, y_punts_out_so, 'o', label='With Operons')
+    #ax[1,1].plot(x_punts_plaw_out_no, y_punts_plaw_out_no, 'o', label='Without Operons')
+    #ax[1,1].plot(x_punts_plaw_out_so, y_punts_plaw_out_so, 'o', label='With Operons')
+    ax[1,1].set_title('Out Degree Distribution Power Law') 
+    ax[2,0].set_title('General Degree Distribution')
+    ax[2,0].plot(x_punts_general_no, y_punts_general_no, 'o', label='Without Operons')
+    ax[2,0].plot(x_punts_general_so, y_punts_general_so, 'o', label='With Operons')
+    #ax[2,1].plot(x_punts_plaw_general_no, y_punts_plaw_general_no, 'o', label='Without Operons')
+    #ax[2,1].plot(x_punts_plaw_general_so, y_punts_plaw_general_so, 'o', label='With Operons')
+    plt.show()
+
+
+    
     # ------------------- END OF MAIN ------------------------ #

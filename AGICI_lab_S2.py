@@ -221,7 +221,6 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     # export graph
     nx.write_graphml(G1, 'Ecoli_TRN.graphml')
     node_colors = [G1.nodes[n].get('color', 'blue') for n in G1.nodes()]
-    nx.draw(G1, node_color=node_colors)
     plt.show()
     print(len(G1))
     print(G1.number_of_edges())
