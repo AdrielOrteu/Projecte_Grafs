@@ -352,6 +352,9 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     #ax[2,1].plot(x_punts_plaw_general_so, y_punts_plaw_general_so, 'o', label='With Operons')
     plt.show()
 
+    print(f'El node amb mes in degree es: {in_degree_dist_so[1][0]} amb {in_degree_dist_so[1][1]} y amb mes out degree: {out_degree_dist_soo[1][0]} amb {out_degree_dist_soo[1][1]}')
+    print(f'The more intergenic distant the more connections would the nodes have')
+
 
     
     # ------------------- END OF MAIN ------------------------ #
