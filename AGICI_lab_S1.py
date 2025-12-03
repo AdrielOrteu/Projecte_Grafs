@@ -7,7 +7,8 @@ from collections import Counter
 import numpy as np
 import math
 import copy
-
+from itertools import combinations
+from random import sample
 from networkx.algorithms.bipartite import color
 
 
@@ -244,6 +245,82 @@ def largest_CC_graph(G : nx.Graph) -> nx.Graph:
  return subG
  # ----------------- END OF FUNCTION --------------------- #
 
+def average_distance(G: nx.Graph, iterations: int) -> float:
+    '''Estimate the average distance in the input graph.
+
+    Parameters
+    ----------
+    - param: G : Networkx graph
+        Graph to analyze
+    - param: iterations : int
+        Number of iterations to perform
+    - return: float
+        The estimated average distance in G
+    '''
+
+    avg_distance = None
+    node_list = list(G.nodes())
+    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    for i in range (0, iterations):
+        random_nodes = sample(node_list,2)
+        has_path = nx.has_path(G,random_nodes[0],random_nodes[1])
+        while not has_path:
+            random_nodes = sample(node_list,2)
+            has_path = nx.has_path(G,random_nodes[0],random_nodes[1])
+        avg_distance += len(nx.shortest_path(G, random_nodes[0], random_nodes[1]))
+        
+    return avg_distance/iterations
+        
+
+        
+
+
+
+
+    # ----------------- END OF FUNCTION --------------------- #
+
+    return avg_distance
+
+def deletion_impact(G: nx.Graph, node_list: list, \
+                    grouping_size: int, iterations: int) -> dict:
+    '''Assess the impact of node deletions on the graph average distance.
+
+    Parameters
+    ----------
+    - param: G : Networkx graph
+        Graph to analyze
+    - param: node_list : list
+        List of nodes to delete from the network
+    - param: grouping_size : list
+        The size of the groupings among nodes in the list
+    - param: iterations : int
+        Number of iterations to perform for average distance
+    - return: dict
+        Dictionary with grouping node names tuples as keys and differential
+        average distance as values.
+    '''
+
+
+    
+
+    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    del_impact = {}
+    per_quitar = combinations(node_list, grouping_size)
+    ave_distance = nx.average_shortest_path_length(G)
+    for group in per_quitar:
+        nodes_finals = [x for x in G.nodes() if x not in per_quitar]
+        sub_graf = G.subgraph(nodes_finals)
+        del_impact[group] = ave_distance - average_distance(sub_graf, iterations)
+    return del_impact
+
+
+
+
+
+    # ----------------- END OF FUNCTION --------------------- #
+    return del_impact
+
+
 if __name__ == "__main__": # temporarily disabled main to test specific parts of the code
 
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
@@ -289,6 +366,7 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     # ------------------- Comparaciones ----------------------#
     G_no = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome, True)
     G_so = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', True, 100, genome,True)
+    """
     in_degree_dist_no = degree_distribution(G_no, 'in', 'All', 5)
     in_degree_dist_so = degree_distribution(G_so, 'in', 'All', 5)
     out_degree_dist_no = degree_distribution(G_no, 'out', 'All', 5)
@@ -355,6 +433,6 @@ if __name__ == "__main__": # temporarily disabled main to test specific parts of
     print(f'El node amb mes in degree es: {in_degree_dist_so[1][0]} amb {in_degree_dist_so[1][1]} y amb mes out degree: {out_degree_dist_soo[1][0]} amb {out_degree_dist_soo[1][1]}')
     print(f'The more intergenic distant the more connections would the nodes have')
 
-
+"""
     
     # ------------------- END OF MAIN ------------------------ #
