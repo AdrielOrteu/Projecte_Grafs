@@ -301,6 +301,9 @@ def deletion_impact(G: nx.Graph, node_list: list, \
     '''
 
 
+    
+
+    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     del_impact = {}
     per_quitar = combinations(node_list, grouping_size)
     ave_distance = nx.average_shortest_path_length(G)
@@ -309,9 +312,6 @@ def deletion_impact(G: nx.Graph, node_list: list, \
         sub_graf = G.subgraph(nodes_finals)
         del_impact[group] = ave_distance - average_distance(sub_graf, iterations)
     return del_impact
-
-    # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-
 
 
 
