@@ -7,6 +7,7 @@ from collections import Counter
 import numpy as np
 import math
 import copy
+from random import sample
 
 from networkx.algorithms.bipartite import color
 
@@ -258,8 +259,20 @@ def average_distance(G: nx.Graph, iterations: int) -> float:
     '''
 
     avg_distance = None
+    node_list = list(G.nodes())
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    for i in range (0, iterations):
+        random_nodes = sample(node_list,2)
+        has_path = nx.has_path(G,random_nodes[0],random_nodes[1])
+        while not has_path:
+            random_nodes = sample(node_list,2)
+            has_path = nx.has_path(G,random_nodes[0],random_nodes[1])
+        avg_distance += len(nx.shortest_path(G, random_nodes[0], random_nodes[1]))
+        
+    return avg_distance/iterations
+        
 
+        
 
 
 
