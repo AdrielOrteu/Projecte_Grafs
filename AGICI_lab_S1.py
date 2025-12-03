@@ -7,12 +7,8 @@ from collections import Counter
 import numpy as np
 import math
 import copy
-<<<<<<< HEAD
 from itertools import combinations
-=======
 from random import sample
->>>>>>> 894d4b74326695846990892ead46d8c2b25d32e9
-
 from networkx.algorithms.bipartite import color
 
 
