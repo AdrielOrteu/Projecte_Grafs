@@ -7,6 +7,7 @@ from collections import Counter
 import numpy as np
 import math
 import copy
+from itertools import combinations
 
 from networkx.algorithms.bipartite import color
 
@@ -287,7 +288,16 @@ def deletion_impact(G: nx.Graph, node_list: list, \
         average distance as values.
     '''
 
+
     del_impact = {}
+    per_quitar = combinations(node_list, grouping_size)
+    ave_distance = nx.average_shortest_path_length(G)
+    for group in per_quitar:
+        nodes_finals = [x for x in G.nodes() if x not in per_quitar]
+        sub_graf = G.subgraph(nodes_finals)
+        del_impact[group] = ave_distance - average_distance(sub_graf, iterations)
+    return del_impact
+
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
 
 
