@@ -319,18 +319,16 @@ if __name__ == "__main__":
     #G1=nx.read_graphml('Ecoli_TRN.graphml')
     #G2=nx.read_graphml('Ecoli_operon_TRN.graphml')
     large_CC = largest_CC_graph(G_no)
-    #print(nx.is_directed)
     #aproximació_500 = average_distance(large_CC,500)
     aproximació_1000 = average_distance(large_CC,1000)
     #aproximació_2000 = average_distance(large_CC,2000)
     #aproximació_10000 = average_distance(large_CC,10000)
     #aproximació_100000 = average_distance(large_CC,100000)
-
     valor_real = nx.average_shortest_path_length(large_CC)
-    print(aproximació_1000, valor_real)
-
+    print(f'Necessitem 1000 aproximacions més o menys per tal de treure 2 decimals correctes--> aproximació: {aproximació_1000}, valor real: {valor_real}')
+    print("Com tenim que la CC més gran té 1806 nodes, la funció de shortest path real ha de fer 1806 iteracions, mentre que la nostra aproximació en fa 1000, l'speedup seria:", 1806/1000) 
     ...
 
-    print("--- %s seconds ---" % (time.time() - start_time))
+    print("--- %s Execution seconds ---" % (time.time() - start_time))
     # ------------------- END OF MAIN ------------------------ #
 
