@@ -296,7 +296,7 @@ def deletion_impact(G: nx.Graph, node_list: list, \
 
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     del_impact = {}
-    per_quitar = combinations(node_list, grouping_size)
+    per_quitar = list(combinations(node_list, grouping_size))
     ave_distance = nx.average_shortest_path_length(G)
     for group in per_quitar:
         nodes_finals = [x for x in G.nodes() if x not in per_quitar]
@@ -319,6 +319,8 @@ if __name__ == "__main__":
     #G1=nx.read_graphml('Ecoli_TRN.graphml')
     #G2=nx.read_graphml('Ecoli_operon_TRN.graphml')
     large_CC = largest_CC_graph(G_no)
+    # ------------------------Apartat a---------------------- #
+
     #aproximació_500 = average_distance(large_CC,500)
     aproximació_1000 = average_distance(large_CC,1000)
     #aproximació_2000 = average_distance(large_CC,2000)
@@ -327,6 +329,26 @@ if __name__ == "__main__":
     valor_real = nx.average_shortest_path_length(large_CC)
     print(f'Necessitem 1000 aproximacions més o menys per tal de treure 2 decimals correctes--> aproximació: {aproximació_1000}, valor real: {valor_real}')
     print("Com tenim que la CC més gran té 1806 nodes, la funció de shortest path real ha de fer 1806 iteracions, mentre que la nostra aproximació en fa 1000, l'speedup seria:", 1806/1000) 
+
+    # --------------------Apartat b------------------------- #
+
+    tf_nodes = [nodes[0] for nodes in [nodes for nodes in G_no.nodes(data=True)] if nodes[1]['type'] == 'TF']
+    res_b = list(deletion_impact(large_CC, tf_nodes, 1, 1000).items())
+    res_sorted = list(sorted(res_b, key=lambda x: x[1], reverse=True))
+    res_sorted_b = res_sorted[:10]
+    for tf, resultat in res_sorted_b:
+        print(f'Els nodes amb mes impacte son {tf} amb {resultat}')
+
+    # --------------------Apartat c------------------------- #
+    res_sorted_30 = [x[0] for x in res_sorted][:30]
+    res_c = list(deletion_impact(large_CC, res_sorted_30, 2, 1000).items())
+    res_sorted_c = list(sorted(res_c, key=lambda x: x[1], reverse=True))
+    res_sorted_c_5 = res_sorted_c[:5]
+    for tf, resultat in res_sorted_c_5:
+        print(f'Les parelles de nodes amb mes impacte son {tf} amb {resultat}')
+
+    # --------------------Apartat d-------------------------- #
+    
     ...
 
     print("--- %s Execution seconds ---" % (time.time() - start_time))
