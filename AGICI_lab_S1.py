@@ -321,6 +321,10 @@ def deletion_impact(G: nx.Graph, node_list: list, \
     return del_impact
 
 
+
+
+
+
 if __name__ == "__main__": # temporarily disabled main to test specific parts of the code
 
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #

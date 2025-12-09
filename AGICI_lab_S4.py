@@ -272,10 +272,9 @@ def average_distance(G: nx.Graph, iterations: int) -> float:
 
     return avg_distance/iterations
 
-def deletion_impact(G: nx.Graph, node_list: list, \
-                    grouping_size: int, iterations: int) -> dict:
+def deletion_impact(G: nx.Graph, node_list: list, grouping_size: int, iterations: int) -> dict:
     '''Assess the impact of node deletions on the graph average distance.
-
+    
     Parameters
     ----------
     - param: G : Networkx graph
@@ -290,10 +289,7 @@ def deletion_impact(G: nx.Graph, node_list: list, \
         Dictionary with grouping node names tuples as keys and differential
         average distance as values.
     '''
-
-
     
-
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     del_impact = {}
     per_quitar = list(combinations(node_list, grouping_size))
@@ -320,7 +316,7 @@ if __name__ == "__main__":
     #G2=nx.read_graphml('Ecoli_operon_TRN.graphml')
     large_CC = largest_CC_graph(G_no)
     # ------------------------Apartat a---------------------- #
-
+    
     #aproximació_500 = average_distance(large_CC,500)
     aproximació_1000 = average_distance(large_CC,1000)
     #aproximació_2000 = average_distance(large_CC,2000)
@@ -349,8 +345,9 @@ if __name__ == "__main__":
 
     # --------------------Apartat d-------------------------- #
     
-    ...
-
-    print("--- %s Execution seconds ---" % (time.time() - start_time))
+    print(f"\nTriem el tf {res_sorted[0][0]} perque es el més influent en els processos de la cel·lula {res_sorted[0][1]}.")
+    print(f"L'us d'antibiotics que es dirigeixen cap els tf es que podem desactivar els tf que permeten que un bacteri es reprodueixi, i per tant que aquest tipus de bacteri no es pugui adaptar (amb facilitat) al antibiotic.")
+    
     # ------------------- END OF MAIN ------------------------ #
+    print("--- %s Execution seconds ---" % (time.time() - start_time))
 
