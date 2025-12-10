@@ -1,11 +1,11 @@
 import sys
 import networkx as nx
 import numpy as np
-
+from itertools import combinations
 from typing import List, Tuple
 from io import StringIO
 
-def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str]]:
+def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
     """
     Detect motifs in the directed graph given as input.
 
@@ -19,7 +19,12 @@ def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str]]:
 
     motifs = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    G_nodes = {nom for (nom,val) in G.out_degree() if val >= 2}
 
+    for n1, n2 in combinations(G_nodes, 2):
+        intersect = set({x for x in set(G.successors(n1)) if x != n1 and x != n2}) & set({x for x in set(G.successors(n2)) if x != n1 and x != n2})
+        for n3, n4 in combinations(intersect, 2):
+            motifs.append((n1,n2,n3,n4))
     # ----------------- END OF FUNCTION --------------------- #
     print(len(motifs))
     return motifs
