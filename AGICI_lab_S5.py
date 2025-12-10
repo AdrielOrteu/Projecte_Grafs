@@ -19,7 +19,8 @@ def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str]]:
 
     motifs = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-
+    
+    
     # ----------------- END OF FUNCTION --------------------- #
     print(len(motifs))
     return motifs
