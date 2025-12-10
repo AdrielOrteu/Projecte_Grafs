@@ -19,7 +19,13 @@ def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str]]:
 
     motifs = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-    
+    for nodes in G.nodes():
+        for neighbor in G.successors(nodes):
+            if neighbor != nodes:
+                for neighbor_3 in G.successors(neighbor):
+                    if neighbor_3 != neighbor and neighbor_3 != nodes:
+                        if neighbor_3 in G.successors(nodes):
+                            motifs.append((nodes,neighbor,neighbor_3))
     
     # ----------------- END OF FUNCTION --------------------- #
     print(len(motifs))
@@ -33,6 +39,9 @@ if __name__ == "__main__":
 
     # Load GraphML content a networkx graph
     G = nx.read_graphml(StringIO(graphml_content))
+    #G = nx.read_graphml("mini_Ecoli_TRN.graphml")
+
 
     # Print number of motifs
     motifs = find_motifs(G)
+
