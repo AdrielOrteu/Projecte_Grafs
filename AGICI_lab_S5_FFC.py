@@ -46,7 +46,7 @@ def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
 if __name__ == "__main__":
 
     # Read all stdin as the GraphML content
-    # E.g.: python3 AGICI_lab_S5.py < toy_1.graphml
+    # E.g1.: python3 AGICI_lab_S5.py < toy_1.graphml
     graphml_content = sys.stdin.read()
     # Load GraphML content a networkx graph
     G = nx.read_graphml(StringIO(graphml_content))
