@@ -6,6 +6,7 @@ import networkx as nx
 from typing import List, Tuple, Set
 
 
+
 def get_motifs_clusters(G: nx.DiGraph, motifs: list, \
                         mtype: str = "ffl") -> List[Set[str]]:
     """
