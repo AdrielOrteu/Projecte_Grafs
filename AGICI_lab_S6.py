@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
+from lib2to3.fixer_util import find_binding
 
 from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 import networkx as nx
 from typing import List, Tuple, Set
 
+# FFC and BF imports
+from AGICI_lab_S5_FFC import find_motifs as find_ffl
+from AGICI_lab_S5 import find_motifs as fins_bf
 
-def get_motifs_clusters(G: nx.DiGraph, motifs: list, \
-                        mtype: str = "ffl") -> List[Set[str]]:
+
+def get_motifs_clusters(G: nx.DiGraph, motifs: list, mtype: str = "ffl") -> List[Set[str]]:
     """
     Analyse the subgraph created from edges belonging to motifs.
 
@@ -24,11 +28,21 @@ def get_motifs_clusters(G: nx.DiGraph, motifs: list, \
     """
     connected_components = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-
-
-
-
-
+    
+    if mtype == "ffl":
+        for t in motifs:
+            connected_components.append({t[0], t[1]})
+            connected_components.append({t[0], t[2]})
+            connected_components.append({t[1], t[2]})
+    elif mtype == "bf":
+        for t in motifs:
+            connected_components.append({t[0], t[2]})
+            connected_components.append({t[0], t[3]})
+            connected_components.append({t[1], t[2]})
+            connected_components.append({t[1], t[3]})
+    else:
+        raise ValueError
+    
     # ----------------- END OF FUNCTION --------------------- #
     return connected_components
 
