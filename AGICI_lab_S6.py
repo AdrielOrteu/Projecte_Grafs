@@ -4,7 +4,11 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 import networkx as nx
 from typing import List, Tuple, Set
-
+import random
+from AGICI_lab_S3 import degree_distribution, TF_RISet_parse
+from AGICI_lab_S5 import find_motifs_BF
+from AGICI_lab_S5_FFC import find_motifs_FFL
+from collections import Counter
 
 def get_motifs_clusters(G: nx.DiGraph, motifs: list, \
                         mtype: str = "ffl") -> List[Set[str]]:
@@ -24,13 +28,29 @@ def get_motifs_clusters(G: nx.DiGraph, motifs: list, \
     """
     connected_components = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
-
+    if mtype == "ffl":
+        for t in motifs:
+            connected_components.append({t[0], t[1]})
+            connected_components.append({t[0], t[2]})
+            connected_components.append({t[1], t[2]})
+    elif mtype == "bf":
+        for t in motifs:
+            connected_components.append({t[0], t[2]})
+            connected_components.append({t[0], t[3]})
+            connected_components.append({t[1], t[2]})
+            connected_components.append({t[1], t[3]})
+    else:
+        raise ValueError
+    
+    # ----------------- END OF FUNCTION --------------------- #
+    return connected_components
 
 
 
 
     # ----------------- END OF FUNCTION --------------------- #
     return connected_components
+    
 
 
 def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
@@ -49,11 +69,51 @@ def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
         Number of random graphs to generate
     """
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
+    in_degree_sequence, best = degree_distribution(G, 'in', 'ALL', 5)
+    out_degree_sequence, best2 = degree_distribution(G, 'out', 'ALL', 5)
+    list_in = list(in_degree_sequence.values())
+    list_out = list(out_degree_sequence.values())
+    motifs_FFL_og = find_motifs_FFL(G)
+    motifs_BF_og = find_motifs_BF(G)
+    nodes_in_motifs_BF_og = ()
+    nodes_in_motifs_FFL_og = ()
+    for BF in motifs_BF_og:
+            for node in BF:
+                nodes_in_motifs_BF_og.add(node)
+    for FFL in motifs_FFL_og:
+            for node in FFL:
+                nodes_in_motifs_FFL_og.add(node)
+    nodes_in_all_motifs_og = nodes_in_motifs_BF_og | nodes_in_motifs_FFL_og
+    motif_clusters_BF_og = get_motifs_clusters(G, motifs_BF_og, 'bf')
+    motif_clusters_FFL_og = get_motifs_clusters(G, motifs_FFL_og, 'ffl')
+    number_of_cluster_FFL_og = len(motif_clusters_FFL_og)
+    number_of_cluster_BF_og = len(motif_clusters_BF_og)
+    cluster_distribution_FFL_og = Counter([len(x) for x in motif_clusters_FFL_og])
+    cluster_distribution_BF_og = Counter([len(x) for x in motif_clusters_BF_og])
+    for i in range(n_random):
+        random_subgraph = nx.directed_configuration_model(list_in, list_out)
 
+    # ---------Statistics -------------------------------------- #
+        motifs_FFL = find_motifs_FFL(random_subgraph)
+        motifs_BF = find_motifs_BF(random_subgraph)
+        nodes_in_motifs_BF = ()
+        nodes_in_motifs_FFL = ()
+        for BF in motifs_BF:
+            for node in BF:
+                nodes_in_motifs_BF.add(node)
+        for FFL in motifs_FFL:
+            for node in FFL:
+                nodes_in_motifs_FFL.add(node)
+        nodes_in_all_motifs = nodes_in_motifs_BF | nodes_in_motifs_FFL
+        motif_clusters_FFL = get_motifs_clusters(random_subgraph, motifs_FFL, 'ffl')
+        motif_clusters_BF = get_motifs_clusters(random_subgraph, motifs_BF, 'bf')
+        number_of_cluster_BF = len(motif_clusters_BF)
+        number_of_cluster_FFL_og = len(motif_clusters_FFL)
+        cluster_distribution_FFL = Counter([len(x) for x in motif_clusters_FFL])
+        cluster_distribution_BF = Counter([len(x) for x in motif_clusters_BF])
 
-
-
-
+    motifs_FFL_og = find_motifs_FFL(G)
+    motifs_BF_og = find_motifs_BF(G)
     # ----------------- END OF FUNCTION --------------------- #
 
 if __name__ == "__main__":
@@ -61,9 +121,12 @@ if __name__ == "__main__":
     # ------- IMPLEMENT HERE THE MAIN FOR THIS SESSION ------- #
     import time
     start_time = time.time()
-
-    G1=nx.read_graphml('Ecoli_TRN.graphml')
-    G2=nx.read_graphml('Ecoli_operon_TRN.graphml')
+    genome = SeqIO.read('dataset/sequence.gb' , 'genbank')
+    G_no = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', False, 100, genome, True)
+    #G_so = TF_RISet_parse('dataset/TF-RISet.tsv', 'dataset/TFSet.tsv', True, 100, genome,True)
+    #G1=nx.read_graphml('Ecoli_TRN.graphml')
+    #G2=nx.read_graphml('Ecoli_operon_TRN.graphml')
+    compare_with_random_graphs(G_no, 3)
 
     ...
 

@@ -110,7 +110,7 @@ def operon(locus_tag: str='', max_intergenic_dist: int=100, genome: SeqRecord=No
     # ----------------- END OF FUNCTION --------------------- #
     return operon
 
-def degree_distribution(G : nx.DiGraph, degree_type : str, \
+def degree_distribution(G : nx.DiGraph, degree_type : str , \
         node_type : str, bestN : int) -> tuple:
         '''Compute the in-, out- or general degree distribution.
         Parameters
