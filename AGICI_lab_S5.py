@@ -5,7 +5,7 @@ from itertools import combinations
 from typing import List, Tuple
 from io import StringIO
 
-def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
+def find_motifs_BF(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
     """
     Detect motifs in the directed graph given as input.
 
