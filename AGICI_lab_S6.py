@@ -5,15 +5,25 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 import networkx as nx
 from typing import List, Tuple, Set
+<<<<<<< HEAD
 from collections import Counter
 import random
 # FFC and BF imports
 from AGICI_lab_S5_FFC import find_motifs_FFL
 from AGICI_lab_S5 import find_motifs_BF
 from AGICI_lab_S3 import degree_distribution, TF_RISet_parse 
+=======
+
+import random
+from AGICI_lab_S3 import degree_distribution, TF_RISet_parse
+from AGICI_lab_S5 import find_motifs_BF
+from AGICI_lab_S5_FFC import find_motifs_FFL
+from collections import Counter
+>>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
 
 
 def get_motifs_clusters(G: nx.DiGraph, motifs: list, mtype: str = "ffl") -> List[Set[str]]:
+
     """
     Analyse the subgraph created from edges belonging to motifs.
 
@@ -108,9 +118,12 @@ def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
         number_of_cluster_FFL = len(motif_clusters_FFL)
         cluster_distribution_FFL = Counter([len(x) for x in motif_clusters_FFL])
         cluster_distribution_BF = Counter([len(x) for x in motif_clusters_BF])
+<<<<<<< HEAD
     
     # ------ Print Results ---------------------------------- #
 
+=======
+>>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
         print(f'---------------------Number of Motifs----------------------\n')
         print(f'------------------------ BF Motifs ------------------------')
         print(f'There are a total of {len(motifs_BF_og)} motifs in the original graph and {len(motifs_BF)} motifs in random graph {i} \n')
@@ -135,7 +148,10 @@ def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
         print(f'------------------------ FFL Motifs ------------------------')
         print(f'The distribution of clusters of motif type BF in the original graph is: \n {cluster_distribution_FFL_og} \n')
         print(f'The distribution of clusters of motif type BF in the random graph {i} is: \n {cluster_distribution_FFL_og} \n')
+<<<<<<< HEAD
 
+=======
+>>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
     # ----------------- END OF FUNCTION --------------------- #
 
 if __name__ == "__main__":

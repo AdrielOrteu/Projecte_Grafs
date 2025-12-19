@@ -17,18 +17,6 @@ def find_motifs_FFL(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
         List of detected motifs, each represented as a tuple (X, Y, Z).
     """
 
-def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
-    """
-    Detect motifs in the directed graph given as input.
-
-    Parameters
-    ----------
-    - param: G : Networkx digraph
-        Graph to analyze
-    - return: list
-        List of detected motifs, each represented as a tuple (X, Y, Z).
-    """
-
     motifs = []
     # ------- IMPLEMENT HERE THE BODY OF THE FUNCTION ------- #
     for nodes in G.nodes():
