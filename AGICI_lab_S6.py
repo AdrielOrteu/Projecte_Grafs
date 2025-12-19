@@ -5,21 +5,11 @@ from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
 import networkx as nx
 from typing import List, Tuple, Set
-<<<<<<< HEAD
-from collections import Counter
-import random
-# FFC and BF imports
-from AGICI_lab_S5_FFC import find_motifs_FFL
-from AGICI_lab_S5 import find_motifs_BF
-from AGICI_lab_S3 import degree_distribution, TF_RISet_parse 
-=======
-
 import random
 from AGICI_lab_S3 import degree_distribution, TF_RISet_parse
 from AGICI_lab_S5 import find_motifs_BF
 from AGICI_lab_S5_FFC import find_motifs_FFL
 from collections import Counter
->>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
 
 
 def get_motifs_clusters(G: nx.DiGraph, motifs: list, mtype: str = "ffl") -> List[Set[str]]:
@@ -95,7 +85,8 @@ def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
     motif_clusters_FFL_og = get_motifs_clusters(G, motifs_FFL_og, 'ffl')
     number_of_cluster_FFL_og = len(motif_clusters_FFL_og)
     number_of_cluster_BF_og = len(motif_clusters_BF_og)
-    cluster_distribution_FFL_og = Counter([len(x) for x in motif_clusters_FFL_og])
+    mid = [len(x) for x in motif_clusters_FFL_og]
+    cluster_distribution_FFL_og = Counter(mid)
     cluster_distribution_BF_og = Counter([len(x) for x in motif_clusters_BF_og])
     for i in range(n_random):
         random_subgraph = nx.directed_configuration_model(list_in, list_out)
@@ -118,40 +109,31 @@ def compare_with_random_graphs(G: nx.DiGraph, n_random: int):
         number_of_cluster_FFL = len(motif_clusters_FFL)
         cluster_distribution_FFL = Counter([len(x) for x in motif_clusters_FFL])
         cluster_distribution_BF = Counter([len(x) for x in motif_clusters_BF])
-<<<<<<< HEAD
-    
-    # ------ Print Results ---------------------------------- #
 
-=======
->>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
         print(f'---------------------Number of Motifs----------------------\n')
         print(f'------------------------ BF Motifs ------------------------')
-        print(f'There are a total of {len(motifs_BF_og)} motifs in the original graph and {len(motifs_BF)} motifs in random graph {i} \n')
+        print(f'There are a total of {len(motifs_BF_og)} motifs in the original graph and {len(motifs_BF)} motifs in random graph {i + 1} \n')
         print(f'------------------------ FFL Motifs -----------------------')
-        print(f'There are a total of {len(motifs_FFL_og)} motifs in the original graph and {len(motifs_FFL)} motifs in random graph {i} \n')
+        print(f'There are a total of {len(motifs_FFL_og)} motifs in the original graph and {len(motifs_FFL)} motifs in random graph {i + 1} \n')
         print(f'--------------------- Number of Nodes ---------------------\n')
         print(f'------------------------ BF Motifs ------------------------')
-        print(f'There are a total of {nodes_in_motifs_BF_og} nodes in the original graph and {len(nodes_in_motifs_BF)} nodes  in random graph {i} \n')
+        print(f'There are a total of {len(nodes_in_motifs_BF_og)} nodes in the original graph and {len(nodes_in_motifs_BF)} nodes  in random graph {i + 1} \n')
         print(f'------------------------ FFL Motifs -----------------------')
-        print(f'There are a total of {nodes_in_motifs_FFL_og} nodes in the original graph and {len(nodes_in_motifs_FFL)} nodes  in random graph {i} \n')
+        print(f'There are a total of {len(nodes_in_motifs_FFL_og)} nodes in the original graph and {len(nodes_in_motifs_FFL)} nodes  in random graph {i + 1} \n')
         print(f'------------------------ All Motifs -----------------------')
-        print(f'There are a total of {nodes_in_all_motifs_og} nodes in the original graph and {len(nodes_in_all_motifs)} nodes  in random graph {i} \n')
+        print(f'There are a total of {len(nodes_in_all_motifs_og)} nodes in the original graph and {len(nodes_in_all_motifs)} nodes  in random graph {i + 1} \n')
         print(f'---------------------Number of Motif Clusters-------------------\n')
         print(f'------------------------ BF Motifs ------------------------')
-        print(f'There are a total of {number_of_cluster_BF_og} motifs in the original graph and {number_of_cluster_BF} motifs in random graph {i} \n')
+        print(f'There are a total of {number_of_cluster_BF_og} motifs in the original graph and {number_of_cluster_BF} motifs in random graph {i + 1} \n')
         print(f'------------------------ FFL Motifs -----------------------')
-        print(f'There are a total of {number_of_cluster_FFL_og} motifs in the original graph and {number_of_cluster_FFL} motifs in random graph {i} \n')
+        print(f'There are a total of {number_of_cluster_FFL_og} motifs in the original graph and {number_of_cluster_FFL} motifs in random graph {i + 1} \n')
         print(f'--------------------- Cluster Distribution ---------------------\n')
         print(f'------------------------ BF Motifs ------------------------')
         print(f'The distribution of clusters of motif type BF in the original graph is: \n {cluster_distribution_BF_og} \n')
-        print(f'The distribution of clusters of motif type BF in the random graph {i} is: \n {cluster_distribution_BF} \n')
+        print(f'The distribution of clusters of motif type BF in the random graph {i + 1} is: \n {cluster_distribution_BF} \n')
         print(f'------------------------ FFL Motifs ------------------------')
         print(f'The distribution of clusters of motif type BF in the original graph is: \n {cluster_distribution_FFL_og} \n')
-        print(f'The distribution of clusters of motif type BF in the random graph {i} is: \n {cluster_distribution_FFL_og} \n')
-<<<<<<< HEAD
-
-=======
->>>>>>> 89e5d90212fe481aeff7c65cc5192a34bc1166f2
+        print(f'The distribution of clusters of motif type BF in the random graph {i + 1} is: \n {cluster_distribution_FFL_og} \n')
     # ----------------- END OF FUNCTION --------------------- #
 
 if __name__ == "__main__":
