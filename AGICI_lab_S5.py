@@ -26,7 +26,6 @@ def find_motifs_BF(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
         for n3, n4 in combinations(intersect, 2):
             motifs.append((n1,n2,n3,n4))
     # ----------------- END OF FUNCTION --------------------- #
-    print(len(motifs))
     return motifs
 
 if __name__ == "__main__":

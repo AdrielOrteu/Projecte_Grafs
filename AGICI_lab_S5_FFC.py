@@ -40,7 +40,6 @@ def find_motifs(G: nx.DiGraph) -> List[Tuple[str, str, str, str]]:
                             motifs.append((nodes,neighbor,neighbor_3))
     
     # ----------------- END OF FUNCTION --------------------- #
-    print(len(motifs))
     return motifs
 
 if __name__ == "__main__":
